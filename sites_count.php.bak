@@ -1,0 +1,345 @@
+<?php 
+//	error_reporting(0);
+
+	//Query Sites (SID)
+	$qrySTE=$link->query("SELECT * FROM sites");
+	$arySTE=mysqli_fetch_array($qrySTE);
+	$sidSTE=$arySTE[0];
+	$munSTE=$arySTE["mcode"];
+	$barSTE=$arySTE["barangay"];
+	
+	//Query Municipality (MID)
+	$qryMUN=$link->query("SELECT * FROM municipality");
+	$aryMUN=mysqli_fetch_array($qryMUN);	
+	$codMUN=$aryMUN["mcode"];
+	$namMUN=$aryMUN["mname"];
+
+	//Query Barangays (SID)
+	$qryBAR=$link->query("SELECT * FROM barangays");
+	$aryBAR=mysqli_fetch_array($qryBAR);	
+	$bidBAR=$aryBAR[0];
+	$munBAR=$aryBAR["mcode"];
+	$namBAR=$aryBAR["barangay"];
+
+	//Count All Barangays (BID)
+	$qraBAR=$link->query("SELECT COUNT(bid) FROM barangays");
+	$araBAR=mysqli_fetch_array($qraBAR);	
+	$allBAR=number_format($araBAR[0]);
+
+	//Count All Municipalities (MID)
+	$qraMUN=$link->query("SELECT COUNT(mid) FROM municipality");
+	$araMUN=mysqli_fetch_array($qraMUN);	
+	$allMUN=number_format($araMUN[0]);
+
+	//Count Municipalities with Installations (WIN)
+	$qrcMUN=$link->query("SELECT COUNT(mcode) FROM municipality m WHERE m.mcode <>'$munSTE'");
+	$cntMUN=mysqli_fetch_array($qrcMUN);	
+	$totMUN=number_format($cntMUN[0]);
+	
+	//Count Barangays with Installations (WIN) All Municipality
+	$qrcBAR=$link->query("SELECT COUNT(bid) FROM barangays WHERE win='Yes'");
+	$cntBAR=mysqli_fetch_array($qrcBAR);
+	$totBAR=number_format($cntBAR[0]);
+	
+	//Count Barangays with Installations (WIN) Per Municipality
+	$qrcWIN=$link->query("SELECT COUNT(bid) FROM barangays WHERE win='Yes' AND mcode='$mcode' ");
+	$cntWIN=mysqli_fetch_array($qrcWIN);
+	$totWIN=number_format($cntWIN[0]);
+
+	//Count Barangay Halls (BAP)
+	$qrcBAP=$link->query("SELECT COUNT(place) FROM sites WHERE place='BAP'");
+	$cntBAP=mysqli_fetch_array($qrcBAP);
+	$totBAP=number_format($cntBAP[0]);
+
+	//Count Barangay Healt Centers (BHC)
+	$qrcBHC=$link->query("SELECT COUNT(place) FROM sites WHERE place='BHC'");
+	$cntBHC=mysqli_fetch_array($qrcBHC);
+	$totBHC=number_format($cntBHC[0]);
+	
+	//Count Base Stations (BST)
+	$qrcBST=$link->query("SELECT COUNT(place) FROM sites WHERE place='BST'");
+	$cntBST=mysqli_fetch_array($qrcBST);
+	$totBST=number_format($cntBST[0]);
+	
+	//Count Coast Guard Posts (CGD)
+	$qrcCGD=$link->query("SELECT COUNT(place) FROM sites WHERE place='CGD'");
+	$cntCGD=mysqli_fetch_array($qrcCGD);
+	$totCGD=number_format($cntCGD[0]);
+
+	//Count Check Points (CKP)
+	$qrcCKP=$link->query("SELECT COUNT(place) FROM sites WHERE place='CKP'");
+	$cntCKP=mysqli_fetch_array($qrcCKP);
+	$totCKP=number_format($cntCKP[0]);
+
+	//Count Military Camps (CMP)
+	$qrcCMP=$link->query("SELECT COUNT(place) FROM sites WHERE place='CMP'");
+	$cntCMP=mysqli_fetch_array($qrcCMP);
+	$totCMP=number_format($cntCMP[0]);
+
+	//Count Army DETachment (DET)
+	$qrcDET=$link->query("SELECT COUNT(place) FROM sites WHERE place='DET'");
+	$cntDET=mysqli_fetch_array($qrcDET);
+	$totDET=number_format($cntDET[0]);
+
+	//Count Elementary Schools (ELS)
+	$qrcELS=$link->query("SELECT COUNT(place) FROM sites WHERE place='ELS'");
+	$cntELS=mysqli_fetch_array($qrcELS);
+	$totELS=number_format($cntELS[0]);
+
+	//Count Elementary Schools 2 (ES2)
+	$qrcES2=$link->query("SELECT COUNT(place) FROM sites WHERE place='ES2'");
+	$cntES2=mysqli_fetch_array($qrcES2);
+	$totES2=number_format($cntES2[0]);
+
+	//Count Other Public Places (ETC)
+	$qrcETC=$link->query("SELECT COUNT(place) FROM sites WHERE place='ETC'");
+	$cntETC=mysqli_fetch_array($qrcETC);
+	$totETC=number_format($cntETC[0]);
+
+	//Count Government Offices (GOF)
+	$qrcGOF=$link->query("SELECT COUNT(place) FROM sites WHERE place='GOF'");
+	$cntGOF=mysqli_fetch_array($qrcGOF);
+	$totGOF=number_format($cntGOF[0]);
+
+	//Count GYMnasiums (GYM)
+	$qrcGYM=$link->query("SELECT COUNT(place) FROM sites WHERE place='GYM'");
+	$cntGYM=mysqli_fetch_array($qrcGYM);
+	$totGYM=number_format($cntGYM[0]);
+
+	//Count HOSpitals (HOS)
+	$qrcHOS=$link->query("SELECT COUNT(place) FROM sites WHERE place='HOS'");
+	$cntHOS=mysqli_fetch_array($qrcHOS);
+	$totHOS=number_format($cntHOS[0]);
+
+	//Count Integrated Schools (INT)
+	$qrcINT=$link->query("SELECT COUNT(place) FROM sites WHERE place='INT'");
+	$cntINT=mysqli_fetch_array($qrcINT);
+	$totINT=number_format($cntINT[0]);
+
+	//Count Municipal Halls (MHL)
+	$qrcMHL=$link->query("SELECT COUNT(place) FROM sites WHERE place='MHL'");
+	$cntMHL=mysqli_fetch_array($qrcMHL);
+	$totMHL=number_format($cntMHL[0]);
+
+	//Count National High Schools (NHS)
+	$qrcNHS=$link->query("SELECT COUNT(place) FROM sites WHERE place='NHS'");
+	$cntNHS=mysqli_fetch_array($qrcNHS);
+	$totNHS=number_format($cntNHS[0]);
+
+	//Count Provincial Government Colleges (PGC)
+	$qrcPGC=$link->query("SELECT COUNT(place) FROM sites WHERE place='PGC'");
+	$cntPGC=mysqli_fetch_array($qrcPGC);
+	$totPGC=number_format($cntPGC[0]);
+
+	//Count Public Markets (PMA)
+	$qrcPMA=$link->query("SELECT COUNT(place) FROM sites WHERE place='PMA'");
+	$cntPMA=mysqli_fetch_array($qrcPMA);
+	$totPMA=number_format($cntPMA[0]);
+
+	//Count RELay Stations (REL)
+	$qrcREL=$link->query("SELECT COUNT(place) FROM sites WHERE place='REL'");
+	$cntREL=mysqli_fetch_array($qrcREL);
+	$totREL=number_format($cntREL[0]);
+
+	//Count Reacreational/Resort Places (RES)
+	$qrcRES=$link->query("SELECT COUNT(place) FROM sites WHERE place='RES'");
+	$cntRES=mysqli_fetch_array($qrcRES);
+	$totRES=number_format($cntRES[0]);
+
+	//Count SSFO Offices (SFO)
+	$qrcSFO=$link->query("SELECT COUNT(place) FROM sites WHERE place='SFO'");
+	$cntSFO=mysqli_fetch_array($qrcSFO);
+	$totSFO=number_format($cntSFO[0]);
+
+	//Count Senior High Schools (SHS)
+	$qrcSHS=$link->query("SELECT COUNT(place) FROM sites WHERE place='SHS'");
+	$cntSHS=mysqli_fetch_array($qrcSHS);
+	$totSHS=number_format($cntSHS[0]);
+
+	//Count Public Ports and Terminals (TER)
+	$qrcTER=$link->query("SELECT COUNT(place) FROM sites WHERE place='TER'");
+	$cntTER=mysqli_fetch_array($qrcTER);
+	$totTER=number_format($cntTER[0]);
+
+	//Count Vocational and Technical Centers (VOC)
+	$qrcVOC=$link->query("SELECT COUNT(place) FROM sites WHERE place='VOC'");
+	$cntVOC=mysqli_fetch_array($qrcVOC);
+	$totVOC=number_format($cntVOC[0]);
+
+	$totBMH = $totBAP+$totMHL+$totBHC+$totGOF+$totHOS+$totPMA+$totSFO+$totTER+$totGYM;
+	$totSCH = $totELS+$totES2+$totNHS+$totVOC+$totINT+$totPGC+$totINT;
+	$totOTH = $totBST+$totCGD+$totCKP+$totCMP+$totDET+$totETC+$totREL+$totRES;
+	
+	$totALL=$totBMH+$totSCH+$totOTH;	
+
+	//Number of Installed WiFi in Schools per Municipality
+	$cntES = $link->query("select count(place) from sites where mcode='$mcode' and place='ELS' ") or die(mysqli_error($link));
+	$aryES = mysqli_fetch_array($cntES);	
+	$totES = number_format($aryES[0]);
+
+	$cntE2 = $link->query("select count(place) from sites where mcode='$mcode' and place='ES2' ") or die(mysqli_error($link));
+	$aryE2 = mysqli_fetch_array($cntE2);	
+	$totE2 = number_format($aryE2[0]);
+
+	$cntHS = $link->query("select count(place) from sites where mcode='$mcode' and place='NHS' ") or die(mysqli_error($link));
+	$aryHS = mysqli_fetch_array($cntHS);	
+	$totHS = number_format($aryHS[0]);
+
+	$cntSH = $link->query("select count(place) from sites where mcode='$mcode' and place='SHS' ") or die(mysqli_error($link));
+	$arySH = mysqli_fetch_array($cntSH);	
+	$totSH = number_format($arySH[0]);
+
+	$cntIS = $link->query("select count(place) from sites where mcode='$mcode' and place='INT' ") or die(mysqli_error($link));
+	$aryIS = mysqli_fetch_array($cntIS);	
+	$totIS = number_format($aryIS[0]);
+
+	$cntVS = $link->query("select count(place) from sites where mcode='$mcode' and place='VOC' ") or die(mysqli_error($link));
+	$aryVS = mysqli_fetch_array($cntVS);	
+	$totVS = number_format($aryVS[0]);
+
+	$cntGC = $link->query("select count(place) from sites where mcode='$mcode' and place='PGC' ") or die(mysqli_error($link));
+	$aryGC = mysqli_fetch_array($cntGC);	
+	$totGC = number_format($aryGC[0]);
+	
+	//Number of Installed WiFi in Barangay Centers per Municipality
+	$cntBH = $link->query("select count(place) from sites where mcode='$mcode' and place='BAP' ") or die(mysqli_error($link));
+	$aryBH = mysqli_fetch_array($cntBH);	
+	$totBH = number_format($aryBH[0]);
+
+	$cntBC = $link->query("select count(place) from sites where mcode='$mcode' and place='BHC' ") or die(mysqli_error($link));
+	$aryBC = mysqli_fetch_array($cntBC);	
+	$totBC = number_format($aryBC[0]);
+
+	$cntMH = $link->query("select count(place) from sites where mcode='$mcode' and place='MHL' ") or die(mysqli_error($link));
+	$aryMH = mysqli_fetch_array($cntMH);	
+	$totMH = number_format($aryMH[0]);
+
+	$cntPM = $link->query("select count(place) from sites where mcode='$mcode' and place='PMA' ") or die(mysqli_error($link));
+	$aryPM = mysqli_fetch_array($cntPM);	
+	$totPM = number_format($aryPM[0]);
+
+	$cntPT = $link->query("select count(place) from sites where mcode='$mcode' and place='TER' ") or die(mysqli_error($link));
+	$aryPT = mysqli_fetch_array($cntPT);	
+	$totPT = number_format($aryPT[0]);
+
+	$cntGM = $link->query("select count(place) from sites where mcode='$mcode' and place='GYM' ") or die(mysqli_error($link));
+	$aryGM = mysqli_fetch_array($cntGM);	
+	$totGM = number_format($aryGM[0]);
+
+	$cntGO = $link->query("select count(place) from sites where mcode='$mcode' and place='GOF' ") or die(mysqli_error($link));
+	$aryGO = mysqli_fetch_array($cntGO);	
+	$totGO = number_format($aryGO[0]);
+
+	$cntHO = $link->query("select count(place) from sites where mcode='$mcode' and place='HOS' ") or die(mysqli_error($link));
+	$aryHO = mysqli_fetch_array($cntHO);	
+	$totHO = number_format($aryHO[0]);
+
+	$cntSF = $link->query("select count(place) from sites where mcode='$mcode' and place='SFO' ") or die(mysqli_error($link));
+	$arySF = mysqli_fetch_array($cntSF);	
+	$totSF = number_format($arySF[0]);
+
+	//Number of Installed WiFi in Other Public Places per Municipality
+	$cntBS = $link->query("select count(place) from sites where mcode='$mcode' and place='BST' ") or die(mysqli_error($link));
+	$aryBS = mysqli_fetch_array($cntBS);	
+	$totBS = number_format($aryBS[0]);
+
+	$cntCG = $link->query("select count(place) from sites where mcode='$mcode' and place='CDG' ") or die(mysqli_error($link));
+	$aryCG = mysqli_fetch_array($cntCG);	
+	$totCG = number_format($aryCG[0]);
+
+	$cntCP = $link->query("select count(place) from sites where mcode='$mcode' and place='CKP' ") or die(mysqli_error($link));
+	$aryCP = mysqli_fetch_array($cntCP);	
+	$totCP = number_format($aryCP[0]);
+
+	$cntMC = $link->query("select count(place) from sites where mcode='$mcode' and place='CMP' ") or die(mysqli_error($link));
+	$aryMC = mysqli_fetch_array($cntMC);	
+	$totMC = number_format($aryMC[0]);
+
+	$cntDC = $link->query("select count(place) from sites where mcode='$mcode' and place='DET' ") or die(mysqli_error($link));
+	$aryDC = mysqli_fetch_array($cntDC);	
+	$totDC = number_format($aryDC[0]);
+
+	$cntOP = $link->query("select count(place) from sites where mcode='$mcode' and place='ETC' ") or die(mysqli_error($link));
+	$aryOP = mysqli_fetch_array($cntOP);	
+	$totOP = number_format($aryOP[0]);
+
+	$cntRL = $link->query("select count(place) from sites where mcode='$mcode' and place='REL' ") or die(mysqli_error($link));
+	$aryRL = mysqli_fetch_array($cntRL);	
+	$totRL = number_format($aryRL[0]);
+
+	$cntRC = $link->query("select count(place) from sites where mcode='$mcode' and place='RES' ") or die(mysqli_error($link));
+	$aryRC = mysqli_fetch_array($cntRC);	
+	$totRC = number_format($aryRC[0]);
+
+	//TOTALS
+	$totBPM = $totBH+$totBC+$totMH+$totPM+$totPT+$totGM+$totGO+$totHO+$totSF;
+	$totSPM = $totES+$totE2+$totHS+$totSH+$totIS+$totVS+$totGC;
+	$totOPM = $totBS+$totCG+$totCP+$totMC+$totDC+$totOP+$totRL+$totRC;
+	
+	//Total Number of Barangays per Municipalities
+	$cntBar = $link->query("select count(barangay) from barangays where mcode = '$mcode' ") or die(mysqli_error($link));
+	$aryBar = mysqli_fetch_array($cntBar);	
+	$totBar = number_format($aryBar[0]);
+	
+	//Total Number of Installed WiFi per Municipality
+	$cntwFi = $link->query("select count(barangay) from sites where mcode = '$mcode' ") or die(mysqli_error($link));
+	$arywFi = mysqli_fetch_array($cntwFi);	
+	$totwFi = number_format($arywFi[0]);
+
+	//COUNT DEPLOYED DEVICES
+	//Count Deployed Access Points Devices (APS)
+	$qraAPS=$link->query("SELECT COUNT(device_id) FROM sites_detail where device_category='Access Point'");
+	$araAPS=mysqli_fetch_array($qraAPS);	
+	$allAPS=number_format($araAPS[0]);
+	
+	//Count Deployed Networking Devices (NET)
+	$qraNET=$link->query("SELECT COUNT(device_id) FROM sites_detail where device_category='Networking'");
+	$araNET=mysqli_fetch_array($qraNET);	
+	$allNET=number_format($araNET[0]);
+	
+	//Count Deployed Routers Devices (ROU)
+	$qraROU=$link->query("SELECT COUNT(device_id) FROM sites_detail where device_category='Router'");
+	$araROU=mysqli_fetch_array($qraROU);	
+	$allROU=number_format($araROU[0]);
+
+	//Count Deployed Switches Devices (USW)
+	$qraUSW=$link->query("SELECT COUNT(device_id) FROM sites_detail where device_category='Switch'");
+	$araUSW=mysqli_fetch_array($qraUSW);	
+	$allUSW=number_format($araUSW[0]);
+
+	//Count Deployed Antenna Devices (ANT)
+	$qraANT=$link->query("SELECT COUNT(device_id) FROM sites_detail where device_category='Antenna'");
+	$araANT=mysqli_fetch_array($qraANT);	
+	$allANT=number_format($araANT[0]);
+
+	//Count Deployed Radio Only Devices (RDO)
+	$qraRDO=$link->query("SELECT COUNT(device_id) FROM sites_detail where device_category='Radio Only'");
+	$araRDO=mysqli_fetch_array($qraRDO);	
+	$allRDO=number_format($araRDO[0]);
+	
+	//Count Deployed Radio Builtin Devices (RDB)
+	$qraRDB=$link->query("SELECT COUNT(device_id) FROM sites_detail where device_category='Radio Builtin'");
+	$araRDB=mysqli_fetch_array($qraRDB);	
+	$allRDB=number_format($araRDB[0]);	
+
+	//Count Deployed Hardware Devices (OTH)
+	$qraHRD=$link->query("SELECT COUNT(device_id) FROM sites_detail where device_category='Hardware'");
+	$araHRD=mysqli_fetch_array($qraHRD);	
+	$allHRD=number_format($araHRD[0]);
+
+	//Count Deployed Electrical Devices (OTH)
+	$qraELE=$link->query("SELECT COUNT(device_id) FROM sites_detail where device_category='Electrical'");
+	$araELE=mysqli_fetch_array($qraELE);	
+	$allELE=number_format($araELE[0]);
+	
+	//Count Deployed Other Devices (OTH)
+	$qraOTD=$link->query("SELECT COUNT(device_id) FROM sites_detail where device_category='Others'");
+	$araOTD=mysqli_fetch_array($qraOTD);	
+	$allOTD=number_format($araOTD[0]);		
+	
+	$totDEV = $allAPS+$allNET+$allROU+$allUSW+$allANT+$allRDO+$allRDB+$allHRD+$allELE+$allOTD;
+	
+	$allNRS = $allNET+$allROU+$allUSW;
+	$allRAD = $allANT+$allRDO+$allRDB;
+	$allOTH = $allHRD+$allELE+$allOTD;
+?>

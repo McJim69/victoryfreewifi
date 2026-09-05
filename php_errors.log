@@ -1,0 +1,485 @@
+[05-Jul-2026 10:47:20 UTC] PHP Warning:  session_start(): open(c:/Server/tmp\sess_lue1p7hpn2r0f37raqucpb10fj, O_RDWR) failed: Permission denied (13) in C:\Server\www\web\connect.php on line 32
+[05-Jul-2026 10:47:20 UTC] PHP Stack trace:
+[05-Jul-2026 10:47:20 UTC] PHP   1. {main}() C:\Server\www\web\reportModal.php:0
+[05-Jul-2026 10:47:20 UTC] PHP   2. require() C:\Server\www\web\reportModal.php:47
+[05-Jul-2026 10:47:20 UTC] PHP   3. session_start() C:\Server\www\web\connect.php:32
+[05-Jul-2026 10:47:20 UTC] PHP Warning:  session_start(): Failed to read session data: files (path: c:/Server/tmp) in C:\Server\www\web\connect.php on line 32
+[05-Jul-2026 10:47:20 UTC] PHP Stack trace:
+[05-Jul-2026 10:47:20 UTC] PHP   1. {main}() C:\Server\www\web\reportModal.php:0
+[05-Jul-2026 10:47:20 UTC] PHP   2. require() C:\Server\www\web\reportModal.php:47
+[05-Jul-2026 10:47:20 UTC] PHP   3. session_start() C:\Server\www\web\connect.php:32
+[05-Jul-2026 19:24:21 Asia/Manila] PHP Notice:  Trying to access array offset on value of type null in C:\Server\www\web\site_details.php on line 40
+[05-Jul-2026 19:24:21 Asia/Manila] PHP Stack trace:
+[05-Jul-2026 19:24:21 Asia/Manila] PHP   1. {main}() C:\Server\www\web\site_details.php:0
+[05-Jul-2026 20:45:01 Asia/Manila] PHP Fatal error:  Maximum execution time of 300 seconds exceeded in C:\Server\www\web\sites_status_cron.php on line 25
+[05-Jul-2026 20:45:01 Asia/Manila] PHP Stack trace:
+[05-Jul-2026 20:45:01 Asia/Manila] PHP   1. {main}() C:\Server\www\web\sites_status_cron.php:0
+[06-Jul-2026 13:45:01 Asia/Manila] PHP Fatal error:  Maximum execution time of 300 seconds exceeded in C:\Server\www\web\sites_status_cron.php on line 25
+[06-Jul-2026 13:45:01 Asia/Manila] PHP Stack trace:
+[06-Jul-2026 13:45:01 Asia/Manila] PHP   1. {main}() C:\Server\www\web\sites_status_cron.php:0
+[10-Jul-2026 06:22:51 Asia/Manila] PHP Notice:  Trying to access array offset on value of type null in C:\Server\www\web\sites.php on line 168
+[10-Jul-2026 06:22:51 Asia/Manila] PHP Stack trace:
+[10-Jul-2026 06:22:51 Asia/Manila] PHP   1. {main}() C:\Server\www\web\sites.php:0
+[10-Jul-2026 11:44:43 Asia/Manila] PHP Notice:  Trying to access array offset on value of type null in C:\Server\www\web\site_details.php on line 40
+[10-Jul-2026 11:44:43 Asia/Manila] PHP Stack trace:
+[10-Jul-2026 11:44:43 Asia/Manila] PHP   1. {main}() C:\Server\www\web\site_details.php:0
+[11-Jul-2026 14:50:46 Asia/Manila] PHP Notice:  Trying to access array offset on value of type null in C:\Server\www\web\site_details.php on line 40
+[11-Jul-2026 14:50:46 Asia/Manila] PHP Stack trace:
+[11-Jul-2026 14:50:46 Asia/Manila] PHP   1. {main}() C:\Server\www\web\site_details.php:0
+[12-Jul-2026 12:15:01 Asia/Manila] PHP Fatal error:  Maximum execution time of 300 seconds exceeded in C:\Server\www\web\sites_status_cron.php on line 25
+[12-Jul-2026 12:15:01 Asia/Manila] PHP Stack trace:
+[12-Jul-2026 12:15:01 Asia/Manila] PHP   1. {main}() C:\Server\www\web\sites_status_cron.php:0
+[12-Jul-2026 13:45:01 Asia/Manila] PHP Fatal error:  Maximum execution time of 300 seconds exceeded in C:\Server\www\web\sites_status_cron.php on line 25
+[12-Jul-2026 13:45:01 Asia/Manila] PHP Stack trace:
+[12-Jul-2026 13:45:01 Asia/Manila] PHP   1. {main}() C:\Server\www\web\sites_status_cron.php:0
+[14-Jul-2026 11:05:01 Asia/Manila] PHP Fatal error:  Maximum execution time of 300 seconds exceeded in C:\Server\www\web\sites_status_cron.php on line 25
+[14-Jul-2026 11:05:01 Asia/Manila] PHP Stack trace:
+[14-Jul-2026 11:05:01 Asia/Manila] PHP   1. {main}() C:\Server\www\web\sites_status_cron.php:0
+[15-Jul-2026 08:15:01 Asia/Manila] PHP Fatal error:  Maximum execution time of 300 seconds exceeded in C:\Server\www\web\sites_status_cron.php on line 25
+[15-Jul-2026 08:15:01 Asia/Manila] PHP Stack trace:
+[15-Jul-2026 08:15:01 Asia/Manila] PHP   1. {main}() C:\Server\www\web\sites_status_cron.php:0
+[15-Jul-2026 08:45:02 Asia/Manila] PHP Fatal error:  Maximum execution time of 300 seconds exceeded in C:\Server\www\web\sites_status_cron.php on line 25
+[15-Jul-2026 08:45:02 Asia/Manila] PHP Stack trace:
+[15-Jul-2026 08:45:02 Asia/Manila] PHP   1. {main}() C:\Server\www\web\sites_status_cron.php:0
+[16-Jul-2026 07:55:01 Asia/Manila] PHP Fatal error:  Maximum execution time of 300 seconds exceeded in C:\Server\www\web\sites_status_cron.php on line 27
+[16-Jul-2026 07:55:01 Asia/Manila] PHP Stack trace:
+[16-Jul-2026 07:55:01 Asia/Manila] PHP   1. {main}() C:\Server\www\web\sites_status_cron.php:0
+[17-Jul-2026 09:25:01 Asia/Manila] PHP Fatal error:  Maximum execution time of 300 seconds exceeded in C:\Server\www\web\sites_status_cron.php on line 25
+[17-Jul-2026 09:25:01 Asia/Manila] PHP Stack trace:
+[17-Jul-2026 09:25:01 Asia/Manila] PHP   1. {main}() C:\Server\www\web\sites_status_cron.php:0
+[18-Jul-2026 09:55:01 Asia/Manila] PHP Fatal error:  Maximum execution time of 300 seconds exceeded in C:\Server\www\web\sites_status_cron.php on line 21
+[18-Jul-2026 09:55:01 Asia/Manila] PHP Stack trace:
+[18-Jul-2026 09:55:01 Asia/Manila] PHP   1. {main}() C:\Server\www\web\sites_status_cron.php:0
+[18-Jul-2026 19:55:01 Asia/Manila] PHP Fatal error:  Maximum execution time of 300 seconds exceeded in C:\Server\www\web\sites_status_cron.php on line 27
+[18-Jul-2026 19:55:01 Asia/Manila] PHP Stack trace:
+[18-Jul-2026 19:55:01 Asia/Manila] PHP   1. {main}() C:\Server\www\web\sites_status_cron.php:0
+[21-Jul-2026 12:55:01 Asia/Manila] PHP Fatal error:  Maximum execution time of 300 seconds exceeded in C:\Server\www\web\sites_status_cron.php on line 25
+[21-Jul-2026 12:55:01 Asia/Manila] PHP Stack trace:
+[21-Jul-2026 12:55:01 Asia/Manila] PHP   1. {main}() C:\Server\www\web\sites_status_cron.php:0
+[21-Jul-2026 18:35:01 Asia/Manila] PHP Fatal error:  Maximum execution time of 300 seconds exceeded in C:\Server\www\web\sites_status_cron.php on line 27
+[21-Jul-2026 18:35:01 Asia/Manila] PHP Stack trace:
+[21-Jul-2026 18:35:01 Asia/Manila] PHP   1. {main}() C:\Server\www\web\sites_status_cron.php:0
+[24-Jul-2026 19:45:01 Asia/Manila] PHP Fatal error:  Maximum execution time of 300 seconds exceeded in C:\Server\www\web\sites_status_cron.php on line 25
+[24-Jul-2026 19:45:01 Asia/Manila] PHP Stack trace:
+[24-Jul-2026 19:45:01 Asia/Manila] PHP   1. {main}() C:\Server\www\web\sites_status_cron.php:0
+[25-Jul-2026 06:35:01 Asia/Manila] PHP Fatal error:  Maximum execution time of 300 seconds exceeded in C:\Server\www\web\sites_status_cron.php on line 25
+[25-Jul-2026 06:35:01 Asia/Manila] PHP Stack trace:
+[25-Jul-2026 06:35:01 Asia/Manila] PHP   1. {main}() C:\Server\www\web\sites_status_cron.php:0
+[27-Jul-2026 09:15:01 Asia/Manila] PHP Fatal error:  Maximum execution time of 300 seconds exceeded in C:\Server\www\web\sites_status_cron.php on line 25
+[27-Jul-2026 09:15:01 Asia/Manila] PHP Stack trace:
+[27-Jul-2026 09:15:01 Asia/Manila] PHP   1. {main}() C:\Server\www\web\sites_status_cron.php:0
+[27-Jul-2026 14:25:01 Asia/Manila] PHP Fatal error:  Maximum execution time of 300 seconds exceeded in C:\Server\www\web\sites_status_cron.php on line 25
+[27-Jul-2026 14:25:01 Asia/Manila] PHP Stack trace:
+[27-Jul-2026 14:25:01 Asia/Manila] PHP   1. {main}() C:\Server\www\web\sites_status_cron.php:0
+[28-Jul-2026 00:55:58 Asia/Manila] PHP Notice:  Undefined index: sites in C:\Server\www\web\site_details.php on line 22
+[28-Jul-2026 00:55:58 Asia/Manila] PHP Stack trace:
+[28-Jul-2026 00:55:58 Asia/Manila] PHP   1. {main}() C:\Server\www\web\site_details.php:0
+[28-Jul-2026 21:15:01 Asia/Manila] PHP Fatal error:  Maximum execution time of 300 seconds exceeded in C:\Server\www\web\sites_status_cron.php on line 25
+[28-Jul-2026 21:15:01 Asia/Manila] PHP Stack trace:
+[28-Jul-2026 21:15:01 Asia/Manila] PHP   1. {main}() C:\Server\www\web\sites_status_cron.php:0
+[29-Jul-2026 15:49:14 Asia/Manila] PHP Notice:  Trying to access array offset on value of type null in C:\Server\www\web\site_details.php on line 40
+[29-Jul-2026 15:49:14 Asia/Manila] PHP Stack trace:
+[29-Jul-2026 15:49:14 Asia/Manila] PHP   1. {main}() C:\Server\www\web\site_details.php:0
+[29-Jul-2026 17:42:40 Asia/Manila] PHP Warning:  fsockopen(): php_network_getaddresses: getaddrinfo failed: No such host is known.  in C:\Server\www\web\servers_stats.php on line 65
+[29-Jul-2026 17:42:40 Asia/Manila] PHP Stack trace:
+[29-Jul-2026 17:42:40 Asia/Manila] PHP   1. {main}() C:\Server\www\web\servers_stats.php:0
+[29-Jul-2026 17:42:40 Asia/Manila] PHP   2. fsockopen($hostname = 'gwr1.victoryfreewifi.net', $port = '443', $errno = 0, $errstr = '', $timeout = 1) C:\Server\www\web\servers_stats.php:65
+[29-Jul-2026 17:42:40 Asia/Manila] PHP Warning:  fsockopen(): unable to connect to gwr1.victoryfreewifi.net:443 (php_network_getaddresses: getaddrinfo failed: No such host is known. ) in C:\Server\www\web\servers_stats.php on line 65
+[29-Jul-2026 17:42:40 Asia/Manila] PHP Stack trace:
+[29-Jul-2026 17:42:40 Asia/Manila] PHP   1. {main}() C:\Server\www\web\servers_stats.php:0
+[29-Jul-2026 17:42:40 Asia/Manila] PHP   2. fsockopen($hostname = 'gwr1.victoryfreewifi.net', $port = '443', $errno = 0, $errstr = '', $timeout = 1) C:\Server\www\web\servers_stats.php:65
+[29-Jul-2026 17:42:40 Asia/Manila] PHP Warning:  fclose() expects parameter 1 to be resource, bool given in C:\Server\www\web\servers_stats.php on line 72
+[29-Jul-2026 17:42:40 Asia/Manila] PHP Stack trace:
+[29-Jul-2026 17:42:40 Asia/Manila] PHP   1. {main}() C:\Server\www\web\servers_stats.php:0
+[29-Jul-2026 17:42:40 Asia/Manila] PHP   2. fclose($fp = FALSE) C:\Server\www\web\servers_stats.php:72
+[29-Jul-2026 17:42:40 Asia/Manila] PHP Warning:  fsockopen(): php_network_getaddresses: getaddrinfo failed: No such host is known.  in C:\Server\www\web\servers_stats.php on line 65
+[29-Jul-2026 17:42:40 Asia/Manila] PHP Stack trace:
+[29-Jul-2026 17:42:40 Asia/Manila] PHP   1. {main}() C:\Server\www\web\servers_stats.php:0
+[29-Jul-2026 17:42:40 Asia/Manila] PHP   2. fsockopen($hostname = 'udm.victoryfreewifi.net', $port = '443', $errno = 0, $errstr = 'php_network_getaddresses: getaddrinfo failed: No such host is known. ', $timeout = 1) C:\Server\www\web\servers_stats.php:65
+[29-Jul-2026 17:42:40 Asia/Manila] PHP Warning:  fsockopen(): unable to connect to udm.victoryfreewifi.net:443 (php_network_getaddresses: getaddrinfo failed: No such host is known. ) in C:\Server\www\web\servers_stats.php on line 65
+[29-Jul-2026 17:42:40 Asia/Manila] PHP Stack trace:
+[29-Jul-2026 17:42:40 Asia/Manila] PHP   1. {main}() C:\Server\www\web\servers_stats.php:0
+[29-Jul-2026 17:42:40 Asia/Manila] PHP   2. fsockopen($hostname = 'udm.victoryfreewifi.net', $port = '443', $errno = 0, $errstr = 'php_network_getaddresses: getaddrinfo failed: No such host is known. ', $timeout = 1) C:\Server\www\web\servers_stats.php:65
+[29-Jul-2026 17:42:40 Asia/Manila] PHP Warning:  fclose() expects parameter 1 to be resource, bool given in C:\Server\www\web\servers_stats.php on line 72
+[29-Jul-2026 17:42:40 Asia/Manila] PHP Stack trace:
+[29-Jul-2026 17:42:40 Asia/Manila] PHP   1. {main}() C:\Server\www\web\servers_stats.php:0
+[29-Jul-2026 17:42:40 Asia/Manila] PHP   2. fclose($fp = FALSE) C:\Server\www\web\servers_stats.php:72
+[29-Jul-2026 17:42:41 Asia/Manila] PHP Warning:  fsockopen(): unable to connect to lnms.victoryfreewifi.net:80 (A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.
+) in C:\Server\www\web\servers_stats.php on line 65
+[29-Jul-2026 17:42:41 Asia/Manila] PHP Stack trace:
+[29-Jul-2026 17:42:41 Asia/Manila] PHP   1. {main}() C:\Server\www\web\servers_stats.php:0
+[29-Jul-2026 17:42:41 Asia/Manila] PHP   2. fsockopen($hostname = 'lnms.victoryfreewifi.net', $port = '80', $errno = 0, $errstr = 'php_network_getaddresses: getaddrinfo failed: No such host is known. ', $timeout = 1) C:\Server\www\web\servers_stats.php:65
+[29-Jul-2026 17:42:41 Asia/Manila] PHP Warning:  fclose() expects parameter 1 to be resource, bool given in C:\Server\www\web\servers_stats.php on line 72
+[29-Jul-2026 17:42:41 Asia/Manila] PHP Stack trace:
+[29-Jul-2026 17:42:41 Asia/Manila] PHP   1. {main}() C:\Server\www\web\servers_stats.php:0
+[29-Jul-2026 17:42:41 Asia/Manila] PHP   2. fclose($fp = FALSE) C:\Server\www\web\servers_stats.php:72
+[29-Jul-2026 17:42:41 Asia/Manila] PHP Warning:  fsockopen(): php_network_getaddresses: getaddrinfo failed: No such host is known.  in C:\Server\www\web\servers_stats.php on line 65
+[29-Jul-2026 17:42:41 Asia/Manila] PHP Stack trace:
+[29-Jul-2026 17:42:41 Asia/Manila] PHP   1. {main}() C:\Server\www\web\servers_stats.php:0
+[29-Jul-2026 17:42:41 Asia/Manila] PHP   2. fsockopen($hostname = 'sense.victoryfreewifi.net', $port = '443', $errno = 10060, $errstr = 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.\r\n', $timeout = 1) C:\Server\www\web\servers_stats.php:65
+[29-Jul-2026 17:42:41 Asia/Manila] PHP Warning:  fsockopen(): unable to connect to sense.victoryfreewifi.net:443 (php_network_getaddresses: getaddrinfo failed: No such host is known. ) in C:\Server\www\web\servers_stats.php on line 65
+[29-Jul-2026 17:42:41 Asia/Manila] PHP Stack trace:
+[29-Jul-2026 17:42:41 Asia/Manila] PHP   1. {main}() C:\Server\www\web\servers_stats.php:0
+[29-Jul-2026 17:42:41 Asia/Manila] PHP   2. fsockopen($hostname = 'sense.victoryfreewifi.net', $port = '443', $errno = 10060, $errstr = 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.\r\n', $timeout = 1) C:\Server\www\web\servers_stats.php:65
+[29-Jul-2026 17:42:41 Asia/Manila] PHP Warning:  fclose() expects parameter 1 to be resource, bool given in C:\Server\www\web\servers_stats.php on line 72
+[29-Jul-2026 17:42:41 Asia/Manila] PHP Stack trace:
+[29-Jul-2026 17:42:41 Asia/Manila] PHP   1. {main}() C:\Server\www\web\servers_stats.php:0
+[29-Jul-2026 17:42:41 Asia/Manila] PHP   2. fclose($fp = FALSE) C:\Server\www\web\servers_stats.php:72
+[29-Jul-2026 17:43:37 Asia/Manila] PHP Warning:  fsockopen(): php_network_getaddresses: getaddrinfo failed: No such host is known.  in C:\Server\www\web\servers_stats.php on line 65
+[29-Jul-2026 17:43:37 Asia/Manila] PHP Stack trace:
+[29-Jul-2026 17:43:37 Asia/Manila] PHP   1. {main}() C:\Server\www\web\servers_stats.php:0
+[29-Jul-2026 17:43:37 Asia/Manila] PHP   2. fsockopen($hostname = 'gwr1.victoryfreewifi.net', $port = '443', $errno = 0, $errstr = '', $timeout = 1) C:\Server\www\web\servers_stats.php:65
+[29-Jul-2026 17:43:37 Asia/Manila] PHP Warning:  fsockopen(): unable to connect to gwr1.victoryfreewifi.net:443 (php_network_getaddresses: getaddrinfo failed: No such host is known. ) in C:\Server\www\web\servers_stats.php on line 65
+[29-Jul-2026 17:43:37 Asia/Manila] PHP Stack trace:
+[29-Jul-2026 17:43:37 Asia/Manila] PHP   1. {main}() C:\Server\www\web\servers_stats.php:0
+[29-Jul-2026 17:43:37 Asia/Manila] PHP   2. fsockopen($hostname = 'gwr1.victoryfreewifi.net', $port = '443', $errno = 0, $errstr = '', $timeout = 1) C:\Server\www\web\servers_stats.php:65
+[29-Jul-2026 17:43:37 Asia/Manila] PHP Warning:  fclose() expects parameter 1 to be resource, bool given in C:\Server\www\web\servers_stats.php on line 72
+[29-Jul-2026 17:43:37 Asia/Manila] PHP Stack trace:
+[29-Jul-2026 17:43:37 Asia/Manila] PHP   1. {main}() C:\Server\www\web\servers_stats.php:0
+[29-Jul-2026 17:43:37 Asia/Manila] PHP   2. fclose($fp = FALSE) C:\Server\www\web\servers_stats.php:72
+[29-Jul-2026 17:43:37 Asia/Manila] PHP Warning:  fsockopen(): php_network_getaddresses: getaddrinfo failed: No such host is known.  in C:\Server\www\web\servers_stats.php on line 65
+[29-Jul-2026 17:43:37 Asia/Manila] PHP Stack trace:
+[29-Jul-2026 17:43:37 Asia/Manila] PHP   1. {main}() C:\Server\www\web\servers_stats.php:0
+[29-Jul-2026 17:43:37 Asia/Manila] PHP   2. fsockopen($hostname = 'udm.victoryfreewifi.net', $port = '443', $errno = 0, $errstr = 'php_network_getaddresses: getaddrinfo failed: No such host is known. ', $timeout = 1) C:\Server\www\web\servers_stats.php:65
+[29-Jul-2026 17:43:37 Asia/Manila] PHP Warning:  fsockopen(): unable to connect to udm.victoryfreewifi.net:443 (php_network_getaddresses: getaddrinfo failed: No such host is known. ) in C:\Server\www\web\servers_stats.php on line 65
+[29-Jul-2026 17:43:37 Asia/Manila] PHP Stack trace:
+[29-Jul-2026 17:43:37 Asia/Manila] PHP   1. {main}() C:\Server\www\web\servers_stats.php:0
+[29-Jul-2026 17:43:37 Asia/Manila] PHP   2. fsockopen($hostname = 'udm.victoryfreewifi.net', $port = '443', $errno = 0, $errstr = 'php_network_getaddresses: getaddrinfo failed: No such host is known. ', $timeout = 1) C:\Server\www\web\servers_stats.php:65
+[29-Jul-2026 17:43:37 Asia/Manila] PHP Warning:  fclose() expects parameter 1 to be resource, bool given in C:\Server\www\web\servers_stats.php on line 72
+[29-Jul-2026 17:43:37 Asia/Manila] PHP Stack trace:
+[29-Jul-2026 17:43:37 Asia/Manila] PHP   1. {main}() C:\Server\www\web\servers_stats.php:0
+[29-Jul-2026 17:43:37 Asia/Manila] PHP   2. fclose($fp = FALSE) C:\Server\www\web\servers_stats.php:72
+[29-Jul-2026 17:43:38 Asia/Manila] PHP Warning:  fsockopen(): unable to connect to lnms.victoryfreewifi.net:80 (A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.
+) in C:\Server\www\web\servers_stats.php on line 65
+[29-Jul-2026 17:43:38 Asia/Manila] PHP Stack trace:
+[29-Jul-2026 17:43:38 Asia/Manila] PHP   1. {main}() C:\Server\www\web\servers_stats.php:0
+[29-Jul-2026 17:43:38 Asia/Manila] PHP   2. fsockopen($hostname = 'lnms.victoryfreewifi.net', $port = '80', $errno = 0, $errstr = 'php_network_getaddresses: getaddrinfo failed: No such host is known. ', $timeout = 1) C:\Server\www\web\servers_stats.php:65
+[29-Jul-2026 17:43:38 Asia/Manila] PHP Warning:  fclose() expects parameter 1 to be resource, bool given in C:\Server\www\web\servers_stats.php on line 72
+[29-Jul-2026 17:43:38 Asia/Manila] PHP Stack trace:
+[29-Jul-2026 17:43:38 Asia/Manila] PHP   1. {main}() C:\Server\www\web\servers_stats.php:0
+[29-Jul-2026 17:43:38 Asia/Manila] PHP   2. fclose($fp = FALSE) C:\Server\www\web\servers_stats.php:72
+[29-Jul-2026 17:43:38 Asia/Manila] PHP Warning:  fsockopen(): php_network_getaddresses: getaddrinfo failed: No such host is known.  in C:\Server\www\web\servers_stats.php on line 65
+[29-Jul-2026 17:43:38 Asia/Manila] PHP Stack trace:
+[29-Jul-2026 17:43:38 Asia/Manila] PHP   1. {main}() C:\Server\www\web\servers_stats.php:0
+[29-Jul-2026 17:43:38 Asia/Manila] PHP   2. fsockopen($hostname = 'sense.victoryfreewifi.net', $port = '443', $errno = 10060, $errstr = 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.\r\n', $timeout = 1) C:\Server\www\web\servers_stats.php:65
+[29-Jul-2026 17:43:38 Asia/Manila] PHP Warning:  fsockopen(): unable to connect to sense.victoryfreewifi.net:443 (php_network_getaddresses: getaddrinfo failed: No such host is known. ) in C:\Server\www\web\servers_stats.php on line 65
+[29-Jul-2026 17:43:38 Asia/Manila] PHP Stack trace:
+[29-Jul-2026 17:43:38 Asia/Manila] PHP   1. {main}() C:\Server\www\web\servers_stats.php:0
+[29-Jul-2026 17:43:38 Asia/Manila] PHP   2. fsockopen($hostname = 'sense.victoryfreewifi.net', $port = '443', $errno = 10060, $errstr = 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.\r\n', $timeout = 1) C:\Server\www\web\servers_stats.php:65
+[29-Jul-2026 17:43:38 Asia/Manila] PHP Warning:  fclose() expects parameter 1 to be resource, bool given in C:\Server\www\web\servers_stats.php on line 72
+[29-Jul-2026 17:43:38 Asia/Manila] PHP Stack trace:
+[29-Jul-2026 17:43:38 Asia/Manila] PHP   1. {main}() C:\Server\www\web\servers_stats.php:0
+[29-Jul-2026 17:43:38 Asia/Manila] PHP   2. fclose($fp = FALSE) C:\Server\www\web\servers_stats.php:72
+[29-Jul-2026 17:46:47 Asia/Manila] PHP Warning:  fsockopen(): php_network_getaddresses: getaddrinfo failed: No such host is known.  in C:\Server\www\web\servers_stats.php on line 65
+[29-Jul-2026 17:46:47 Asia/Manila] PHP Stack trace:
+[29-Jul-2026 17:46:47 Asia/Manila] PHP   1. {main}() C:\Server\www\web\servers_stats.php:0
+[29-Jul-2026 17:46:47 Asia/Manila] PHP   2. fsockopen($hostname = 'udm.victoryfreewifi.net', $port = '443', $errno = 0, $errstr = '', $timeout = 1) C:\Server\www\web\servers_stats.php:65
+[29-Jul-2026 17:46:47 Asia/Manila] PHP Warning:  fsockopen(): unable to connect to udm.victoryfreewifi.net:443 (php_network_getaddresses: getaddrinfo failed: No such host is known. ) in C:\Server\www\web\servers_stats.php on line 65
+[29-Jul-2026 17:46:47 Asia/Manila] PHP Stack trace:
+[29-Jul-2026 17:46:47 Asia/Manila] PHP   1. {main}() C:\Server\www\web\servers_stats.php:0
+[29-Jul-2026 17:46:47 Asia/Manila] PHP   2. fsockopen($hostname = 'udm.victoryfreewifi.net', $port = '443', $errno = 0, $errstr = '', $timeout = 1) C:\Server\www\web\servers_stats.php:65
+[29-Jul-2026 17:46:47 Asia/Manila] PHP Warning:  fclose() expects parameter 1 to be resource, bool given in C:\Server\www\web\servers_stats.php on line 72
+[29-Jul-2026 17:46:47 Asia/Manila] PHP Stack trace:
+[29-Jul-2026 17:46:47 Asia/Manila] PHP   1. {main}() C:\Server\www\web\servers_stats.php:0
+[29-Jul-2026 17:46:47 Asia/Manila] PHP   2. fclose($fp = FALSE) C:\Server\www\web\servers_stats.php:72
+[29-Jul-2026 17:46:48 Asia/Manila] PHP Warning:  fsockopen(): unable to connect to lnms.victoryfreewifi.net:80 (A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.
+) in C:\Server\www\web\servers_stats.php on line 65
+[29-Jul-2026 17:46:48 Asia/Manila] PHP Stack trace:
+[29-Jul-2026 17:46:48 Asia/Manila] PHP   1. {main}() C:\Server\www\web\servers_stats.php:0
+[29-Jul-2026 17:46:48 Asia/Manila] PHP   2. fsockopen($hostname = 'lnms.victoryfreewifi.net', $port = '80', $errno = 0, $errstr = 'php_network_getaddresses: getaddrinfo failed: No such host is known. ', $timeout = 1) C:\Server\www\web\servers_stats.php:65
+[29-Jul-2026 17:46:48 Asia/Manila] PHP Warning:  fclose() expects parameter 1 to be resource, bool given in C:\Server\www\web\servers_stats.php on line 72
+[29-Jul-2026 17:46:48 Asia/Manila] PHP Stack trace:
+[29-Jul-2026 17:46:48 Asia/Manila] PHP   1. {main}() C:\Server\www\web\servers_stats.php:0
+[29-Jul-2026 17:46:48 Asia/Manila] PHP   2. fclose($fp = FALSE) C:\Server\www\web\servers_stats.php:72
+[29-Jul-2026 17:46:48 Asia/Manila] PHP Warning:  fsockopen(): php_network_getaddresses: getaddrinfo failed: No such host is known.  in C:\Server\www\web\servers_stats.php on line 65
+[29-Jul-2026 17:46:48 Asia/Manila] PHP Stack trace:
+[29-Jul-2026 17:46:48 Asia/Manila] PHP   1. {main}() C:\Server\www\web\servers_stats.php:0
+[29-Jul-2026 17:46:48 Asia/Manila] PHP   2. fsockopen($hostname = 'sense.victoryfreewifi.net', $port = '443', $errno = 10060, $errstr = 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.\r\n', $timeout = 1) C:\Server\www\web\servers_stats.php:65
+[29-Jul-2026 17:46:48 Asia/Manila] PHP Warning:  fsockopen(): unable to connect to sense.victoryfreewifi.net:443 (php_network_getaddresses: getaddrinfo failed: No such host is known. ) in C:\Server\www\web\servers_stats.php on line 65
+[29-Jul-2026 17:46:48 Asia/Manila] PHP Stack trace:
+[29-Jul-2026 17:46:48 Asia/Manila] PHP   1. {main}() C:\Server\www\web\servers_stats.php:0
+[29-Jul-2026 17:46:48 Asia/Manila] PHP   2. fsockopen($hostname = 'sense.victoryfreewifi.net', $port = '443', $errno = 10060, $errstr = 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.\r\n', $timeout = 1) C:\Server\www\web\servers_stats.php:65
+[29-Jul-2026 17:46:48 Asia/Manila] PHP Warning:  fclose() expects parameter 1 to be resource, bool given in C:\Server\www\web\servers_stats.php on line 72
+[29-Jul-2026 17:46:48 Asia/Manila] PHP Stack trace:
+[29-Jul-2026 17:46:48 Asia/Manila] PHP   1. {main}() C:\Server\www\web\servers_stats.php:0
+[29-Jul-2026 17:46:48 Asia/Manila] PHP   2. fclose($fp = FALSE) C:\Server\www\web\servers_stats.php:72
+[29-Jul-2026 17:47:55 Asia/Manila] PHP Warning:  fsockopen(): unable to connect to lnms.victoryfreewifi.net:80 (A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.
+) in C:\Server\www\web\servers_stats.php on line 65
+[29-Jul-2026 17:47:55 Asia/Manila] PHP Stack trace:
+[29-Jul-2026 17:47:55 Asia/Manila] PHP   1. {main}() C:\Server\www\web\servers_stats.php:0
+[29-Jul-2026 17:47:55 Asia/Manila] PHP   2. fsockopen($hostname = 'lnms.victoryfreewifi.net', $port = '80', $errno = 0, $errstr = '', $timeout = 1) C:\Server\www\web\servers_stats.php:65
+[29-Jul-2026 17:47:55 Asia/Manila] PHP Warning:  fclose() expects parameter 1 to be resource, bool given in C:\Server\www\web\servers_stats.php on line 72
+[29-Jul-2026 17:47:55 Asia/Manila] PHP Stack trace:
+[29-Jul-2026 17:47:55 Asia/Manila] PHP   1. {main}() C:\Server\www\web\servers_stats.php:0
+[29-Jul-2026 17:47:55 Asia/Manila] PHP   2. fclose($fp = FALSE) C:\Server\www\web\servers_stats.php:72
+[29-Jul-2026 17:47:55 Asia/Manila] PHP Warning:  fsockopen(): php_network_getaddresses: getaddrinfo failed: No such host is known.  in C:\Server\www\web\servers_stats.php on line 65
+[29-Jul-2026 17:47:55 Asia/Manila] PHP Stack trace:
+[29-Jul-2026 17:47:55 Asia/Manila] PHP   1. {main}() C:\Server\www\web\servers_stats.php:0
+[29-Jul-2026 17:47:55 Asia/Manila] PHP   2. fsockopen($hostname = 'sense.victoryfreewifi.net', $port = '443', $errno = 10060, $errstr = 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.\r\n', $timeout = 1) C:\Server\www\web\servers_stats.php:65
+[29-Jul-2026 17:47:55 Asia/Manila] PHP Warning:  fsockopen(): unable to connect to sense.victoryfreewifi.net:443 (php_network_getaddresses: getaddrinfo failed: No such host is known. ) in C:\Server\www\web\servers_stats.php on line 65
+[29-Jul-2026 17:47:55 Asia/Manila] PHP Stack trace:
+[29-Jul-2026 17:47:55 Asia/Manila] PHP   1. {main}() C:\Server\www\web\servers_stats.php:0
+[29-Jul-2026 17:47:55 Asia/Manila] PHP   2. fsockopen($hostname = 'sense.victoryfreewifi.net', $port = '443', $errno = 10060, $errstr = 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.\r\n', $timeout = 1) C:\Server\www\web\servers_stats.php:65
+[29-Jul-2026 17:47:55 Asia/Manila] PHP Warning:  fclose() expects parameter 1 to be resource, bool given in C:\Server\www\web\servers_stats.php on line 72
+[29-Jul-2026 17:47:55 Asia/Manila] PHP Stack trace:
+[29-Jul-2026 17:47:55 Asia/Manila] PHP   1. {main}() C:\Server\www\web\servers_stats.php:0
+[29-Jul-2026 17:47:55 Asia/Manila] PHP   2. fclose($fp = FALSE) C:\Server\www\web\servers_stats.php:72
+[29-Jul-2026 17:48:57 Asia/Manila] PHP Warning:  fsockopen(): unable to connect to seims.victoryfreewifi.net:80 (A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.
+) in C:\Server\www\web\servers_stats.php on line 65
+[29-Jul-2026 17:48:57 Asia/Manila] PHP Stack trace:
+[29-Jul-2026 17:48:57 Asia/Manila] PHP   1. {main}() C:\Server\www\web\servers_stats.php:0
+[29-Jul-2026 17:48:57 Asia/Manila] PHP   2. fsockopen($hostname = 'seims.victoryfreewifi.net', $port = '80', $errno = 0, $errstr = '', $timeout = 1) C:\Server\www\web\servers_stats.php:65
+[29-Jul-2026 17:48:57 Asia/Manila] PHP Warning:  fclose() expects parameter 1 to be resource, bool given in C:\Server\www\web\servers_stats.php on line 72
+[29-Jul-2026 17:48:57 Asia/Manila] PHP Stack trace:
+[29-Jul-2026 17:48:57 Asia/Manila] PHP   1. {main}() C:\Server\www\web\servers_stats.php:0
+[29-Jul-2026 17:48:57 Asia/Manila] PHP   2. fclose($fp = FALSE) C:\Server\www\web\servers_stats.php:72
+[29-Jul-2026 17:48:57 Asia/Manila] PHP Warning:  fsockopen(): php_network_getaddresses: getaddrinfo failed: No such host is known.  in C:\Server\www\web\servers_stats.php on line 65
+[29-Jul-2026 17:48:57 Asia/Manila] PHP Stack trace:
+[29-Jul-2026 17:48:57 Asia/Manila] PHP   1. {main}() C:\Server\www\web\servers_stats.php:0
+[29-Jul-2026 17:48:57 Asia/Manila] PHP   2. fsockopen($hostname = 'sense.victoryfreewifi.net', $port = '443', $errno = 10060, $errstr = 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.\r\n', $timeout = 1) C:\Server\www\web\servers_stats.php:65
+[29-Jul-2026 17:48:57 Asia/Manila] PHP Warning:  fsockopen(): unable to connect to sense.victoryfreewifi.net:443 (php_network_getaddresses: getaddrinfo failed: No such host is known. ) in C:\Server\www\web\servers_stats.php on line 65
+[29-Jul-2026 17:48:57 Asia/Manila] PHP Stack trace:
+[29-Jul-2026 17:48:57 Asia/Manila] PHP   1. {main}() C:\Server\www\web\servers_stats.php:0
+[29-Jul-2026 17:48:57 Asia/Manila] PHP   2. fsockopen($hostname = 'sense.victoryfreewifi.net', $port = '443', $errno = 10060, $errstr = 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.\r\n', $timeout = 1) C:\Server\www\web\servers_stats.php:65
+[29-Jul-2026 17:48:57 Asia/Manila] PHP Warning:  fclose() expects parameter 1 to be resource, bool given in C:\Server\www\web\servers_stats.php on line 72
+[29-Jul-2026 17:48:57 Asia/Manila] PHP Stack trace:
+[29-Jul-2026 17:48:57 Asia/Manila] PHP   1. {main}() C:\Server\www\web\servers_stats.php:0
+[29-Jul-2026 17:48:57 Asia/Manila] PHP   2. fclose($fp = FALSE) C:\Server\www\web\servers_stats.php:72
+[29-Jul-2026 17:56:40 Asia/Manila] PHP Warning:  fsockopen(): unable to connect to seims.victoryfreewifi.net:80 (A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.
+) in C:\Server\www\web\servers_stats.php on line 65
+[29-Jul-2026 17:56:40 Asia/Manila] PHP Stack trace:
+[29-Jul-2026 17:56:40 Asia/Manila] PHP   1. {main}() C:\Server\www\web\servers_stats.php:0
+[29-Jul-2026 17:56:40 Asia/Manila] PHP   2. fsockopen($hostname = 'seims.victoryfreewifi.net', $port = '80', $errno = 0, $errstr = '', $timeout = 1) C:\Server\www\web\servers_stats.php:65
+[29-Jul-2026 17:56:40 Asia/Manila] PHP Warning:  fclose() expects parameter 1 to be resource, bool given in C:\Server\www\web\servers_stats.php on line 72
+[29-Jul-2026 17:56:40 Asia/Manila] PHP Stack trace:
+[29-Jul-2026 17:56:40 Asia/Manila] PHP   1. {main}() C:\Server\www\web\servers_stats.php:0
+[29-Jul-2026 17:56:40 Asia/Manila] PHP   2. fclose($fp = FALSE) C:\Server\www\web\servers_stats.php:72
+[29-Jul-2026 17:56:40 Asia/Manila] PHP Warning:  fsockopen(): php_network_getaddresses: getaddrinfo failed: No such host is known.  in C:\Server\www\web\servers_stats.php on line 65
+[29-Jul-2026 17:56:40 Asia/Manila] PHP Stack trace:
+[29-Jul-2026 17:56:40 Asia/Manila] PHP   1. {main}() C:\Server\www\web\servers_stats.php:0
+[29-Jul-2026 17:56:40 Asia/Manila] PHP   2. fsockopen($hostname = 'sense.victoryfreewifi.net', $port = '443', $errno = 10060, $errstr = 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.\r\n', $timeout = 1) C:\Server\www\web\servers_stats.php:65
+[29-Jul-2026 17:56:40 Asia/Manila] PHP Warning:  fsockopen(): unable to connect to sense.victoryfreewifi.net:443 (php_network_getaddresses: getaddrinfo failed: No such host is known. ) in C:\Server\www\web\servers_stats.php on line 65
+[29-Jul-2026 17:56:40 Asia/Manila] PHP Stack trace:
+[29-Jul-2026 17:56:40 Asia/Manila] PHP   1. {main}() C:\Server\www\web\servers_stats.php:0
+[29-Jul-2026 17:56:40 Asia/Manila] PHP   2. fsockopen($hostname = 'sense.victoryfreewifi.net', $port = '443', $errno = 10060, $errstr = 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.\r\n', $timeout = 1) C:\Server\www\web\servers_stats.php:65
+[29-Jul-2026 17:56:40 Asia/Manila] PHP Warning:  fclose() expects parameter 1 to be resource, bool given in C:\Server\www\web\servers_stats.php on line 72
+[29-Jul-2026 17:56:40 Asia/Manila] PHP Stack trace:
+[29-Jul-2026 17:56:40 Asia/Manila] PHP   1. {main}() C:\Server\www\web\servers_stats.php:0
+[29-Jul-2026 17:56:40 Asia/Manila] PHP   2. fclose($fp = FALSE) C:\Server\www\web\servers_stats.php:72
+[29-Jul-2026 17:59:03 Asia/Manila] PHP Warning:  fsockopen(): unable to connect to seims.victoryfreewifi.net:80 (A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.
+) in C:\Server\www\web\servers_stats.php on line 65
+[29-Jul-2026 17:59:03 Asia/Manila] PHP Stack trace:
+[29-Jul-2026 17:59:03 Asia/Manila] PHP   1. {main}() C:\Server\www\web\servers_stats.php:0
+[29-Jul-2026 17:59:03 Asia/Manila] PHP   2. fsockopen($hostname = 'seims.victoryfreewifi.net', $port = '80', $errno = 0, $errstr = '', $timeout = 1) C:\Server\www\web\servers_stats.php:65
+[29-Jul-2026 17:59:03 Asia/Manila] PHP Warning:  fclose() expects parameter 1 to be resource, bool given in C:\Server\www\web\servers_stats.php on line 72
+[29-Jul-2026 17:59:03 Asia/Manila] PHP Stack trace:
+[29-Jul-2026 17:59:03 Asia/Manila] PHP   1. {main}() C:\Server\www\web\servers_stats.php:0
+[29-Jul-2026 17:59:03 Asia/Manila] PHP   2. fclose($fp = FALSE) C:\Server\www\web\servers_stats.php:72
+[29-Jul-2026 17:59:03 Asia/Manila] PHP Warning:  fsockopen(): php_network_getaddresses: getaddrinfo failed: No such host is known.  in C:\Server\www\web\servers_stats.php on line 65
+[29-Jul-2026 17:59:03 Asia/Manila] PHP Stack trace:
+[29-Jul-2026 17:59:03 Asia/Manila] PHP   1. {main}() C:\Server\www\web\servers_stats.php:0
+[29-Jul-2026 17:59:03 Asia/Manila] PHP   2. fsockopen($hostname = 'sense.victoryfreewifi.net', $port = '443', $errno = 10060, $errstr = 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.\r\n', $timeout = 1) C:\Server\www\web\servers_stats.php:65
+[29-Jul-2026 17:59:03 Asia/Manila] PHP Warning:  fsockopen(): unable to connect to sense.victoryfreewifi.net:443 (php_network_getaddresses: getaddrinfo failed: No such host is known. ) in C:\Server\www\web\servers_stats.php on line 65
+[29-Jul-2026 17:59:03 Asia/Manila] PHP Stack trace:
+[29-Jul-2026 17:59:03 Asia/Manila] PHP   1. {main}() C:\Server\www\web\servers_stats.php:0
+[29-Jul-2026 17:59:03 Asia/Manila] PHP   2. fsockopen($hostname = 'sense.victoryfreewifi.net', $port = '443', $errno = 10060, $errstr = 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.\r\n', $timeout = 1) C:\Server\www\web\servers_stats.php:65
+[29-Jul-2026 17:59:03 Asia/Manila] PHP Warning:  fclose() expects parameter 1 to be resource, bool given in C:\Server\www\web\servers_stats.php on line 72
+[29-Jul-2026 17:59:03 Asia/Manila] PHP Stack trace:
+[29-Jul-2026 17:59:03 Asia/Manila] PHP   1. {main}() C:\Server\www\web\servers_stats.php:0
+[29-Jul-2026 17:59:03 Asia/Manila] PHP   2. fclose($fp = FALSE) C:\Server\www\web\servers_stats.php:72
+[29-Jul-2026 18:00:31 Asia/Manila] PHP Warning:  fsockopen(): unable to connect to seims.victoryfreewifi.net:80 (A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.
+) in C:\Server\www\web\servers_stats.php on line 65
+[29-Jul-2026 18:00:31 Asia/Manila] PHP Stack trace:
+[29-Jul-2026 18:00:31 Asia/Manila] PHP   1. {main}() C:\Server\www\web\servers_stats.php:0
+[29-Jul-2026 18:00:31 Asia/Manila] PHP   2. fsockopen($hostname = 'seims.victoryfreewifi.net', $port = '80', $errno = 0, $errstr = '', $timeout = 1) C:\Server\www\web\servers_stats.php:65
+[29-Jul-2026 18:00:31 Asia/Manila] PHP Warning:  fclose() expects parameter 1 to be resource, bool given in C:\Server\www\web\servers_stats.php on line 72
+[29-Jul-2026 18:00:31 Asia/Manila] PHP Stack trace:
+[29-Jul-2026 18:00:31 Asia/Manila] PHP   1. {main}() C:\Server\www\web\servers_stats.php:0
+[29-Jul-2026 18:00:31 Asia/Manila] PHP   2. fclose($fp = FALSE) C:\Server\www\web\servers_stats.php:72
+[29-Jul-2026 18:00:32 Asia/Manila] PHP Warning:  fsockopen(): php_network_getaddresses: getaddrinfo failed: No such host is known.  in C:\Server\www\web\servers_stats.php on line 65
+[29-Jul-2026 18:00:32 Asia/Manila] PHP Stack trace:
+[29-Jul-2026 18:00:32 Asia/Manila] PHP   1. {main}() C:\Server\www\web\servers_stats.php:0
+[29-Jul-2026 18:00:32 Asia/Manila] PHP   2. fsockopen($hostname = 'sense1.victoryfreewifi.net', $port = '443', $errno = 10060, $errstr = 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.\r\n', $timeout = 1) C:\Server\www\web\servers_stats.php:65
+[29-Jul-2026 18:00:32 Asia/Manila] PHP Warning:  fsockopen(): unable to connect to sense1.victoryfreewifi.net:443 (php_network_getaddresses: getaddrinfo failed: No such host is known. ) in C:\Server\www\web\servers_stats.php on line 65
+[29-Jul-2026 18:00:32 Asia/Manila] PHP Stack trace:
+[29-Jul-2026 18:00:32 Asia/Manila] PHP   1. {main}() C:\Server\www\web\servers_stats.php:0
+[29-Jul-2026 18:00:32 Asia/Manila] PHP   2. fsockopen($hostname = 'sense1.victoryfreewifi.net', $port = '443', $errno = 10060, $errstr = 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.\r\n', $timeout = 1) C:\Server\www\web\servers_stats.php:65
+[29-Jul-2026 18:00:32 Asia/Manila] PHP Warning:  fclose() expects parameter 1 to be resource, bool given in C:\Server\www\web\servers_stats.php on line 72
+[29-Jul-2026 18:00:32 Asia/Manila] PHP Stack trace:
+[29-Jul-2026 18:00:32 Asia/Manila] PHP   1. {main}() C:\Server\www\web\servers_stats.php:0
+[29-Jul-2026 18:00:32 Asia/Manila] PHP   2. fclose($fp = FALSE) C:\Server\www\web\servers_stats.php:72
+[29-Jul-2026 18:01:21 Asia/Manila] PHP Warning:  fsockopen(): unable to connect to seims.victoryfreewifi.net:80 (A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.
+) in C:\Server\www\web\servers_stats.php on line 65
+[29-Jul-2026 18:01:21 Asia/Manila] PHP Stack trace:
+[29-Jul-2026 18:01:21 Asia/Manila] PHP   1. {main}() C:\Server\www\web\servers_stats.php:0
+[29-Jul-2026 18:01:21 Asia/Manila] PHP   2. fsockopen($hostname = 'seims.victoryfreewifi.net', $port = '80', $errno = 0, $errstr = '', $timeout = 1) C:\Server\www\web\servers_stats.php:65
+[29-Jul-2026 18:01:21 Asia/Manila] PHP Warning:  fclose() expects parameter 1 to be resource, bool given in C:\Server\www\web\servers_stats.php on line 72
+[29-Jul-2026 18:01:21 Asia/Manila] PHP Stack trace:
+[29-Jul-2026 18:01:21 Asia/Manila] PHP   1. {main}() C:\Server\www\web\servers_stats.php:0
+[29-Jul-2026 18:01:21 Asia/Manila] PHP   2. fclose($fp = FALSE) C:\Server\www\web\servers_stats.php:72
+[29-Jul-2026 18:01:22 Asia/Manila] PHP Warning:  fsockopen(): unable to connect to opns1.victoryfreewifi.net:443 (A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.
+) in C:\Server\www\web\servers_stats.php on line 65
+[29-Jul-2026 18:01:22 Asia/Manila] PHP Stack trace:
+[29-Jul-2026 18:01:22 Asia/Manila] PHP   1. {main}() C:\Server\www\web\servers_stats.php:0
+[29-Jul-2026 18:01:22 Asia/Manila] PHP   2. fsockopen($hostname = 'opns1.victoryfreewifi.net', $port = '443', $errno = 10060, $errstr = 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.\r\n', $timeout = 1) C:\Server\www\web\servers_stats.php:65
+[29-Jul-2026 18:01:22 Asia/Manila] PHP Warning:  fclose() expects parameter 1 to be resource, bool given in C:\Server\www\web\servers_stats.php on line 72
+[29-Jul-2026 18:01:22 Asia/Manila] PHP Stack trace:
+[29-Jul-2026 18:01:22 Asia/Manila] PHP   1. {main}() C:\Server\www\web\servers_stats.php:0
+[29-Jul-2026 18:01:22 Asia/Manila] PHP   2. fclose($fp = FALSE) C:\Server\www\web\servers_stats.php:72
+[29-Jul-2026 18:01:29 Asia/Manila] PHP Warning:  fsockopen(): unable to connect to seims.victoryfreewifi.net:80 (A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.
+) in C:\Server\www\web\servers_stats.php on line 65
+[29-Jul-2026 18:01:29 Asia/Manila] PHP Stack trace:
+[29-Jul-2026 18:01:29 Asia/Manila] PHP   1. {main}() C:\Server\www\web\servers_stats.php:0
+[29-Jul-2026 18:01:29 Asia/Manila] PHP   2. fsockopen($hostname = 'seims.victoryfreewifi.net', $port = '80', $errno = 0, $errstr = '', $timeout = 1) C:\Server\www\web\servers_stats.php:65
+[29-Jul-2026 18:01:29 Asia/Manila] PHP Warning:  fclose() expects parameter 1 to be resource, bool given in C:\Server\www\web\servers_stats.php on line 72
+[29-Jul-2026 18:01:29 Asia/Manila] PHP Stack trace:
+[29-Jul-2026 18:01:29 Asia/Manila] PHP   1. {main}() C:\Server\www\web\servers_stats.php:0
+[29-Jul-2026 18:01:29 Asia/Manila] PHP   2. fclose($fp = FALSE) C:\Server\www\web\servers_stats.php:72
+[29-Jul-2026 18:01:30 Asia/Manila] PHP Warning:  fsockopen(): unable to connect to opns1.victoryfreewifi.net:443 (A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.
+) in C:\Server\www\web\servers_stats.php on line 65
+[29-Jul-2026 18:01:30 Asia/Manila] PHP Stack trace:
+[29-Jul-2026 18:01:30 Asia/Manila] PHP   1. {main}() C:\Server\www\web\servers_stats.php:0
+[29-Jul-2026 18:01:30 Asia/Manila] PHP   2. fsockopen($hostname = 'opns1.victoryfreewifi.net', $port = '443', $errno = 10060, $errstr = 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.\r\n', $timeout = 1) C:\Server\www\web\servers_stats.php:65
+[29-Jul-2026 18:01:30 Asia/Manila] PHP Warning:  fclose() expects parameter 1 to be resource, bool given in C:\Server\www\web\servers_stats.php on line 72
+[29-Jul-2026 18:01:30 Asia/Manila] PHP Stack trace:
+[29-Jul-2026 18:01:30 Asia/Manila] PHP   1. {main}() C:\Server\www\web\servers_stats.php:0
+[29-Jul-2026 18:01:30 Asia/Manila] PHP   2. fclose($fp = FALSE) C:\Server\www\web\servers_stats.php:72
+[29-Jul-2026 18:07:52 Asia/Manila] PHP Warning:  fsockopen(): unable to connect to seims.victoryfreewifi.net:80 (A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.
+) in C:\Server\www\web\servers_stats.php on line 65
+[29-Jul-2026 18:07:52 Asia/Manila] PHP Stack trace:
+[29-Jul-2026 18:07:52 Asia/Manila] PHP   1. {main}() C:\Server\www\web\servers_stats.php:0
+[29-Jul-2026 18:07:52 Asia/Manila] PHP   2. fsockopen($hostname = 'seims.victoryfreewifi.net', $port = '80', $errno = 0, $errstr = '', $timeout = 1) C:\Server\www\web\servers_stats.php:65
+[29-Jul-2026 18:07:52 Asia/Manila] PHP Warning:  fclose() expects parameter 1 to be resource, bool given in C:\Server\www\web\servers_stats.php on line 72
+[29-Jul-2026 18:07:52 Asia/Manila] PHP Stack trace:
+[29-Jul-2026 18:07:52 Asia/Manila] PHP   1. {main}() C:\Server\www\web\servers_stats.php:0
+[29-Jul-2026 18:07:52 Asia/Manila] PHP   2. fclose($fp = FALSE) C:\Server\www\web\servers_stats.php:72
+[29-Jul-2026 18:07:53 Asia/Manila] PHP Warning:  fsockopen(): unable to connect to opns1.victoryfreewifi.net:443 (A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.
+) in C:\Server\www\web\servers_stats.php on line 65
+[29-Jul-2026 18:07:53 Asia/Manila] PHP Stack trace:
+[29-Jul-2026 18:07:53 Asia/Manila] PHP   1. {main}() C:\Server\www\web\servers_stats.php:0
+[29-Jul-2026 18:07:53 Asia/Manila] PHP   2. fsockopen($hostname = 'opns1.victoryfreewifi.net', $port = '443', $errno = 10060, $errstr = 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.\r\n', $timeout = 1) C:\Server\www\web\servers_stats.php:65
+[29-Jul-2026 18:07:53 Asia/Manila] PHP Warning:  fclose() expects parameter 1 to be resource, bool given in C:\Server\www\web\servers_stats.php on line 72
+[29-Jul-2026 18:07:53 Asia/Manila] PHP Stack trace:
+[29-Jul-2026 18:07:53 Asia/Manila] PHP   1. {main}() C:\Server\www\web\servers_stats.php:0
+[29-Jul-2026 18:07:53 Asia/Manila] PHP   2. fclose($fp = FALSE) C:\Server\www\web\servers_stats.php:72
+[29-Jul-2026 18:10:00 Asia/Manila] PHP Warning:  fsockopen(): unable to connect to seims.victoryfreewifi.net:80 (A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.
+) in C:\Server\www\web\servers_stats.php on line 65
+[29-Jul-2026 18:10:00 Asia/Manila] PHP Stack trace:
+[29-Jul-2026 18:10:00 Asia/Manila] PHP   1. {main}() C:\Server\www\web\servers_stats.php:0
+[29-Jul-2026 18:10:00 Asia/Manila] PHP   2. fsockopen($hostname = 'seims.victoryfreewifi.net', $port = '80', $errno = 0, $errstr = '', $timeout = 1) C:\Server\www\web\servers_stats.php:65
+[29-Jul-2026 18:10:00 Asia/Manila] PHP Warning:  fclose() expects parameter 1 to be resource, bool given in C:\Server\www\web\servers_stats.php on line 72
+[29-Jul-2026 18:10:00 Asia/Manila] PHP Stack trace:
+[29-Jul-2026 18:10:00 Asia/Manila] PHP   1. {main}() C:\Server\www\web\servers_stats.php:0
+[29-Jul-2026 18:10:00 Asia/Manila] PHP   2. fclose($fp = FALSE) C:\Server\www\web\servers_stats.php:72
+[29-Jul-2026 18:17:31 Asia/Manila] PHP Warning:  fsockopen(): unable to connect to media.mcjim-server.com:4 (A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.
+) in C:\Server\www\web\servers_stats.php on line 65
+[29-Jul-2026 18:17:31 Asia/Manila] PHP Stack trace:
+[29-Jul-2026 18:17:31 Asia/Manila] PHP   1. {main}() C:\Server\www\web\servers_stats.php:0
+[29-Jul-2026 18:17:31 Asia/Manila] PHP   2. fsockopen($hostname = 'media.mcjim-server.com', $port = '4', $errno = 0, $errstr = '', $timeout = 1) C:\Server\www\web\servers_stats.php:65
+[29-Jul-2026 18:17:31 Asia/Manila] PHP Warning:  fclose() expects parameter 1 to be resource, bool given in C:\Server\www\web\servers_stats.php on line 72
+[29-Jul-2026 18:17:31 Asia/Manila] PHP Stack trace:
+[29-Jul-2026 18:17:31 Asia/Manila] PHP   1. {main}() C:\Server\www\web\servers_stats.php:0
+[29-Jul-2026 18:17:31 Asia/Manila] PHP   2. fclose($fp = FALSE) C:\Server\www\web\servers_stats.php:72
+[30-Jul-2026 06:07:38 Asia/Manila] PHP Notice:  Trying to access array offset on value of type null in C:\Server\www\web\site_details.php on line 40
+[30-Jul-2026 06:07:38 Asia/Manila] PHP Stack trace:
+[30-Jul-2026 06:07:38 Asia/Manila] PHP   1. {main}() C:\Server\www\web\site_details.php:0
+[30-Jul-2026 06:07:42 Asia/Manila] PHP Notice:  Trying to access array offset on value of type null in C:\Server\www\web\site_details.php on line 40
+[30-Jul-2026 06:07:42 Asia/Manila] PHP Stack trace:
+[30-Jul-2026 06:07:42 Asia/Manila] PHP   1. {main}() C:\Server\www\web\site_details.php:0
+[30-Jul-2026 20:36:13 Asia/Manila] PHP Notice:  Trying to access array offset on value of type null in C:\Server\www\web\site_details.php on line 40
+[30-Jul-2026 20:36:13 Asia/Manila] PHP Stack trace:
+[30-Jul-2026 20:36:13 Asia/Manila] PHP   1. {main}() C:\Server\www\web\site_details.php:0
+[31-Jul-2026 06:15:39 Asia/Manila] PHP Notice:  Trying to access array offset on value of type null in C:\Server\www\web\site_details.php on line 40
+[31-Jul-2026 06:15:39 Asia/Manila] PHP Stack trace:
+[31-Jul-2026 06:15:39 Asia/Manila] PHP   1. {main}() C:\Server\www\web\site_details.php:0
+[31-Jul-2026 17:05:46 Asia/Manila] PHP Notice:  Trying to access array offset on value of type null in C:\Server\www\web\site_details.php on line 40
+[31-Jul-2026 17:05:46 Asia/Manila] PHP Stack trace:
+[31-Jul-2026 17:05:46 Asia/Manila] PHP   1. {main}() C:\Server\www\web\site_details.php:0
+[07-Aug-2026 01:15:01 Asia/Manila] PHP Fatal error:  Maximum execution time of 300 seconds exceeded in C:\Server\www\web\sites_status_cron.php on line 25
+[07-Aug-2026 01:15:01 Asia/Manila] PHP Stack trace:
+[07-Aug-2026 01:15:01 Asia/Manila] PHP   1. {main}() C:\Server\www\web\sites_status_cron.php:0
+[07-Aug-2026 02:15:01 Asia/Manila] PHP Fatal error:  Maximum execution time of 300 seconds exceeded in C:\Server\www\web\sites_status_cron.php on line 25
+[07-Aug-2026 02:15:01 Asia/Manila] PHP Stack trace:
+[07-Aug-2026 02:15:01 Asia/Manila] PHP   1. {main}() C:\Server\www\web\sites_status_cron.php:0
+[08-Aug-2026 00:55:01 Asia/Manila] PHP Fatal error:  Maximum execution time of 300 seconds exceeded in C:\Server\www\web\sites_status_cron.php on line 25
+[08-Aug-2026 00:55:01 Asia/Manila] PHP Stack trace:
+[08-Aug-2026 00:55:01 Asia/Manila] PHP   1. {main}() C:\Server\www\web\sites_status_cron.php:0
+[08-Aug-2026 07:55:33 Asia/Manila] PHP Notice:  Trying to access array offset on value of type null in C:\Server\www\web\site_details.php on line 40
+[08-Aug-2026 07:55:33 Asia/Manila] PHP Stack trace:
+[08-Aug-2026 07:55:33 Asia/Manila] PHP   1. {main}() C:\Server\www\web\site_details.php:0
+[08-Aug-2026 23:15:01 Asia/Manila] PHP Fatal error:  Maximum execution time of 300 seconds exceeded in C:\Server\www\web\sites_status_cron.php on line 27
+[08-Aug-2026 23:15:01 Asia/Manila] PHP Stack trace:
+[08-Aug-2026 23:15:01 Asia/Manila] PHP   1. {main}() C:\Server\www\web\sites_status_cron.php:0
+[09-Aug-2026 03:08:19 Asia/Manila] PHP Notice:  Trying to access array offset on value of type null in C:\Server\www\web\site_details.php on line 40
+[09-Aug-2026 03:08:19 Asia/Manila] PHP Stack trace:
+[09-Aug-2026 03:08:19 Asia/Manila] PHP   1. {main}() C:\Server\www\web\site_details.php:0
+[13-Aug-2026 10:59:20 Asia/Manila] PHP Notice:  Trying to access array offset on value of type null in C:\Server\www\web\site_details.php on line 40
+[13-Aug-2026 10:59:20 Asia/Manila] PHP Stack trace:
+[13-Aug-2026 10:59:20 Asia/Manila] PHP   1. {main}() C:\Server\www\web\site_details.php:0
+[15-Aug-2026 03:02:34 Asia/Manila] PHP Notice:  Undefined index: sites in C:\Server\www\web\site_details.php on line 22
+[15-Aug-2026 03:02:34 Asia/Manila] PHP Stack trace:
+[15-Aug-2026 03:02:34 Asia/Manila] PHP   1. {main}() C:\Server\www\web\site_details.php:0
+[16-Aug-2026 12:35:01 Asia/Manila] PHP Fatal error:  Maximum execution time of 300 seconds exceeded in C:\Server\www\web\sites_status_cron.php on line 27
+[16-Aug-2026 12:35:01 Asia/Manila] PHP Stack trace:
+[16-Aug-2026 12:35:01 Asia/Manila] PHP   1. {main}() C:\Server\www\web\sites_status_cron.php:0
+[17-Aug-2026 19:25:01 Asia/Manila] PHP Fatal error:  Maximum execution time of 300 seconds exceeded in C:\Server\www\web\sites_status_cron.php on line 27
+[17-Aug-2026 19:25:01 Asia/Manila] PHP Stack trace:
+[17-Aug-2026 19:25:01 Asia/Manila] PHP   1. {main}() C:\Server\www\web\sites_status_cron.php:0
+[17-Aug-2026 20:55:01 Asia/Manila] PHP Fatal error:  Maximum execution time of 300 seconds exceeded in C:\Server\www\web\sites_status_cron.php on line 27
+[17-Aug-2026 20:55:01 Asia/Manila] PHP Stack trace:
+[17-Aug-2026 20:55:01 Asia/Manila] PHP   1. {main}() C:\Server\www\web\sites_status_cron.php:0
+[20-Aug-2026 15:25:01 Asia/Manila] PHP Fatal error:  Maximum execution time of 300 seconds exceeded in C:\Server\www\web\sites_status_cron.php on line 25
+[20-Aug-2026 15:25:01 Asia/Manila] PHP Stack trace:
+[20-Aug-2026 15:25:01 Asia/Manila] PHP   1. {main}() C:\Server\www\web\sites_status_cron.php:0
+[20-Aug-2026 17:48:12 Asia/Manila] PHP Notice:  Trying to access array offset on value of type null in C:\Server\www\web\site_details.php on line 40
+[20-Aug-2026 17:48:12 Asia/Manila] PHP Stack trace:
+[20-Aug-2026 17:48:12 Asia/Manila] PHP   1. {main}() C:\Server\www\web\site_details.php:0
+[20-Aug-2026 21:15:01 Asia/Manila] PHP Fatal error:  Maximum execution time of 300 seconds exceeded in C:\Server\www\web\sites_status_cron.php on line 25
+[20-Aug-2026 21:15:01 Asia/Manila] PHP Stack trace:
+[20-Aug-2026 21:15:01 Asia/Manila] PHP   1. {main}() C:\Server\www\web\sites_status_cron.php:0
+[21-Aug-2026 10:53:26 Asia/Manila] PHP Notice:  Trying to access array offset on value of type null in C:\Server\www\web\site_details.php on line 40
+[21-Aug-2026 10:53:26 Asia/Manila] PHP Stack trace:
+[21-Aug-2026 10:53:26 Asia/Manila] PHP   1. {main}() C:\Server\www\web\site_details.php:0
+[22-Aug-2026 11:35:00 Asia/Manila] PHP Fatal error:  Maximum execution time of 300 seconds exceeded in C:\Server\www\web\sites_status_cron.php on line 25
+[22-Aug-2026 11:35:00 Asia/Manila] PHP Stack trace:
+[22-Aug-2026 11:35:00 Asia/Manila] PHP   1. {main}() C:\Server\www\web\sites_status_cron.php:0
+[23-Aug-2026 00:01:25 Asia/Manila] PHP Notice:  Undefined index: mname in C:\Server\www\web\register_proc.php on line 8
+[23-Aug-2026 00:01:25 Asia/Manila] PHP Stack trace:
+[23-Aug-2026 00:01:25 Asia/Manila] PHP   1. {main}() C:\Server\www\web\register_proc.php:0
+[23-Aug-2026 00:01:25 Asia/Manila] PHP Notice:  Undefined index: account in C:\Server\www\web\register_proc.php on line 14
+[23-Aug-2026 00:01:25 Asia/Manila] PHP Stack trace:
+[23-Aug-2026 00:01:25 Asia/Manila] PHP   1. {main}() C:\Server\www\web\register_proc.php:0
+[23-Aug-2026 15:46:38 Asia/Manila] PHP Notice:  Trying to access array offset on value of type null in C:\Server\www\web\site_details.php on line 40
+[23-Aug-2026 15:46:38 Asia/Manila] PHP Stack trace:
+[23-Aug-2026 15:46:38 Asia/Manila] PHP   1. {main}() C:\Server\www\web\site_details.php:0
+[25-Aug-2026 14:41:59 Asia/Manila] PHP Notice:  Undefined index: sites in C:\Server\www\web\site_details.php on line 22
+[25-Aug-2026 14:41:59 Asia/Manila] PHP Stack trace:
+[25-Aug-2026 14:41:59 Asia/Manila] PHP   1. {main}() C:\Server\www\web\site_details.php:0
+[27-Aug-2026 17:15:01 Asia/Manila] PHP Fatal error:  Maximum execution time of 300 seconds exceeded in C:\Server\www\web\sites_status_cron.php on line 27
+[27-Aug-2026 17:15:01 Asia/Manila] PHP Stack trace:
+[27-Aug-2026 17:15:01 Asia/Manila] PHP   1. {main}() C:\Server\www\web\sites_status_cron.php:0
+[28-Aug-2026 10:50:33 Asia/Manila] PHP Notice:  Trying to access array offset on value of type null in C:\Server\www\web\site_details.php on line 40
+[28-Aug-2026 10:50:33 Asia/Manila] PHP Stack trace:
+[28-Aug-2026 10:50:33 Asia/Manila] PHP   1. {main}() C:\Server\www\web\site_details.php:0
+[28-Aug-2026 13:45:01 Asia/Manila] PHP Fatal error:  Maximum execution time of 300 seconds exceeded in C:\Server\www\web\sites_status_cron.php on line 25
+[28-Aug-2026 13:45:01 Asia/Manila] PHP Stack trace:
+[28-Aug-2026 13:45:01 Asia/Manila] PHP   1. {main}() C:\Server\www\web\sites_status_cron.php:0
+[29-Aug-2026 09:35:01 Asia/Manila] PHP Fatal error:  Maximum execution time of 300 seconds exceeded in C:\Server\www\web\sites_status_cron.php on line 25
+[29-Aug-2026 09:35:01 Asia/Manila] PHP Stack trace:
+[29-Aug-2026 09:35:01 Asia/Manila] PHP   1. {main}() C:\Server\www\web\sites_status_cron.php:0
+[31-Aug-2026 03:17:22 Asia/Manila] PHP Notice:  Undefined index: sites in C:\Server\www\web\site_details.php on line 22
+[31-Aug-2026 03:17:22 Asia/Manila] PHP Stack trace:
+[31-Aug-2026 03:17:22 Asia/Manila] PHP   1. {main}() C:\Server\www\web\site_details.php:0
+[31-Aug-2026 21:15:01 Asia/Manila] PHP Fatal error:  Maximum execution time of 300 seconds exceeded in C:\Server\www\web\sites_status_cron.php on line 25
+[31-Aug-2026 21:15:01 Asia/Manila] PHP Stack trace:
+[31-Aug-2026 21:15:01 Asia/Manila] PHP   1. {main}() C:\Server\www\web\sites_status_cron.php:0
+[03-Sep-2026 07:55:01 Asia/Manila] PHP Fatal error:  Maximum execution time of 300 seconds exceeded in C:\Server\www\web\sites_status_cron.php on line 25
+[03-Sep-2026 07:55:01 Asia/Manila] PHP Stack trace:
+[03-Sep-2026 07:55:01 Asia/Manila] PHP   1. {main}() C:\Server\www\web\sites_status_cron.php:0
+[03-Sep-2026 14:42:44 Asia/Manila] PHP Parse error:  syntax error, unexpected '?>' in C:\Server\www\web\header.php on line 47
+[04-Sep-2026 11:18:17 Asia/Manila] PHP Notice:  Trying to access array offset on value of type null in C:\Server\www\web\site_details.php on line 40
+[04-Sep-2026 11:18:17 Asia/Manila] PHP Stack trace:
+[04-Sep-2026 11:18:17 Asia/Manila] PHP   1. {main}() C:\Server\www\web\site_details.php:0
+[04-Sep-2026 20:15:01 Asia/Manila] PHP Fatal error:  Maximum execution time of 300 seconds exceeded in C:\Server\www\web\sites_status_cron.php on line 25
+[04-Sep-2026 20:15:01 Asia/Manila] PHP Stack trace:
+[04-Sep-2026 20:15:01 Asia/Manila] PHP   1. {main}() C:\Server\www\web\sites_status_cron.php:0
