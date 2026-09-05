@@ -44,9 +44,9 @@
 		  })
 		})
 	</script>					
-
+	<?php require("crisp_web_id.php");?>
 	<!-- Chat Box -->	
-	<script type="text/javascript">window.$crisp=[];window.CRISP_WEBSITE_ID="878e3b68-1d81-4862-b2a9-5b7c9f9b8d4f";(function(){ d=document;s=d.createElement("script"); s.src="https://client.crisp.chat/l.js"; s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})(); </script>
+	<script type="text/javascript">window.$crisp=[];window.CRISP_WEBSITE_ID="<?php echo $crisp;?>";(function(){ d=document;s=d.createElement("script"); s.src="https://client.crisp.chat/l.js"; s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})(); </script>
 
 	<!-- Inventory Header -->
 	<script src="plugins/timepicker/bootstrap-timepicker.min.js"></script>	
