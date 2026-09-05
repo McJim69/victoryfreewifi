@@ -1,4 +1,4 @@
-# Victory Free WiFi Portal  
+# Victory Free WiFi 
 ![PHP](https://img.shields.io/badge/PHP-7.4%2B-blue?logo=php)  
 ![MySQL](https://img.shields.io/badge/MySQL-5.7%2B-orange?logo=mysql)  
 ![Bootstrap](https://img.shields.io/badge/Bootstrap-5-purple?logo=bootstrap)  
