@@ -1,11 +1,11 @@
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBLFwro7oy5NJvweRCRIBF1956rONihokE"></script>
+<?php 
+	require("gmapi_key.php");
+	$gmapi = MAP_API; 
+?>
 
-<style>
-	#map {
-		height: 65vh;
-		width: 100%;
-	}
-</style>
+<script src="https://maps.googleapis.com/maps/api/js?key=<?php echo $gmapi;?>"></script>
+
+<style>#map {height: 65vh;width: 100%;}</style>
 
 <script>
 	function downloadFile(url) {
