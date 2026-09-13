@@ -1,7 +1,5 @@
 <?php 
-	error_reporting(0);
 	require("connect.php");
-	require("header.php");
 	
 	$value = isset($_GET['value']) ? $_GET['value'] : "";
 				
@@ -57,10 +55,23 @@
 		l.inst_date like'%".$value."%' or
 		l.installer like'%".$value."%' or
 		l.cont_person like'%".$value."%') $mun $bar $site order by inst_date DESC");		
-	//
+
+	$file = basename(__FILE__);
+	
+	if ($file=="sites.php"){
+		$view="List View";
+		$goto="sites_list.php";
+	} else {
+		$view="Box View";
+		$goto="sites.php";
+	}
+
+	require("header.php");
+	require("menunav.php"); 
+	require("search_nav1.php"); 
 ?>
 
-<body>
+<script>setActive("sites");</script>
 
 <style>
 	.sbox{
@@ -71,26 +82,8 @@
 	}
 </style>
 
-
-<?php 
-	$file = basename(__FILE__);
-	
-	if ($file=="sites.php"){
-		$view="List View";
-		$goto="sites_list.php";
-	} else {
-		$view="Box View";
-		$goto="sites.php";
-	}
-	
-	require("menunav1.php"); 
-	require("search_nav1.php"); 
-?>
-
-<script>setActive("sites");</script>
-
 <main id="main">
-    <section style="margin: 60px 15px 0 15px;">
+    <section style="margin: 175px 15px 0 15px;">
 		<div class="container">
 			<div class="row justify-content-center">	
 				<?php
@@ -332,24 +325,6 @@
 
 <?php require("footerNAV.php");?>
 
-<div id="preloader"></div>
-
-<!-- Vendor JS Files -->
-<script src="assets/vendor/jquery/jquery.min.js"></script>
-<script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-<script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
-<script src="assets/vendor/php-email-form/validate.js"></script>
-<script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
-<script src="assets/vendor/venobox/venobox.min.js"></script>
-<script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-<script src="assets/vendor/aos/aos.js"></script>
-
-<!-- Template Main JS File -->
-<script src="assets/js/main.js"></script>
-
-</body>
-
-</html>
 
 <script>
 	function site_delete(sid){	
@@ -401,3 +376,5 @@
 	}
 
 </script>
+
+<?php require("footer.php");?>

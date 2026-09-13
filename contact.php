@@ -2,11 +2,8 @@
 	require("connect.php");
 	require("header.php");
 	require("webform.php")
+	require("menunav.php");
 ?>
-
-<body>
-
-<?php require("menunav.php");?>
 
 <script>setActive("contact");</script>
 
@@ -86,7 +83,3 @@
 </main><!-- End #main -->
 
 <?php require("footer.php");?>
-
-</body>
-
-</html>

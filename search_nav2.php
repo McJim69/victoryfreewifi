@@ -14,29 +14,9 @@
 	$municipal  = $_GET["municipality"] ?? "";
 	$places     = $_GET["places"]      ?? "";
 ?>
-<style>
-    #nav div {
-        font-size:15px;
-        cursor:pointer;
-        background:#fff;
-        padding:3px 5px;
-        border-radius:5px;
-        display:table-cell;
-    }
-    #nav div:hover {
-        background:#ff0000;
-        color:#fff;
-    }
-    #nav #opt {
-        font-size:15px;
-        padding:3px 5px;
-        text-align:center;
-        vertical-align:middle;
-    }
-</style>
 
 <!-- ======= Header ======= -->
-<header class="fixed-top header-inner-pages" style="margin-top:55px">
+<header id="search_nav" class="fixed-top header-inner-pages" style="margin-top:120px">
   <div class="container d-flex align-items-center justify-content-between">
     <h1 class="logo"><a href="barangays.php" class="scrollto" style="color:#fff">BARANGAYS</a></h1>
     <form method="post" enctype="multipart/form-data">
@@ -90,23 +70,6 @@
         </ul>
       </nav>
     </div>
-    <div style="background:#A91B0D !important;padding:4px;margin-top:-2px">
-      <div class="container d-flex align-items-center justify-content-between">
-        <table class="table bg-secondary text-light" style="margin:5px 0 -5px 0;padding:0">
-          <thead>
-            <tr>
-              <th width='3%' style='text-align:center'>#</th>
-              <th width='12%'>Municipality</th>
-              <th width='15%'>Barangay</th>
-              <th width='15%'>STN Location</th>
-              <th width='18%'>Potential Link</th>
-              <th width='15%'>Link Location</th>
-              <th width='7%'>AP Link</th>
-              <th width='7%'>On WiFi</th>
-            </tr>
-          </thead>
-        </table>
-      </div>
-    </div>
+    <!-- Responsive table header implemented in main file -->
 </header>
 </form>

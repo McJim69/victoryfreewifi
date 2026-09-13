@@ -139,27 +139,6 @@
 				</div> 
 			</div>
 		</div>
-		<div class="container d-flex align-items-center justify-content-between">
-			<table class="table bg-secondary text-light" style="margin:5px 0 -4px 0">
-				<thead style='border:1px solid #535353'>
-					<tr>
-						<th width='3%' style='text-align:center'>#</th>
-						<th width='16%'>Municipality</th>
-						<th width='15%'>Barangay</th>
-						<th width='15%'>STN Location</th>
-						<th width='18%'>Potential Link</th>
-						<th width='15%'>Link Location</th>
-						<th width='5%'>LOS*</th>
-						<th width='5%'>WiFi*</th>
-						<?php 
-							if(isset($_SESSION['user'])){ 
-								echo"<th>Action</th>";
-							}
-						?>
-					</tr>
-				</thead>
-			</table>
-		</div>
-	</div>
+		<!-- Responsive table header implemented in main file -->
 </header>
 </form>

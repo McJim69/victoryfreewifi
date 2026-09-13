@@ -1,17 +1,12 @@
 <?php 
 	require("connect.php");
 	require("header.php");	
+	require("menunav.php");
 ?>
-
-<body>
-
-<?php require("menunav.php");?>
-
 
 <script>setActive("home");</script>
 
 <main id="main">
-
 <!-- ======= Breadcrumbs ======= -->
 <section id="breadcrumbs" class="breadcrumbs" >
 	<div class="container">
@@ -182,6 +177,5 @@
 		</div>
 	</div>
 </div>
-</body>
 
-</html>
+<?php require("footer.php");?>

@@ -210,12 +210,12 @@
 				if(isset($_SESSION['user'])){
 				echo" <a href='sites_add_dev.php?sites=$rs[0]' class='btn btn-sm btn-danger'>Add Device</a>";}
 				echo"</h2>";
-				echo"<div style='overflow-x:auto'>";
+				echo"<div class='table-responsive'>";
 
 				$exd=$link->query("SELECT * FROM sites_detail WHERE site_id='".$rs[0]."' ");
 					if ($exd->num_rows > 0) {
 
-					echo"<table class='table table-responsive'>
+					echo"<table class='table'>
 						<thead style='border:1px $statr;$statb;color:#eee'>
 							<tr>
 								<th style='$statb; text-align:center'>#</th>

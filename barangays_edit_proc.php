@@ -16,15 +16,10 @@
 			echo"<script>history.back();</script>";
 		}else{
 			$error = mysqli_error($link);
-		//
-	//
+	// Continued else ...
+	require("header.php");
+	require("menunav.php");
 ?>
-
-<?php require("header.php"); ?>
-
-<body>
-
-<?php require("menunav.php"); ?>
 
 <script>setActive("team");</script>
 
@@ -51,7 +46,3 @@
 </main>
 
 <?php require("footer.php"); } } ?>
-
-</body>
-
-</html>

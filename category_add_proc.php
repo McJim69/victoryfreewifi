@@ -11,18 +11,14 @@
 		}else{
 	
 	$error = mysqli_error($link);
+	
+	require("header.php");
+	require("menunav.php");
 ?>
-
-<?php require("header.php"); ?>
-
-<body>
-
-<?php require("menunav.php"); ?>
 
 <script>setActive("login");</script>
 
 <main id="main"><br><br><br><br>
-
 <!-- Installation Section -->
 	<section id="contact" class="contact">
 		<div class="container" data-aos="fade-up" style="text-align:center">
@@ -46,7 +42,3 @@
 </main>
 
 <?php require("footer.php"); } } ?>
-
-</body>
-
-</html>

@@ -1,4 +1,3 @@
-<?php error_reporting(0);?>
 <style>
 	.menuli{
 		border-radius:5px;

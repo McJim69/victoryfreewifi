@@ -1,14 +1,10 @@
 <?php
 	require("connect.php");
 	require("header.php");
+	require("menunav.php");
 ?>
 
-<body>
-
-<?php require("menunav.php");?>
-
 <script>setActive("team");</script>
-
 <script>setActive("office");</script>
 
 <main id="main">
@@ -104,12 +100,6 @@
 	</div>
 <!-- END MODAL -->
 
-<?php require("footer.php");?>
-
-</body>
-
-</html>
-
 <script>
 	function deleteTeam(cid){	
 		if(confirm("Are you sure you want to Remove this Team Member?")){
@@ -138,3 +128,5 @@
 	  window.history.replaceState( null, null, window.location.href );
 	}
 </script>
+
+<?php require("footer.php");?>

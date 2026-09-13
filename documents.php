@@ -1,38 +1,6 @@
 <?php 
 	require("connect.php");
-	require("header.php");	
-?>
 
-<script>
-	function printF(){		
-		getID('topbar').style.display='none';
-		getID('header').style.display='none';
-		getID('breadcrumbs').style.display='none';
-		getID('portfolio-details').style.display='none';
-		getID('toprint').style.display='block';
-		getID('footer').style.display='none';
-		$(".report-header").css("display","none");
-		$(".back-to-top").css("display","none");
-
-	window.print();
-		getID('topbar').style.display='block';
-		getID('header').style.display='block';
-		getID('breadcrumbs').style.display='block';
-		getID('portfolio-details').style.display='block';
-		getID('toprint').style.display='none';
-		getID('footer').style.display='block';
-		$(".report-header").css("display","block");
-		$(".back-to-top").css("display","block");
-	}
-</script>
-
-<body>
-
-<?php require("menunav.php");?>
-
-<script>setActive("docs");</script>
-
-<?php	
 	$dphotos="Photos-Onsites";
 	$summrep="Summary-Report";
 	$rep2025="Status Report 2025";
@@ -48,8 +16,13 @@
 	}else{
 	   $post="Select Document";	
 	}
-?>
 	
+	require("header.php");	
+	require("menunav.php");
+?>
+
+<script>setActive("docs");</script>
+
 <form action="documents.php" method="post" enctype="multipart/form-data">
 
 <section id="breadcrumbs" class="breadcrumbs" >
@@ -205,8 +178,27 @@
 </div>
 </section>
 
+<script>
+	function printF(){		
+		getID('topbar').style.display='none';
+		getID('header').style.display='none';
+		getID('breadcrumbs').style.display='none';
+		getID('portfolio-details').style.display='none';
+		getID('toprint').style.display='block';
+		getID('footer').style.display='none';
+		$(".report-header").css("display","none");
+		$(".back-to-top").css("display","none");
+
+	window.print();
+		getID('topbar').style.display='block';
+		getID('header').style.display='block';
+		getID('breadcrumbs').style.display='block';
+		getID('portfolio-details').style.display='block';
+		getID('toprint').style.display='none';
+		getID('footer').style.display='block';
+		$(".report-header").css("display","block");
+		$(".back-to-top").css("display","block");
+	}
+</script>
+
 <?php require("footer.php");?>
-
-</body>
-
-</html>

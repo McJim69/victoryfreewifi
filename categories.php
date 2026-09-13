@@ -1,12 +1,17 @@
 <?php
 	require("connect.php");
-	require("header.php");
 	
 	if(!isset($_SESSION['user'])){
 		header("location:index.php");
 		exit();
 	}
+
+	require("header.php");
+	require("menunav.php");
 ?>
+
+<script>setActive("admin");</script>
+<script>setActive("categories");</script>
 
 <style>
 	.dev-card{
@@ -26,13 +31,6 @@
 		box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
 	}
 </style>
-
-<body>
-
-<?php require("menunav.php");?>
-
-<script>setActive("admin");</script>
-<script>setActive("categories");</script>
 
 <main id="main">
 	<section id="breadcrumbs" class="breadcrumbs" >
@@ -107,12 +105,6 @@
 	</section>
 </main>
 
-<?php require("footer.php");?>
-
-</body>
-
-</html>
-
 <script>
 	function deleteCategory(cat_id){	
 		if(confirm("Are you sure you want to Remove this Team Member?")){
@@ -141,3 +133,5 @@
 	  window.history.replaceState( null, null, window.location.href );
 	}
 </script>
+
+<?php require("footer.php");?>

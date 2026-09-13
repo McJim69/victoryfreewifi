@@ -1,6 +1,5 @@
 <?php 
 	require("connect.php");
-	require("header_all.php");
 
 	// Safe defaults for GET/POST
 	$value = $_GET['value'] ?? "";
@@ -36,9 +35,16 @@
 			LIMIT $from,$to";
 
 	$ex = $link->query($sql);
+	
+	require("header_all.php");
+	require("menunav2.php");
 ?>
 
+<script>setActive("bst");</script>
+<script>setActive("sites");</script>
+
 <style>
+	body {background: rgba(255, 000, 000, 0.2) url(assets/img/about-bg.png}
 	.bsbox{
 		padding:15px;
 		background:#eee;
@@ -51,19 +57,10 @@
 		background:darkred;
 	}
 </style>
-
-<body style="background: rgba(255, 000, 000, 0.2) url(assets/img/about-bg.png)">
-
-<?php require("menunav2.php");?>
-
-<script>setActive("bst");</script>
-
-<script>setActive("sites");</script>
-
+	
 <main id="main" style="margin-top:155px;min-height:560px">
 	<div class="container">
 		<div class="row">
-		
 		<?php 
 			$val = '';
 			$rep = '';
@@ -159,12 +156,6 @@
 	</div><br>
 </main>
 
-<?php require("footer.php");?>
-
-</body>
-
-</html>
-
 <script>
 	function deleteBase(bst_id){	
 		if(confirm("Are you sure you want to Remove this Base Station?")){
@@ -189,3 +180,5 @@
 	}
 
 </script>
+
+<?php require("footer.php");?>

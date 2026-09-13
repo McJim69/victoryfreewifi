@@ -1,7 +1,5 @@
 <?php
-	error_reporting(0);
 	require("connect.php");
-	require("header.php");
 	
 	if(!isset($_SESSION['user'])){
 		header("location:index.php");
@@ -46,8 +44,13 @@
 		d.device_code like'%".$value."%' or
 		d.device_name like'%".$value."%' or
 		d.device_category like'%".$value."%') $dev $cod $cat order by device_id DESC LIMIT $from,$to ");
-	//
+	
+	require("header.php");
+	require("menunav.php");
 ?>
+
+<script>setActive("admin");</script>
+<script>setActive("devices");</script>
 
 <style>
 	.dev-card{
@@ -64,13 +67,6 @@
 		box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
 	}
 </style>
-
-<body>
-
-<?php require("menunav.php");?>
-
-<script>setActive("admin");</script>
-<script>setActive("devices");</script>
 
 <form action='#' method='POST' enctype='multipart/form-data'>
 
@@ -225,12 +221,6 @@
 
 </form>
 
-<?php require("footer.php");?>
-
-</body>
-
-</html>
-
 <script>
 	function deviceDelete(device_id){	
 		if(confirm("Are you sure you want to Remove this Team Member?")){
@@ -259,3 +249,5 @@
 	  window.history.replaceState( null, null, window.location.href );
 	}
 </script>
+
+<?php require("footer.php");?>

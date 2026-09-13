@@ -1,12 +1,8 @@
 <?php
 	require("connect.php");
 	require("header.php");
-	error_reporting(0);
+	require("menunav.php");
 ?>
-
-<body>
-
-<?php require("menunav.php");?>
 
 <script>setActive("team");</script>
 <script>setActive("admin");</script>
@@ -113,12 +109,6 @@
 	</section>
 </main>
 
-<?php require("footer.php");?>
-
-</body>
-
-</html>
-
 <script>
 	function deleteTeam(tid){	
 		if(confirm("Are you sure you want to Remove this Team Leader?")){
@@ -147,3 +137,5 @@
 	  window.history.replaceState( null, null, window.location.href );
 	}
 </script>
+
+<?php require("footer.php");?>

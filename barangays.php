@@ -1,6 +1,5 @@
 <?php 
 	require("connect.php");
-	require("header.php");
 
 	$value = $_GET["value"] ?? "";
 
@@ -37,42 +36,20 @@
 		l.mcode LIKE '%".$value."%' OR
 		l.barangay LIKE '%".$value."%') $mun $bar 
 	   ORDER BY bid LIMIT $from,$to");
-	//
-?>
 
-
-<body>
-
-<?php 
-	require("menunav1.php"); 
+	require("header.php");
+	require("menunav.php"); 
 	require("search_nav2.php"); 
 ?>
 
 <script>setActive("barangays");</script>
 
-	<div style="background:#A91B0D; !important;padding:4px;margin-top:-10px">
-		<div class="container d-flex align-items-center justify-content-between">
-			<table class="table bg-secondary text-light" style="margin:5px 0 -4px 0">
-				<thead style="border:1px solid #535353">
-					<tr>
-						<th width='3%' style='text-align:center'>#</th>
-						<th width='12%'>Municipality</th>
-						<th width='15%'>Barangay</th>
-						<th width='15%'>STN Location</th>
-						<th width='18%'>Potential Link</th>
-						<th width='15%'>Link Location</th>
-						<th width='7%'>AP Link</th>
-						<th width='7%'>On WiFi</th>
-					</tr>
-				</thead>
-			</table>
-		</div>
-	</div>
-<main id="main" style="margin-top:78px;min-height:580px">
+<!-- Responsive table implemented below -->
+<main id="main" style="margin-top:175px;min-height:580px">
 	<?php if ($ex->num_rows > 0) { ?>
-	<div class="container d-flex align-items-center justify-content-between">
+	<div class="container">
 		<table class="table bg-secondary text-light">
-			<thead>
+			<thead style="position: sticky; top: 117px; z-index: 1020; background: #6c757d;">
 				<tr>
 					<th width='3%' style='text-align:center'>#</th>
 					<th width='12%'>Municipality</th>
@@ -100,6 +77,7 @@
 					}
 				}							
 									
+				echo "<tbody style='border:1px solid #535353'>";
 				while($rs=mysqli_fetch_array($ex)){		
 				
 				if(isset($_POST["b_remove_$rs[0]"])){
@@ -124,9 +102,7 @@
 					$link->query("UPDATE barangays set los='Yes' where bid='".$rs[0]."'");
 				}
 				
-				echo"
-				<tbody style='border:1px solid #535353'>";
-
+				
 					$cls="style='height:20px;padding:4px'";
 
 					if($i%2==0) echo"<tr $instalink class='odd' id='tr_".$rs[0]."'>"; else echo"<tr $instalink class='even' id='tr_".$rs[0]."'>";
@@ -140,12 +116,12 @@
 						<td $cls>".$rs["bst_coordinates"]."</td>
 						<td $cls>";if($rs["los"]=="Yes") echo"<b style='color:green'>Yes</b>"; else echo"<b style='color:red'>No</b>"; echo"</td>
 						<td $cls>";if($rs["win"]=="Yes") echo"<b style='color:green'>Yes</b>"; else echo"<b style='color:red'>No</b>"; echo"</td>
-					</tr>
-				</tbody>";	
+					</tr>";	
 				$i++;
 				}
 		
 		?>
+			</tbody>
 		</table>	
 	</div>	
 	<?php
@@ -162,7 +138,3 @@
 </main>
 
 <?php require("footer.php");?>
-
-</body>
-
-</html>

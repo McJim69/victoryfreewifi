@@ -1,13 +1,26 @@
 <?php 
 	require("connect.php");
 	require("header_all.php");
+	require("menunav.php");
 ?>
 
-<body>
-
-<?php require("menunav.php");?>
-
 <script>setActive("home");</script>
+
+<main id="main">
+
+<?php 
+	require("mainslider.php");
+	require("featbox.php");
+	require("techlogo.php");
+	require("rollout_front.php");
+	require("whyvictory.php");
+//	require("testimonials.php");
+//	require("target_progress.php");
+	require("contact_front.php");
+	require("colaboration.php");
+?>
+
+</main>
 
 <script>
 	function printF(){		
@@ -57,23 +70,4 @@
 	}
 </script>
 
-<main id="main">
-
-<?php 
-	require("mainslider.php");
-	require("featbox.php");
-	require("techlogo.php");
-	require("rollout_front.php");
-	require("whyvictory.php");
-//	require("testimonials.php");
-//	require("target_progress.php");
-	require("contact_front.php");
-	require("colaboration.php");
-	require("footer.php");
-?>
-
-</main>
-
-</body>
-
-</html>
+<?php require("footer.php");?>

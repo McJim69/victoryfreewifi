@@ -25,14 +25,10 @@
 			echo"<script>history.back();</script>";
 		}else{
 			$error = mysqli_error($link);
-		//
-	
+		//	
 	require("header.php"); 
+	require("menunav.php");
 ?>
-
-<body>
-
-<?php require("menunav.php"); ?>
 
 <script>setActive("devices");</script>
 
@@ -59,7 +55,3 @@
 </main>
 
 <?php require("footer.php"); } } ?>
-
-</body>
-
-</html>

@@ -1,5 +1,4 @@
 <?php 
-	error_reporting(0);
 	// Query first site record
 	$qrySTE = $link->query("SELECT * FROM sites LIMIT 1");
 	if ($qrySTE && $qrySTE->num_rows > 0) {

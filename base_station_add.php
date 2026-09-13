@@ -1,7 +1,6 @@
 <?php
 	error_reporting(0);
 	require("connect.php");
-	require("header_all.php");
     
 	$querys = $link->query("SELECT MAX(bst_id) FROM base_stations");
 	$result = $querys->fetch_array();
@@ -44,11 +43,10 @@
 
 		echo"<script>location.href='base_stations.php?base_stations=$baseID';</script>";
 	}
+	
+	require("header_all.php");
+	require("menunav.php");
 ?>
-
-<body>
-
-<?php require("menunav.php");?>
 
 <script>setActive("sites");</script>
 

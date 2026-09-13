@@ -21,16 +21,12 @@
 		echo"<script>location.href='devices.php?device=$device'</script>";
 	}else{
 	$error = mysqli_error($link);
+	
+	require("header.php");
+	require("menunav.php");
 ?>
 
-<?php require("header.php"); ?>
-
-<body>
-
-<?php require("menunav.php"); ?>
-
 <script>setActive("admin");</script>
-
 <script>setActive("device");</script>
 
 <main id="main"><br><br><br><br>
@@ -56,7 +52,3 @@
 </main>
 
 <?php require("footer.php"); } } ?>
-
-</body>
-
-</html>

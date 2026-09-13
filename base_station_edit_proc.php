@@ -15,14 +15,9 @@
 		}else{
 			$error = mysqli_error($link);
 		//
-	//
+	require("header.php");
+	require("menunav2.php");
 ?>
-
-<?php require("header.php"); ?>
-
-<body>
-
-<?php require("menunav2.php"); ?>
 
 <script>setActive("bst");</script>
 
@@ -49,7 +44,3 @@
 </main>
 
 <?php require("footer.php"); } } ?>
-
-</body>
-
-</html>

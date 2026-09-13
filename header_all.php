@@ -90,3 +90,5 @@
 	}
 	require("language.php");
 ?>
+
+<body>

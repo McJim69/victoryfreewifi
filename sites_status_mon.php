@@ -1,6 +1,5 @@
 <?php 
 	require("connect.php");
-	require("header_all.php");      
 
 	// Query active/inactive counts
 	$qryStatus = $link->query("SELECT SUM(status = 1) AS active, SUM(status = 0) AS inactive FROM sites");
@@ -22,11 +21,10 @@
 		array("label" => "Online Sites", "y" => $percent1),
 		array("label" => "Offline Sites", "y" => $percent2)
 	);
+
+	require("header_all.php"); 
+	require("menunav.php");	
 ?>
-
-<body>
-
-<?php require("menunav.php");?>
 
 <script>
 	setActive("sites"); 
@@ -157,6 +155,3 @@
 </script>
 
 <?php require("footer.php");?>
-
-</body>
-</html>

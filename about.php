@@ -2,46 +2,9 @@
 	require("connect.php");
 	require("header_all.php");
 	require("sites_count.php");
+	require("menunav.php");
 ?>
 
-<script>
-	function printF(){		
-		getID('topbar').style.display='none';
-		getID('header').style.display='none';
-		getID('main').style.display='none';
-		getID('about').style.display='none';
-		getID('footer').style.display='none';
-		getID('print-header').style.display='block';
-		getID('print-footer').style.display='block';
-		$(".fixed-top").css("display","none");
-		$(".back-to-top").css("display","none");
-		$(".container").css("display","none");
-		$(".back-to-top").css("display","none");
-		$(".report-header").css("display","none");
-		$(".close").css("display","none");
-		$(".hid").css("display","none");
-
-	window.print();
-		getID('topbar').style.display='block';
-		getID('header').style.display='block';
-		getID('main').style.display='block';
-		getID('about').style.display='block';
-		getID('footer').style.display='block';
-		getID('print-header').style.display='none';
-		getID('print-footer').style.display='none';
-		$(".fixed-top").css("display","block");
-		$(".container").css("display","block");
-		$(".back-to-top").css("display","block");
-		$(".report-header").css("display","block");
-		$(".close").css("display","block");
-		$(".hid").css("display","block");
-	}
-</script>
-
-<body>
-
-<?php require("menunav.php");?>
- 
 <script>setActive("about");</script>
 
 <?php 
@@ -125,8 +88,38 @@
 	</section>
 </main>
 	
+<script>
+	function printF(){		
+		getID('topbar').style.display='none';
+		getID('header').style.display='none';
+		getID('main').style.display='none';
+		getID('about').style.display='none';
+		getID('footer').style.display='none';
+		getID('print-header').style.display='block';
+		getID('print-footer').style.display='block';
+		$(".fixed-top").css("display","none");
+		$(".back-to-top").css("display","none");
+		$(".container").css("display","none");
+		$(".back-to-top").css("display","none");
+		$(".report-header").css("display","none");
+		$(".close").css("display","none");
+		$(".hid").css("display","none");
+
+	window.print();
+		getID('topbar').style.display='block';
+		getID('header').style.display='block';
+		getID('main').style.display='block';
+		getID('about').style.display='block';
+		getID('footer').style.display='block';
+		getID('print-header').style.display='none';
+		getID('print-footer').style.display='none';
+		$(".fixed-top").css("display","block");
+		$(".container").css("display","block");
+		$(".back-to-top").css("display","block");
+		$(".report-header").css("display","block");
+		$(".close").css("display","block");
+		$(".hid").css("display","block");
+	}
+</script>
+ 
 <?php require("footer.php");?>
-
-</body>
-
-</html>

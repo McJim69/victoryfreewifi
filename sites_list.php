@@ -1,7 +1,6 @@
 <?php 
 	error_reporting(0);
 	require("connect.php");
-	require("header.php");
 
 	$value = isset($_GET['value']) ? $_GET['value'] : "";
 				
@@ -62,12 +61,7 @@
 		l.installer like'%".$value."%' or
 		l.cont_person like'%".$value."%') $mun $bar $site order by inst_date DESC");
 	//
-?>	
 
-<body>
-
-
-<?php 
 	$file = basename(__FILE__);
 	
 	if ($file=="sites.php"){
@@ -78,44 +72,18 @@
 		$goto="sites.php";
 	}
 	
-	require("menunav1.php"); 
+	require("menunav.php"); 
 	require("search_nav1.php"); 
-?>
+	require("header.php");
+?>	
 
 <script>setActive("sites");</script>
 
-<header class="fixed-top header-inner-pages" style="margin-top:110px">
-	<div class="container d-flex align-items-center justify-content-between" style="margin-bottom:-17px">
-		<table class="table bg-secondary text-light">	
-			<thead>
-				<tr>
-					<th width='4%' style='text-align:center' scope='col'>#</th>
-					<th width='25%' scope='col'>Site Name</th>
-					<th width='14%' scope='col'>Placement</th>
-					<th width='13%' scope='col'>Coordinates</th>
-					<th width='15%' scope='col'>Linked AP</th>
-					<th width='8%'  scope='col'>Roll Date</th>
-					<?php 
-						if(isset($_SESSION['user'])){ 
-							echo"<th width='12%' scope='col'>IP Address</th>";
-							echo"<th width='8%'  scope='col'>Action</th>";
-						}else{
-							echo"<th width='8%'  scope='col'>Status</th>";
-						}
-					?>
-				</tr>
-			</thead>
-		</table>
-	</div>
-</header>
-
-<main id="main" style="margin-top:110px;min-height:610px">
-
-<?php  if ($ex->num_rows > 0) { ?>
-
-	<div class="container d-flex align-items-center justify-content-between">
-		<table class="table bg-secondary text-light">	
-			<thead>
+<main id="main" style="margin-top:193px;min-height:610px">
+	<?php if ($ex->num_rows > 0) { ?>
+	<div class="container">
+		<table class="table bg-secondary text-light">
+			<thead style="position: sticky; top: 133px; z-index: 1020; background: #6c757d;">
 				<tr>
 					<th width='4%' style='text-align:center' scope='col'>#</th>
 					<th width='25%' scope='col'>Site Name</th>
@@ -240,12 +208,6 @@
 	?>	
 </main>
 
-<?php require("footer.php");?>
-
-</body>
-
-</html>
-
 <script>
 	function site_delete(sid){	
 		if(confirm("Are you sure you want to Remove this Site?")){
@@ -276,3 +238,5 @@
 	  window.history.replaceState( null, null, window.location.href );
 	}
 </script>
+
+<?php require("footer.php");?>

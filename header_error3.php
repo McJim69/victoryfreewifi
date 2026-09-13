@@ -1,11 +1,8 @@
 <?php 
 	require("connect.php");
 	require("header.php"); 
+	require("menunav.php"); 
 ?>
-
-<body>
-
-<?php require("menunav.php"); ?>
 
 <script>setActive("login");</script>
 
@@ -31,7 +28,3 @@
 </main>
 
 <?php require("footer.php"); ?>
-
-</body>
-
-</html>

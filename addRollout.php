@@ -1,6 +1,5 @@
 <?php
 	require("connect.php");
-	require("header_all.php");
 
     function fill_device($pdo){
 		$output= '';
@@ -209,10 +208,11 @@
 		}
 	}
 ?>
-
-<body>
-
-<?php require("menunav.php");?>
+	
+<?php 
+	require("header_all.php");	
+	require("menunav.php");
+?>
 
 <script>setActive("sites");</script>
 
@@ -360,8 +360,8 @@
 				</div>	
 			</div>
 			<div class="container">	
-				<div class="row" style="overflow-x:auto;margin-top:10px;background:#eee;border:1px solid #bbb;border-radius:5px">
-					<table class="table table-responsive" id="myRollout">
+				<div class="row table-responsive" style="margin-top:10px;background:#eee;border:1px solid #bbb;border-radius:5px">
+					<table class="table" id="myRollout">
 						<thead style="background:#bbb">
 							<tr>
 								<th class="text-success"></th>

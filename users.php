@@ -1,16 +1,14 @@
 <?php
-	require("connect.php");
-	require("header.php");
+	require("connect.php");	
 	
 	if(!isset($_SESSION['user'])){
 		header("location:index.php");
 		exit();
 	}
+
+	require("header.php");
+	require("menunav.php");
 ?>
-
-<body>
-
-<?php require("menunav.php");?>
 
 <script>setActive("admin");</script>
 <script>setActive("users");</script>
@@ -111,12 +109,6 @@
 	</section>
 </main>
 
-<?php require("footer.php");?>
-
-</body>
-
-</html>
-
 <script>
 	function deleteUser(usrid){	
 		if(confirm("Are you sure you want to Remove this User User?")){
@@ -145,3 +137,5 @@
 	  window.history.replaceState( null, null, window.location.href );
 	}
 </script>
+
+<?php require("footer.php");?>

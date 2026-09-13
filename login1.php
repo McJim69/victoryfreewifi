@@ -1,6 +1,5 @@
 <?php 
 	require("connect.php"); 
-	require("header.php"); 
 	
 	if(isset($_POST["login"])){
 		$ex=$link->query("SELECT * FROM users WHERE 
@@ -37,11 +36,10 @@
 				</div><br><br>";
 		$err=1;
 	}
+	
+	require("header.php"); 
+	require("menunav.php");
 ?>
-
-<body>
-
-<?php require("menunav.php");?>
 
 <script>setActive("login");</script>
 
@@ -82,7 +80,3 @@
 </main>
 
 <?php require("footer.php");?>
-
-</body>
-
-</html>

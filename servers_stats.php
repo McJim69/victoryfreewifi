@@ -83,7 +83,8 @@
 				}
 
 				echo"
-					<div style='border:1px solid #bbb;background:#eee' class='deployed-box align-items-center mobile col-lg-3'>									
+					<div class='col-lg-3 col-md-6 mb-4'>
+					<div style='border:1px solid #bbb;background:#eee;border-radius:5px;padding:5px' class='deployed-box align-items-center mobile'>									
 						<div class='deployed-content' style='padding-left:5px'>";
 						
 						if (($ip)!==$wan || ($ip)!==$lan){
@@ -105,6 +106,7 @@
 							<div class='loader'></div>
 						  </a>
 						</div>		
+					</div>
 					</div>";
 					$i++;			
 				}

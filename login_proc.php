@@ -33,14 +33,11 @@
 
 		}else
 
-	$error = "Either wrong username or password.<h4>PLEASE TRY AGAIN</h4>";			
+	$error = "Either wrong username or password.<h4>PLEASE TRY AGAIN</h4>";		
+	
+	require("header.php");
+	require("menunav.php");
 ?>
-
-<?php require("header.php"); ?>
-
-<body>
-
-<?php require("menunav.php"); ?>
 
 <script>setActive("team");</script>
 
@@ -63,8 +60,4 @@
 	</section>
 </main>
 
-	<?php require("footer.php"); } ?>
-
-</body>
-
-</html>
+<?php require("footer.php"); } ?>

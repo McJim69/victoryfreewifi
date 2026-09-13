@@ -1,13 +1,5 @@
 <?php
 	require("connect.php");
-	require("header.php");
-?>
-
-<body>
-
-<?php 
-	
-	require("menunav.php");
 
 	$value = isset($_GET['value']) ? $_GET['value'] : "";
 
@@ -35,7 +27,9 @@
 		d.device_code like'%".$value."%' or
 		d.device_name like'%".$value."%' or
 		d.serial_mac like'%".$value."%') order by device_name LIMIT $from,$to ");
-	//
+
+	require("header.php");	
+	require("menunav.php");
 ?>
 
 <script>setActive("admin");</script>
@@ -151,14 +145,10 @@
 	</section>
 </main>
 
-<?php require("footer.php");?>
-
-</body>
-
-</html>
-
 <script>	
 	if ( window.history.replaceState ) {
 	  window.history.replaceState( null, null, window.location.href );
 	}
 </script>
+
+<?php require("footer.php");?>

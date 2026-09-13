@@ -1,17 +1,14 @@
 <?php
 	require("connect.php");
-	require("header.php");
 
 	if(!isset($_SESSION['user'])){
 		header("location:index.php");
 		exit();
 	}
+	require("header.php");
+	require("menunav.php");
 ?>
-
-<body>
-
-<?php require("menunav.php");?>
-
+	
 <script>setActive("admin");</script>
 
 <main id="main">
@@ -71,12 +68,6 @@
 	</section>
 </main>
 
-<?php require("footer.php");?>
-
-</body>
-
-</html>
-
 <script>
 	function deleteTeam(cid){	
 		if(confirm("Are you sure you want to Remove this Team Member?")){
@@ -104,4 +95,6 @@
 	if ( window.history.replaceState ) {
 	  window.history.replaceState( null, null, window.location.href );
 	}
-</sript>
+</script>
+
+<?php require("footer.php");?>

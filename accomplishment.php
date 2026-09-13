@@ -1,6 +1,5 @@
 <?php 
 	require("connect.php");
-	require("header.php");
     
 	function fill_team($pdo){
 		$output= '';
@@ -48,11 +47,10 @@
 		$exr=$link->query("select * from sites where repair_date between '$dafr' and '$dato' $repr order by mcode") or die(mysqli_error($link));		
 	}	
 	$link->query("UPDATE sites set inst_date='2022-06-20' WHERE inst_date=null ");
+
+	require("header.php");
+	require("menunav.php");
 ?>
-
-<body>
-
-<?php require("menunav.php"); ?>
 
 <script>setActive("admin");</script>
 <script>setActive("rollout");</script>
@@ -133,8 +131,8 @@
 					
 				if ($exi->num_rows > 0 || $exr->num_rows > 0) {	
 				echo"	
-				<div style='overflow-x:auto'>
-					<table class='table table-responsive bg-secondary text-light'>
+				<div class='table-responsive'>
+					<table class='table bg-secondary text-light'>
 						<thead>
 							<tr>
 								<th width='2%' scope='col' style='text-align:center'><small>#</small></th>
@@ -241,7 +239,8 @@
 							if($month){							
 
 							echo"<b>$post - ALL TEAMS - INSTALLATIONS</b> 
-								<table class='table table-responsive bg-secondary text-light'>
+								<div class='table-responsive'>
+								<table class='table bg-secondary text-light'>
 									<thead style='text-align:center'>
 										<tr>
 											<th>#</th>
@@ -278,6 +277,7 @@
 										<td $cls><b>$tSite</b></td>
 									</tbody>
 								</table>
+								</div>
 							</div>";
 						}				
 					}
@@ -290,7 +290,3 @@
 </form>			
 
 <?php require("footer.php");?>
-
-</body>
-
-</html>

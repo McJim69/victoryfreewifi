@@ -14,15 +14,10 @@
 			echo"<script>history.back();</script>";
 		}else{
 			$error = mysqli_error($link);
-		//
-	//
+		// 
+	require("header.php"); 
+	require("menunav.php");
 ?>
-
-<?php require("header.php"); ?>
-
-<body>
-
-<?php require("menunav.php"); ?>
 
 <script>setActive("login");</script>
 
@@ -49,7 +44,3 @@
 </main>
 
 <?php require("footer.php"); } } ?>
-
-</body>
-
-</html>

@@ -36,7 +36,7 @@
 </style>
 
 <!-- ======= Header ======= -->
-<header class="fixed-top header-inner-pages" style="margin-top:55px">
+<header id="search_nav" class="fixed-top header-inner-pages" style="margin-top:120px">
   <div class="container d-flex align-items-center justify-content-between">
     <h1 class="logo"><a href="sites_list.php" class="scrollto" style="color:#fff">SITES</a></h1>
     
@@ -48,7 +48,7 @@
           Down: <?php echo $downed;?> 
         </button>
       </a>
-    </span>
+    </span> 
 
     <form method="post" enctype="multipart/form-data">
       <nav class="nav-menu d-none d-lg-block">

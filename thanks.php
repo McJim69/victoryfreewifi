@@ -1,11 +1,8 @@
 <?php 
 	require("connect.php"); 
 	require("header.php"); 	
+	require("menunav.php");
 ?>
-
-<body>
-
-<?php require("menunav.php");?>
 
 <main id="main"><br><br><br><br>
 
@@ -24,7 +21,3 @@
 </main><!-- End #main -->
 
 <?php require("footer.php");?>
-
-</body>
-
-</html>
