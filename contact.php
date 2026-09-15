@@ -1,7 +1,7 @@
 <?php 
 	require("connect.php");
 	require("header.php");
-	require("webform.php")
+	require("webform.php");
 	require("menunav.php");
 ?>
 

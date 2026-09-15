@@ -1,7 +1,7 @@
 <?php 
 	require("connect.php");
 
-	// Query active/inactive counts
+	// Query active/inactive counts for total
 	$qryStatus = $link->query("SELECT SUM(status = 1) AS active, SUM(status = 0) AS inactive FROM sites");
 	$row = $qryStatus->fetch_assoc();
 	$rawACT = (int)$row['active'];
@@ -12,15 +12,27 @@
 	$percent1 = ($total > 0) ? ($rawACT / $total) * 100 : 0;
 	$percent2 = 100 - $percent1;
 
-	// Format for display
-	$totACT = number_format($rawACT);
-	$totDWN = number_format($rawDWN);
-
-	// Chart data
-	$dataPoints1 = array(
-		array("label" => "Online Sites", "y" => $percent1),
-		array("label" => "Offline Sites", "y" => $percent2)
-	);
+	// Query for municipality breakdown
+	$qryMuni = $link->query("
+		SELECT 
+			mcode, 
+			COUNT(*) as total_sites,
+			SUM(status = 1) AS active, 
+			SUM(status = 0) AS inactive 
+		FROM sites 
+		GROUP BY mcode 
+		ORDER BY total_sites DESC
+	");
+	
+	$muniLabels = [];
+	$muniActive = [];
+	$muniInactive = [];
+	
+	while($rowM = $qryMuni->fetch_assoc()){
+		$muniLabels[] = $rowM['mcode'];
+		$muniActive[] = (int)$rowM['active'];
+		$muniInactive[] = (int)$rowM['inactive'];
+	}
 
 	require("header_all.php"); 
 	require("menunav.php");	
@@ -31,119 +43,245 @@
 	setActive("stats");
 </script>
 
-<script>
-	window.onload = function () {
-		var chart1 = new CanvasJS.Chart("chartContainer1", {
-			animationEnabled: true,
-			title: { text: "Out of <?php echo $total;?> Sites" },
-			data: [{
-				type: "bar",
-				yValueFormatString: "#,##0.00\"%\"",
-				indexLabel: "{label} ({y})",
-				dataPoints: <?php echo json_encode($dataPoints1, JSON_NUMERIC_CHECK); ?>
-			}]
-		});
-		chart1.render();
+<style>
+	.dashboard-card {
+		border-radius: 10px;
+		box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+		background: #fff;
+		padding: 20px;
+		margin-bottom: 20px;
+		border: 1px solid #eee;
 	}
-</script>
+	.stat-value {
+		font-size: 2.5rem;
+		font-weight: 700;
+		line-height: 1;
+	}
+	.stat-label {
+		color: #6c757d;
+		font-weight: 600;
+		text-transform: uppercase;
+		font-size: 0.9rem;
+		margin-top: 5px;
+	}
+	.list-container {
+		height: 400px;
+		overflow-y: auto;
+		border-radius: 0 0 8px 8px;
+		border: 1px solid #ddd;
+		border-top: none;
+	}
+	.list-group-item {
+		border-left: none;
+		border-right: none;
+		border-top: none;
+		border-bottom: 1px solid #eee;
+	}
+	.list-group-item:last-child {
+		border-bottom: none;
+	}
+	.chart-wrapper {
+		position: relative;
+		height: 300px;
+		width: 100%;
+	}
+</style>
 
-<main style="background: rgba(255,0,0,0.2) url(assets/img/about-bg.png) no-repeat">
-<div class="container" style="text-align:center;margin-top:120px">
-    <div class="row justify-content-center text-center">
-        <!-- Online Sites -->
-        <div class="col-lg-3" style="margin-top:35px">
-            <div style="border:1px solid #bbb;border-radius:5px;padding:5px;background:#bbb;color:green"><b>ONLINE SITES (<?php echo $totACT;?>)</b></div>
-            <div style="border:1px solid #bbb;border-radius:5px;padding:10px;background:#fff;color:green;text-align:left;height:543px;overflow:auto;margin-bottom:30px">
-            <?php 
-                $i=1;
-                $ex=$link->query("SELECT * FROM sites WHERE status=1 ORDER BY mcode");
-                while($rs=mysqli_fetch_assoc($ex)){
-                    echo "<div>$i. <a href=\"site_details.php?sites=".(int)$rs["sid"]."\">".$rs["mcode"]." ".$rs["barangay"]." ".$rs["place"]."</a></div>";
-                    $i++;
-                }
-            ?>
-            </div>
-        </div>
+<!-- Chart.js -->
+<script src="assets/chartjs/chart.js"></script>
 
-        <!-- Center Chart + Totals -->
-        <div class="col-lg-6" style="border:1px solid #bbb;border-radius:5px;margin-top:35px;margin-bottom:30px;background-color: rgba(255,0,0,0.2);">
-            <div class="row justify-content-center" style="font-size:50px">
-				<b class="text-success">Sites Status</b>
-			</div>  
-			<div class="row justify-content-center" style="margin:-10px 0 0 0">			
-				<div style="font-size:30px">
-					<a href="sites_status_mon.php"><i class="fa fa-refresh"></i></a>
-					<b class="text-danger" id="countdown"></b>
-					<a href="sites_status_mon.php"><i class="fa fa-refresh"></i></a>
+<main id="main" style="background: #f4f6f9; padding-bottom: 50px;">
+	<section class="breadcrumbs" style="margin-top: 120px;">
+		<div class="container">
+			<ol>
+				<li><a href="index.php">Home</a></li>
+				<li><a href="sites_list.php">Sites</a></li>
+				<li>Analytics Dashboard</li>
+			</ol>
+			<h2>Site Status & Analytics</h2>
+		</div>
+	</section>
+
+	<section class="inner-page pt-4">
+		<div class="container" data-aos="fade-up">
+			
+			<!-- KPI Row -->
+			<div class="row">
+				<div class="col-lg-4 col-md-6">
+					<div class="dashboard-card text-center" style="border-bottom: 4px solid #007bff;">
+						<div class="stat-value text-primary"><?php echo number_format($total); ?></div>
+						<div class="stat-label">Total Deployed Sites</div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6">
+					<div class="dashboard-card text-center" style="border-bottom: 4px solid #28a745;">
+						<div class="stat-value text-success"><?php echo number_format($rawACT); ?> <span style="font-size: 1.2rem; color: #aaa;">(<?php echo number_format($percent1); ?>%)</span></div>
+						<div class="stat-label">Online Sites</div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-12">
+					<div class="dashboard-card text-center" style="border-bottom: 4px solid #dc3545;">
+						<div class="stat-value text-danger"><?php echo number_format($rawDWN); ?> <span style="font-size: 1.2rem; color: #aaa;">(<?php echo number_format($percent2); ?>%)</span></div>
+						<div class="stat-label">Offline Sites</div>
+					</div>
 				</div>
 			</div>
-			<div class="row justify-content-center" style="width:100%;margin-top:10px">
-				<div id="chartContainer1" style="height:165px"></div>          
-			</div> 
-            <div class="row justify-content-center" style="margin-top:15px">
-                <div>
-                    <button class="btn btn-primary" style="width:100%;background:#369ead;font-size:30px">
-                        Active: <b><?php echo $totACT;?></b> (<b><?php echo number_format($percent1);?></b>%)
-                    </button> 
-                </div>
-            </div>          
-            <div class="row justify-content-center" style="margin-top:10px">
-                <div>
-                    <button class="btn btn-danger" style="width:100%;background:#c24642;font-size:30px">
-                        Down: <b><?php echo $totDWN;?></b> (<b><?php echo number_format($percent2);?></b>%)
-                    </button>
-                </div>
-            </div>
-            <div class="row justify-content-center" style="margin-top:10px;margin-bottom:10px">
-                <div>
-                    <a rel="facebox" href="reportModal2.php">
-                        <button class="btn btn-success" style="width:100%;font-size:30px;opacity:.7">
-                            <b class="text-light">Total Sites: <?php echo $total;?></b>
-                        </button>
-                    </a>
-                </div>
-            </div>
-        </div>
 
-        <!-- Offline Sites -->
-        <div class="col-lg-3" style="margin-top:35px">
-            <div style="border:1px solid #bbb;border-radius:5px;padding:5px;background:#bbb;color:red"><b>OFFLINE SITES (<?php echo $totDWN;?>)</b></div>
-            <div style="border:1px solid #bbb;border-radius:5px;padding:10px;background:#fff;color:red;text-align:left;height:543px;overflow:auto;margin-bottom:30px">
-            <?php 
-                $i=1;
-                $ex=$link->query("SELECT * FROM sites WHERE status=0 ORDER BY mcode");
-                while($rs=mysqli_fetch_assoc($ex)){
-                    echo "<div>$i. <a href=\"site_details.php?sites=".(int)$rs["sid"]."\">".$rs["mcode"]." ".$rs["barangay"]." ".$rs["place"]."</a></div>";
-                    $i++;
-                }
-            ?>
-            </div>
-        </div>
-    </div>
-</div>
+			<!-- Charts Row -->
+			<div class="row">
+				<div class="col-lg-4">
+					<div class="dashboard-card">
+						<h5 class="text-center mb-4">Overall Network Status</h5>
+						<div class="chart-wrapper">
+							<canvas id="doughnutChart"></canvas>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-8">
+					<div class="dashboard-card">
+						<div class="d-flex justify-content-between align-items-center mb-4">
+							<h5 class="mb-0">Municipality Health Distribution</h5>
+							<div class="small">
+								Next refresh in <b id="countdown" class="text-danger">05:00</b>
+							</div>
+						</div>
+						<div class="chart-wrapper">
+							<canvas id="barChart"></canvas>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- Lists Row -->
+			<div class="row mt-2">
+				<div class="col-lg-6">
+					<div class="dashboard-card p-0 mb-4">
+						<div class="p-3 bg-success text-white rounded-top d-flex justify-content-between align-items-center">
+							<h5 class="m-0"><i class="fa fa-wifi"></i> Online Sites</h5>
+							<span class="badge bg-light text-success" style="font-size:1.1rem;"><?php echo number_format($rawACT); ?></span>
+						</div>
+						<div class="list-container">
+							<div class="list-group list-group-flush">
+								<?php 
+									$i=1;
+									$ex=$link->query("SELECT * FROM sites WHERE status=1 ORDER BY mcode, barangay");
+									while($rs=mysqli_fetch_assoc($ex)){
+										echo "<a href=\"site_details.php?sites=".(int)$rs["sid"]."\" class=\"list-group-item list-group-item-action\">
+												<b>$i.</b> ".$rs["mcode"]." - ".$rs["barangay"]." <span class='text-muted small'>(".$rs["place"].")</span>
+											  </a>";
+										$i++;
+									}
+								?>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<div class="col-lg-6">
+					<div class="dashboard-card p-0 mb-4">
+						<div class="p-3 bg-danger text-white rounded-top d-flex justify-content-between align-items-center">
+							<h5 class="m-0"><i class="fa fa-exclamation-triangle"></i> Offline Sites</h5>
+							<span class="badge bg-light text-danger" style="font-size:1.1rem;"><?php echo number_format($rawDWN); ?></span>
+						</div>
+						<div class="list-container">
+							<div class="list-group list-group-flush">
+								<?php 
+									$i=1;
+									$ex=$link->query("SELECT * FROM sites WHERE status=0 ORDER BY mcode, barangay");
+									while($rs=mysqli_fetch_assoc($ex)){
+										echo "<a href=\"site_details.php?sites=".(int)$rs["sid"]."\" class=\"list-group-item list-group-item-action\">
+												<b>$i.</b> ".$rs["mcode"]." - ".$rs["barangay"]." <span class='text-muted small'>(".$rs["place"].")</span>
+											  </a>";
+										$i++;
+									}
+								?>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</section>
 </main>
 
-<!-- Auto refresh after 5 minutes -->
 <script>
+	// Chart.js Configuration
+	document.addEventListener("DOMContentLoaded", function() {
+		// Doughnut Chart
+		const ctxDoughnut = document.getElementById('doughnutChart').getContext('2d');
+		new Chart(ctxDoughnut, {
+			type: 'doughnut',
+			data: {
+				labels: ['Online', 'Offline'],
+				datasets: [{
+					data: [<?php echo $rawACT; ?>, <?php echo $rawDWN; ?>],
+					backgroundColor: ['#28a745', '#dc3545'],
+					borderWidth: 0,
+					hoverOffset: 4
+				}]
+			},
+			options: {
+				responsive: true,
+				maintainAspectRatio: false,
+				plugins: {
+					legend: { position: 'bottom' }
+				},
+				cutout: '70%'
+			}
+		});
+
+		// Stacked Bar Chart
+		const ctxBar = document.getElementById('barChart').getContext('2d');
+		new Chart(ctxBar, {
+			type: 'bar',
+			data: {
+				labels: <?php echo json_encode($muniLabels); ?>,
+				datasets: [
+					{
+						label: 'Online',
+						data: <?php echo json_encode($muniActive); ?>,
+						backgroundColor: '#28a745',
+					},
+					{
+						label: 'Offline',
+						data: <?php echo json_encode($muniInactive); ?>,
+						backgroundColor: '#dc3545',
+					}
+				]
+			},
+			options: {
+				responsive: true,
+				maintainAspectRatio: false,
+				scales: {
+					x: { stacked: true },
+					y: { stacked: true, beginAtZero: true }
+				},
+				plugins: {
+					legend: { position: 'bottom' }
+				}
+			}
+		});
+	});
+
+	// Auto refresh after 5 minutes
 	setTimeout(function(){
 		window.location.reload();
 	}, 300000);
-</script>
 
-<!-- Countdown timer -->
-<script>
+	// Countdown timer
 	function countdown(elementName, minutes, seconds){
 	  var element, endTime, hours, mins, msLeft, time;
 	  function twoDigits(n){ return (n <= 9 ? "0" + n : n); }
 	  function updateTimer(){
 		msLeft = endTime - (+new Date);
 		if (msLeft < 1000) {
-		  element.innerHTML = "00:00";
+		  if(element) element.innerHTML = "00:00";
 		} else {
 		  time = new Date(msLeft);
 		  hours = time.getUTCHours();
 		  mins = time.getUTCMinutes();
-		  element.innerHTML = (hours ? hours + ':' + twoDigits(mins) : mins) + ':' + twoDigits(time.getUTCSeconds());
+		  if(element) element.innerHTML = (hours ? hours + ':' + twoDigits(mins) : mins) + ':' + twoDigits(time.getUTCSeconds());
 		  setTimeout(updateTimer, time.getUTCMilliseconds() + 500);
 		}
 	  }

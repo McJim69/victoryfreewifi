@@ -5,7 +5,15 @@
 	<meta charset="utf-8">
 	<meta name="referrer" content="origin">
 	<meta content="width=device-width, initial-scale=1.0" name="viewport">
-	<title>Victory Free WiFi 4.0</title>
+	<?php
+		$current_file = basename($_SERVER['PHP_SELF'], ".php");
+		if ($current_file == "index") {
+			$page_title = "Home";
+		} else {
+			$page_title = ucwords(str_replace('_', ' ', $current_file));
+		}
+	?>
+	<title><?php echo $page_title; ?> | Victory Free WiFi 4.0</title>
 	<meta content="Victory Free WiFi" name="description">
 	<meta content="Victory, Free WiFi" name="keywords">
 

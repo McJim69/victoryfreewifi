@@ -2720,6 +2720,7 @@ td{
 
 .admin-box{
 	width: 310px;
+	margin: 10px;
 	box-shadow: rgba(99, 99, 99, 0.2) 0px 3px 10px 0px;
 	border: 1px solid #eee;
 	background: #fff;

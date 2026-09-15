@@ -127,6 +127,8 @@
 								<li><a href='categories.php' id='categories' class='menuli'>Category</a></li>
 								<li><a href='installers.php' id='installers' class='menuli'>Installers</a></li>
 								<li><a href='barangays.php' id='barangays' class='menuli'>Barangays</a></li>
+								<li><a href='sync_uisp.php' class='menuli'>Sync UISP</a></li>
+								<li><a href='recover_ips.php' class='menuli'>Recover IPs</a></li>
 							</ul>
 						</li>
 						<li><a onclick='sessionEnd()' class='menuli'>Logout</a></li>";

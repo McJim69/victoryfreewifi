@@ -27,7 +27,7 @@
 	$ii=1;
 ?>
 
-<div style="width:350px;text-align:center">
+<div style="width: 100%; min-width: 300px; max-width: 800px; padding: 15px; text-align: center;">
 
 <form action="site_edit_proc.php" method="POST" enctype="multipart/form-data">
 
@@ -47,12 +47,16 @@
 	}
 
 	echo"	
-		<div class='text-center' style='font-size:20px;font-weight:bold'>
+		<div class='text-center' style='font-size:24px;font-weight:bold;color:#333;margin-bottom:5px;'>
 			".$rs["mcode"]." ".$rs["barangay"]." ".$rs["place"]."
 		</div>
-		<div>Site Status: $statx</div>			
+		<div style='margin-bottom: 20px;'>
+			<span style='padding: 5px 15px; border-radius: 20px; font-weight: bold; background: var(--bs-$statb); color: white;'>
+				Site Status: $statx
+			</span>
+		</div>			
 	
-		<div class='mt-5 mt-lg-0'>			
+		<div class='mt-3 mt-lg-0' style='text-align: left;'>			
 			<div class='row'>				
 				<div style='padding-top:5px' class='col-md-6 form-group mt-3 mt-md-0'>
 					<input type='hidden' class='form-control' name='sid' value='$rs[0]' />

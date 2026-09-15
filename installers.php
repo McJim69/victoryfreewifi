@@ -54,7 +54,7 @@
 						jump("");
 					}	
 				echo"
-				<div class='admin-box col-lg-3' style='margin:10px' data-aos='fade-up' data-aos-delay='100' id='div_$rs[0]'>									
+				<div class='admin-box col-lg-3' data-aos='fade-up' data-aos-delay='100' id='div_$rs[0]'>									
 					<div class='row'>
 						<div class='admin-logo col-lg-2'>
 						<a href='$face' target='_blank'>

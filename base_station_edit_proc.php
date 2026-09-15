@@ -3,12 +3,31 @@
 
 	if (isset($_POST['upDate'])) {
 
-	$update = $link->query("UPDATE base_stations set
-		bst_id 	 		= '".$_POST['bst_id']."',
-		coordinates 	= '".$_POST['coordinates']."',
-		tower_height 	= '".$_POST['tower_height']."',
-		elevation		= '".$_POST['elevation']."',
-		ip_address		= '".$_POST['ip_address']."' where bst_id = '".$_POST['bst_id']."'");
+	$bst_id = $link->real_escape_string($_POST['bst_id']);
+	$coordinates = $link->real_escape_string($_POST['coordinates']);
+	$tower_height = $link->real_escape_string($_POST['tower_height']);
+	$elevation = $link->real_escape_string($_POST['elevation']);
+	$ip_address = $link->real_escape_string($_POST['ip_address']);
+
+	$name_update_sql = "";
+	if (!empty($_POST['stn_id']) && !empty($_POST['station_name'])) {
+		$stn_id = $link->real_escape_string($_POST['stn_id']);
+		$bname = $link->real_escape_string($_POST['station_name']);
+		$name_update_sql .= "stn_id = '$stn_id', station_name = '$bname', ";
+	}
+	
+	if (!empty($_POST['station_type'])) {
+		$bst_type = $link->real_escape_string($_POST['station_type']);
+		$name_update_sql .= "station_type = '$bst_type', ";
+	}
+
+	$update = $link->query("UPDATE base_stations SET
+		$name_update_sql
+		coordinates 	= '$coordinates',
+		tower_height 	= '$tower_height',
+		elevation		= '$elevation',
+		ip_address		= '$ip_address' 
+		WHERE bst_id = '$bst_id'");
 
 		if(($update) === TRUE){
 			echo"<script>location.href='base_stations.php?base_stations=".$_POST['bst_id']."';</script>";
