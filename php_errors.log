@@ -68670,3 +68670,273 @@ Stack trace:
 [16-Sep-2026 18:36:07 Asia/Manila] PHP   1. {main}() D:\Server\www\projects\victoryfreewifi\index.php:0
 [16-Sep-2026 18:36:07 Asia/Manila] PHP   2. require() D:\Server\www\projects\victoryfreewifi\index.php:73
 [16-Sep-2026 18:36:07 Asia/Manila] PHP   3. require() D:\Server\www\projects\victoryfreewifi\footer.php:1
+[22-Sep-2026 10:25:10 Asia/Manila] PHP Warning:  Undefined variable $mcode in D:\Server\www\projects\victoryfreewifi\sites_count.php on line 65
+[22-Sep-2026 10:25:10 Asia/Manila] PHP Stack trace:
+[22-Sep-2026 10:25:10 Asia/Manila] PHP   1. {main}() D:\Server\www\projects\victoryfreewifi\index.php:0
+[22-Sep-2026 10:25:10 Asia/Manila] PHP   2. require() D:\Server\www\projects\victoryfreewifi\index.php:15
+[22-Sep-2026 10:25:10 Asia/Manila] PHP   3. require() D:\Server\www\projects\victoryfreewifi\rollout_front.php:2
+[22-Sep-2026 10:25:10 Asia/Manila] PHP Warning:  Undefined variable $mcode in D:\Server\www\projects\victoryfreewifi\sites_count.php on line 246
+[22-Sep-2026 10:25:10 Asia/Manila] PHP Stack trace:
+[22-Sep-2026 10:25:10 Asia/Manila] PHP   1. {main}() D:\Server\www\projects\victoryfreewifi\index.php:0
+[22-Sep-2026 10:25:10 Asia/Manila] PHP   2. require() D:\Server\www\projects\victoryfreewifi\index.php:15
+[22-Sep-2026 10:25:10 Asia/Manila] PHP   3. require() D:\Server\www\projects\victoryfreewifi\rollout_front.php:2
+[22-Sep-2026 10:25:10 Asia/Manila] PHP Warning:  Undefined variable $mcode in D:\Server\www\projects\victoryfreewifi\sites_count.php on line 250
+[22-Sep-2026 10:25:10 Asia/Manila] PHP Stack trace:
+[22-Sep-2026 10:25:10 Asia/Manila] PHP   1. {main}() D:\Server\www\projects\victoryfreewifi\index.php:0
+[22-Sep-2026 10:25:10 Asia/Manila] PHP   2. require() D:\Server\www\projects\victoryfreewifi\index.php:15
+[22-Sep-2026 10:25:10 Asia/Manila] PHP   3. require() D:\Server\www\projects\victoryfreewifi\rollout_front.php:2
+[22-Sep-2026 10:25:10 Asia/Manila] PHP Warning:  Undefined variable $mcode in D:\Server\www\projects\victoryfreewifi\sites_count.php on line 254
+[22-Sep-2026 10:25:10 Asia/Manila] PHP Stack trace:
+[22-Sep-2026 10:25:10 Asia/Manila] PHP   1. {main}() D:\Server\www\projects\victoryfreewifi\index.php:0
+[22-Sep-2026 10:25:10 Asia/Manila] PHP   2. require() D:\Server\www\projects\victoryfreewifi\index.php:15
+[22-Sep-2026 10:25:10 Asia/Manila] PHP   3. require() D:\Server\www\projects\victoryfreewifi\rollout_front.php:2
+[22-Sep-2026 10:25:10 Asia/Manila] PHP Warning:  Undefined variable $mcode in D:\Server\www\projects\victoryfreewifi\sites_count.php on line 258
+[22-Sep-2026 10:25:10 Asia/Manila] PHP Stack trace:
+[22-Sep-2026 10:25:10 Asia/Manila] PHP   1. {main}() D:\Server\www\projects\victoryfreewifi\index.php:0
+[22-Sep-2026 10:25:10 Asia/Manila] PHP   2. require() D:\Server\www\projects\victoryfreewifi\index.php:15
+[22-Sep-2026 10:25:10 Asia/Manila] PHP   3. require() D:\Server\www\projects\victoryfreewifi\rollout_front.php:2
+[22-Sep-2026 10:25:10 Asia/Manila] PHP Warning:  Undefined variable $mcode in D:\Server\www\projects\victoryfreewifi\sites_count.php on line 262
+[22-Sep-2026 10:25:10 Asia/Manila] PHP Stack trace:
+[22-Sep-2026 10:25:10 Asia/Manila] PHP   1. {main}() D:\Server\www\projects\victoryfreewifi\index.php:0
+[22-Sep-2026 10:25:10 Asia/Manila] PHP   2. require() D:\Server\www\projects\victoryfreewifi\index.php:15
+[22-Sep-2026 10:25:10 Asia/Manila] PHP   3. require() D:\Server\www\projects\victoryfreewifi\rollout_front.php:2
+[22-Sep-2026 10:25:10 Asia/Manila] PHP Warning:  Undefined variable $mcode in D:\Server\www\projects\victoryfreewifi\sites_count.php on line 266
+[22-Sep-2026 10:25:10 Asia/Manila] PHP Stack trace:
+[22-Sep-2026 10:25:10 Asia/Manila] PHP   1. {main}() D:\Server\www\projects\victoryfreewifi\index.php:0
+[22-Sep-2026 10:25:10 Asia/Manila] PHP   2. require() D:\Server\www\projects\victoryfreewifi\index.php:15
+[22-Sep-2026 10:25:10 Asia/Manila] PHP   3. require() D:\Server\www\projects\victoryfreewifi\rollout_front.php:2
+[22-Sep-2026 10:25:10 Asia/Manila] PHP Warning:  Undefined variable $mcode in D:\Server\www\projects\victoryfreewifi\sites_count.php on line 270
+[22-Sep-2026 10:25:10 Asia/Manila] PHP Stack trace:
+[22-Sep-2026 10:25:10 Asia/Manila] PHP   1. {main}() D:\Server\www\projects\victoryfreewifi\index.php:0
+[22-Sep-2026 10:25:10 Asia/Manila] PHP   2. require() D:\Server\www\projects\victoryfreewifi\index.php:15
+[22-Sep-2026 10:25:10 Asia/Manila] PHP   3. require() D:\Server\www\projects\victoryfreewifi\rollout_front.php:2
+[22-Sep-2026 10:25:10 Asia/Manila] PHP Warning:  Undefined variable $mcode in D:\Server\www\projects\victoryfreewifi\sites_count.php on line 275
+[22-Sep-2026 10:25:10 Asia/Manila] PHP Stack trace:
+[22-Sep-2026 10:25:10 Asia/Manila] PHP   1. {main}() D:\Server\www\projects\victoryfreewifi\index.php:0
+[22-Sep-2026 10:25:10 Asia/Manila] PHP   2. require() D:\Server\www\projects\victoryfreewifi\index.php:15
+[22-Sep-2026 10:25:10 Asia/Manila] PHP   3. require() D:\Server\www\projects\victoryfreewifi\rollout_front.php:2
+[22-Sep-2026 10:25:10 Asia/Manila] PHP Warning:  Undefined variable $mcode in D:\Server\www\projects\victoryfreewifi\sites_count.php on line 279
+[22-Sep-2026 10:25:10 Asia/Manila] PHP Stack trace:
+[22-Sep-2026 10:25:10 Asia/Manila] PHP   1. {main}() D:\Server\www\projects\victoryfreewifi\index.php:0
+[22-Sep-2026 10:25:10 Asia/Manila] PHP   2. require() D:\Server\www\projects\victoryfreewifi\index.php:15
+[22-Sep-2026 10:25:10 Asia/Manila] PHP   3. require() D:\Server\www\projects\victoryfreewifi\rollout_front.php:2
+[22-Sep-2026 10:25:10 Asia/Manila] PHP Warning:  Undefined variable $mcode in D:\Server\www\projects\victoryfreewifi\sites_count.php on line 283
+[22-Sep-2026 10:25:10 Asia/Manila] PHP Stack trace:
+[22-Sep-2026 10:25:10 Asia/Manila] PHP   1. {main}() D:\Server\www\projects\victoryfreewifi\index.php:0
+[22-Sep-2026 10:25:10 Asia/Manila] PHP   2. require() D:\Server\www\projects\victoryfreewifi\index.php:15
+[22-Sep-2026 10:25:10 Asia/Manila] PHP   3. require() D:\Server\www\projects\victoryfreewifi\rollout_front.php:2
+[22-Sep-2026 10:25:10 Asia/Manila] PHP Warning:  Undefined variable $mcode in D:\Server\www\projects\victoryfreewifi\sites_count.php on line 287
+[22-Sep-2026 10:25:10 Asia/Manila] PHP Stack trace:
+[22-Sep-2026 10:25:10 Asia/Manila] PHP   1. {main}() D:\Server\www\projects\victoryfreewifi\index.php:0
+[22-Sep-2026 10:25:10 Asia/Manila] PHP   2. require() D:\Server\www\projects\victoryfreewifi\index.php:15
+[22-Sep-2026 10:25:10 Asia/Manila] PHP   3. require() D:\Server\www\projects\victoryfreewifi\rollout_front.php:2
+[22-Sep-2026 10:25:10 Asia/Manila] PHP Warning:  Undefined variable $mcode in D:\Server\www\projects\victoryfreewifi\sites_count.php on line 291
+[22-Sep-2026 10:25:10 Asia/Manila] PHP Stack trace:
+[22-Sep-2026 10:25:10 Asia/Manila] PHP   1. {main}() D:\Server\www\projects\victoryfreewifi\index.php:0
+[22-Sep-2026 10:25:10 Asia/Manila] PHP   2. require() D:\Server\www\projects\victoryfreewifi\index.php:15
+[22-Sep-2026 10:25:10 Asia/Manila] PHP   3. require() D:\Server\www\projects\victoryfreewifi\rollout_front.php:2
+[22-Sep-2026 10:25:10 Asia/Manila] PHP Warning:  Undefined variable $mcode in D:\Server\www\projects\victoryfreewifi\sites_count.php on line 295
+[22-Sep-2026 10:25:10 Asia/Manila] PHP Stack trace:
+[22-Sep-2026 10:25:10 Asia/Manila] PHP   1. {main}() D:\Server\www\projects\victoryfreewifi\index.php:0
+[22-Sep-2026 10:25:10 Asia/Manila] PHP   2. require() D:\Server\www\projects\victoryfreewifi\index.php:15
+[22-Sep-2026 10:25:10 Asia/Manila] PHP   3. require() D:\Server\www\projects\victoryfreewifi\rollout_front.php:2
+[22-Sep-2026 10:25:10 Asia/Manila] PHP Warning:  Undefined variable $mcode in D:\Server\www\projects\victoryfreewifi\sites_count.php on line 299
+[22-Sep-2026 10:25:10 Asia/Manila] PHP Stack trace:
+[22-Sep-2026 10:25:10 Asia/Manila] PHP   1. {main}() D:\Server\www\projects\victoryfreewifi\index.php:0
+[22-Sep-2026 10:25:10 Asia/Manila] PHP   2. require() D:\Server\www\projects\victoryfreewifi\index.php:15
+[22-Sep-2026 10:25:10 Asia/Manila] PHP   3. require() D:\Server\www\projects\victoryfreewifi\rollout_front.php:2
+[22-Sep-2026 10:25:10 Asia/Manila] PHP Warning:  Undefined variable $mcode in D:\Server\www\projects\victoryfreewifi\sites_count.php on line 303
+[22-Sep-2026 10:25:10 Asia/Manila] PHP Stack trace:
+[22-Sep-2026 10:25:10 Asia/Manila] PHP   1. {main}() D:\Server\www\projects\victoryfreewifi\index.php:0
+[22-Sep-2026 10:25:10 Asia/Manila] PHP   2. require() D:\Server\www\projects\victoryfreewifi\index.php:15
+[22-Sep-2026 10:25:10 Asia/Manila] PHP   3. require() D:\Server\www\projects\victoryfreewifi\rollout_front.php:2
+[22-Sep-2026 10:25:10 Asia/Manila] PHP Warning:  Undefined variable $mcode in D:\Server\www\projects\victoryfreewifi\sites_count.php on line 307
+[22-Sep-2026 10:25:10 Asia/Manila] PHP Stack trace:
+[22-Sep-2026 10:25:10 Asia/Manila] PHP   1. {main}() D:\Server\www\projects\victoryfreewifi\index.php:0
+[22-Sep-2026 10:25:10 Asia/Manila] PHP   2. require() D:\Server\www\projects\victoryfreewifi\index.php:15
+[22-Sep-2026 10:25:10 Asia/Manila] PHP   3. require() D:\Server\www\projects\victoryfreewifi\rollout_front.php:2
+[22-Sep-2026 10:25:10 Asia/Manila] PHP Warning:  Undefined variable $mcode in D:\Server\www\projects\victoryfreewifi\sites_count.php on line 312
+[22-Sep-2026 10:25:10 Asia/Manila] PHP Stack trace:
+[22-Sep-2026 10:25:10 Asia/Manila] PHP   1. {main}() D:\Server\www\projects\victoryfreewifi\index.php:0
+[22-Sep-2026 10:25:10 Asia/Manila] PHP   2. require() D:\Server\www\projects\victoryfreewifi\index.php:15
+[22-Sep-2026 10:25:10 Asia/Manila] PHP   3. require() D:\Server\www\projects\victoryfreewifi\rollout_front.php:2
+[22-Sep-2026 10:25:10 Asia/Manila] PHP Warning:  Undefined variable $mcode in D:\Server\www\projects\victoryfreewifi\sites_count.php on line 316
+[22-Sep-2026 10:25:10 Asia/Manila] PHP Stack trace:
+[22-Sep-2026 10:25:10 Asia/Manila] PHP   1. {main}() D:\Server\www\projects\victoryfreewifi\index.php:0
+[22-Sep-2026 10:25:10 Asia/Manila] PHP   2. require() D:\Server\www\projects\victoryfreewifi\index.php:15
+[22-Sep-2026 10:25:10 Asia/Manila] PHP   3. require() D:\Server\www\projects\victoryfreewifi\rollout_front.php:2
+[22-Sep-2026 10:25:10 Asia/Manila] PHP Warning:  Undefined variable $mcode in D:\Server\www\projects\victoryfreewifi\sites_count.php on line 320
+[22-Sep-2026 10:25:10 Asia/Manila] PHP Stack trace:
+[22-Sep-2026 10:25:10 Asia/Manila] PHP   1. {main}() D:\Server\www\projects\victoryfreewifi\index.php:0
+[22-Sep-2026 10:25:10 Asia/Manila] PHP   2. require() D:\Server\www\projects\victoryfreewifi\index.php:15
+[22-Sep-2026 10:25:10 Asia/Manila] PHP   3. require() D:\Server\www\projects\victoryfreewifi\rollout_front.php:2
+[22-Sep-2026 10:25:10 Asia/Manila] PHP Warning:  Undefined variable $mcode in D:\Server\www\projects\victoryfreewifi\sites_count.php on line 324
+[22-Sep-2026 10:25:10 Asia/Manila] PHP Stack trace:
+[22-Sep-2026 10:25:10 Asia/Manila] PHP   1. {main}() D:\Server\www\projects\victoryfreewifi\index.php:0
+[22-Sep-2026 10:25:10 Asia/Manila] PHP   2. require() D:\Server\www\projects\victoryfreewifi\index.php:15
+[22-Sep-2026 10:25:10 Asia/Manila] PHP   3. require() D:\Server\www\projects\victoryfreewifi\rollout_front.php:2
+[22-Sep-2026 10:25:10 Asia/Manila] PHP Warning:  Undefined variable $mcode in D:\Server\www\projects\victoryfreewifi\sites_count.php on line 328
+[22-Sep-2026 10:25:10 Asia/Manila] PHP Stack trace:
+[22-Sep-2026 10:25:10 Asia/Manila] PHP   1. {main}() D:\Server\www\projects\victoryfreewifi\index.php:0
+[22-Sep-2026 10:25:10 Asia/Manila] PHP   2. require() D:\Server\www\projects\victoryfreewifi\index.php:15
+[22-Sep-2026 10:25:10 Asia/Manila] PHP   3. require() D:\Server\www\projects\victoryfreewifi\rollout_front.php:2
+[22-Sep-2026 10:25:10 Asia/Manila] PHP Warning:  Undefined variable $mcode in D:\Server\www\projects\victoryfreewifi\sites_count.php on line 332
+[22-Sep-2026 10:25:10 Asia/Manila] PHP Stack trace:
+[22-Sep-2026 10:25:10 Asia/Manila] PHP   1. {main}() D:\Server\www\projects\victoryfreewifi\index.php:0
+[22-Sep-2026 10:25:10 Asia/Manila] PHP   2. require() D:\Server\www\projects\victoryfreewifi\index.php:15
+[22-Sep-2026 10:25:10 Asia/Manila] PHP   3. require() D:\Server\www\projects\victoryfreewifi\rollout_front.php:2
+[22-Sep-2026 10:25:10 Asia/Manila] PHP Warning:  Undefined variable $mcode in D:\Server\www\projects\victoryfreewifi\sites_count.php on line 336
+[22-Sep-2026 10:25:10 Asia/Manila] PHP Stack trace:
+[22-Sep-2026 10:25:10 Asia/Manila] PHP   1. {main}() D:\Server\www\projects\victoryfreewifi\index.php:0
+[22-Sep-2026 10:25:10 Asia/Manila] PHP   2. require() D:\Server\www\projects\victoryfreewifi\index.php:15
+[22-Sep-2026 10:25:10 Asia/Manila] PHP   3. require() D:\Server\www\projects\victoryfreewifi\rollout_front.php:2
+[22-Sep-2026 10:25:10 Asia/Manila] PHP Warning:  Undefined variable $mcode in D:\Server\www\projects\victoryfreewifi\sites_count.php on line 340
+[22-Sep-2026 10:25:10 Asia/Manila] PHP Stack trace:
+[22-Sep-2026 10:25:10 Asia/Manila] PHP   1. {main}() D:\Server\www\projects\victoryfreewifi\index.php:0
+[22-Sep-2026 10:25:10 Asia/Manila] PHP   2. require() D:\Server\www\projects\victoryfreewifi\index.php:15
+[22-Sep-2026 10:25:10 Asia/Manila] PHP   3. require() D:\Server\www\projects\victoryfreewifi\rollout_front.php:2
+[22-Sep-2026 10:25:10 Asia/Manila] PHP Warning:  Undefined variable $mcode in D:\Server\www\projects\victoryfreewifi\sites_count.php on line 350
+[22-Sep-2026 10:25:10 Asia/Manila] PHP Stack trace:
+[22-Sep-2026 10:25:10 Asia/Manila] PHP   1. {main}() D:\Server\www\projects\victoryfreewifi\index.php:0
+[22-Sep-2026 10:25:10 Asia/Manila] PHP   2. require() D:\Server\www\projects\victoryfreewifi\index.php:15
+[22-Sep-2026 10:25:10 Asia/Manila] PHP   3. require() D:\Server\www\projects\victoryfreewifi\rollout_front.php:2
+[22-Sep-2026 10:25:10 Asia/Manila] PHP Warning:  Undefined variable $mcode in D:\Server\www\projects\victoryfreewifi\sites_count.php on line 355
+[22-Sep-2026 10:25:10 Asia/Manila] PHP Stack trace:
+[22-Sep-2026 10:25:10 Asia/Manila] PHP   1. {main}() D:\Server\www\projects\victoryfreewifi\index.php:0
+[22-Sep-2026 10:25:10 Asia/Manila] PHP   2. require() D:\Server\www\projects\victoryfreewifi\index.php:15
+[22-Sep-2026 10:25:10 Asia/Manila] PHP   3. require() D:\Server\www\projects\victoryfreewifi\rollout_front.php:2
+[22-Sep-2026 10:25:10 Asia/Manila] PHP Warning:  Undefined variable $mcode in D:\Server\www\projects\victoryfreewifi\sites_count.php on line 65
+[22-Sep-2026 10:25:10 Asia/Manila] PHP Stack trace:
+[22-Sep-2026 10:25:10 Asia/Manila] PHP   1. {main}() D:\Server\www\projects\victoryfreewifi\index.php:0
+[22-Sep-2026 10:25:10 Asia/Manila] PHP   2. require() D:\Server\www\projects\victoryfreewifi\index.php:73
+[22-Sep-2026 10:25:10 Asia/Manila] PHP   3. require() D:\Server\www\projects\victoryfreewifi\footer.php:1
+[22-Sep-2026 10:25:10 Asia/Manila] PHP Warning:  Undefined variable $mcode in D:\Server\www\projects\victoryfreewifi\sites_count.php on line 246
+[22-Sep-2026 10:25:10 Asia/Manila] PHP Stack trace:
+[22-Sep-2026 10:25:10 Asia/Manila] PHP   1. {main}() D:\Server\www\projects\victoryfreewifi\index.php:0
+[22-Sep-2026 10:25:10 Asia/Manila] PHP   2. require() D:\Server\www\projects\victoryfreewifi\index.php:73
+[22-Sep-2026 10:25:10 Asia/Manila] PHP   3. require() D:\Server\www\projects\victoryfreewifi\footer.php:1
+[22-Sep-2026 10:25:10 Asia/Manila] PHP Warning:  Undefined variable $mcode in D:\Server\www\projects\victoryfreewifi\sites_count.php on line 250
+[22-Sep-2026 10:25:10 Asia/Manila] PHP Stack trace:
+[22-Sep-2026 10:25:10 Asia/Manila] PHP   1. {main}() D:\Server\www\projects\victoryfreewifi\index.php:0
+[22-Sep-2026 10:25:10 Asia/Manila] PHP   2. require() D:\Server\www\projects\victoryfreewifi\index.php:73
+[22-Sep-2026 10:25:10 Asia/Manila] PHP   3. require() D:\Server\www\projects\victoryfreewifi\footer.php:1
+[22-Sep-2026 10:25:10 Asia/Manila] PHP Warning:  Undefined variable $mcode in D:\Server\www\projects\victoryfreewifi\sites_count.php on line 254
+[22-Sep-2026 10:25:10 Asia/Manila] PHP Stack trace:
+[22-Sep-2026 10:25:10 Asia/Manila] PHP   1. {main}() D:\Server\www\projects\victoryfreewifi\index.php:0
+[22-Sep-2026 10:25:10 Asia/Manila] PHP   2. require() D:\Server\www\projects\victoryfreewifi\index.php:73
+[22-Sep-2026 10:25:10 Asia/Manila] PHP   3. require() D:\Server\www\projects\victoryfreewifi\footer.php:1
+[22-Sep-2026 10:25:10 Asia/Manila] PHP Warning:  Undefined variable $mcode in D:\Server\www\projects\victoryfreewifi\sites_count.php on line 258
+[22-Sep-2026 10:25:10 Asia/Manila] PHP Stack trace:
+[22-Sep-2026 10:25:10 Asia/Manila] PHP   1. {main}() D:\Server\www\projects\victoryfreewifi\index.php:0
+[22-Sep-2026 10:25:10 Asia/Manila] PHP   2. require() D:\Server\www\projects\victoryfreewifi\index.php:73
+[22-Sep-2026 10:25:10 Asia/Manila] PHP   3. require() D:\Server\www\projects\victoryfreewifi\footer.php:1
+[22-Sep-2026 10:25:10 Asia/Manila] PHP Warning:  Undefined variable $mcode in D:\Server\www\projects\victoryfreewifi\sites_count.php on line 262
+[22-Sep-2026 10:25:10 Asia/Manila] PHP Stack trace:
+[22-Sep-2026 10:25:10 Asia/Manila] PHP   1. {main}() D:\Server\www\projects\victoryfreewifi\index.php:0
+[22-Sep-2026 10:25:10 Asia/Manila] PHP   2. require() D:\Server\www\projects\victoryfreewifi\index.php:73
+[22-Sep-2026 10:25:10 Asia/Manila] PHP   3. require() D:\Server\www\projects\victoryfreewifi\footer.php:1
+[22-Sep-2026 10:25:10 Asia/Manila] PHP Warning:  Undefined variable $mcode in D:\Server\www\projects\victoryfreewifi\sites_count.php on line 266
+[22-Sep-2026 10:25:10 Asia/Manila] PHP Stack trace:
+[22-Sep-2026 10:25:10 Asia/Manila] PHP   1. {main}() D:\Server\www\projects\victoryfreewifi\index.php:0
+[22-Sep-2026 10:25:10 Asia/Manila] PHP   2. require() D:\Server\www\projects\victoryfreewifi\index.php:73
+[22-Sep-2026 10:25:10 Asia/Manila] PHP   3. require() D:\Server\www\projects\victoryfreewifi\footer.php:1
+[22-Sep-2026 10:25:10 Asia/Manila] PHP Warning:  Undefined variable $mcode in D:\Server\www\projects\victoryfreewifi\sites_count.php on line 270
+[22-Sep-2026 10:25:10 Asia/Manila] PHP Stack trace:
+[22-Sep-2026 10:25:10 Asia/Manila] PHP   1. {main}() D:\Server\www\projects\victoryfreewifi\index.php:0
+[22-Sep-2026 10:25:10 Asia/Manila] PHP   2. require() D:\Server\www\projects\victoryfreewifi\index.php:73
+[22-Sep-2026 10:25:10 Asia/Manila] PHP   3. require() D:\Server\www\projects\victoryfreewifi\footer.php:1
+[22-Sep-2026 10:25:10 Asia/Manila] PHP Warning:  Undefined variable $mcode in D:\Server\www\projects\victoryfreewifi\sites_count.php on line 275
+[22-Sep-2026 10:25:10 Asia/Manila] PHP Stack trace:
+[22-Sep-2026 10:25:10 Asia/Manila] PHP   1. {main}() D:\Server\www\projects\victoryfreewifi\index.php:0
+[22-Sep-2026 10:25:10 Asia/Manila] PHP   2. require() D:\Server\www\projects\victoryfreewifi\index.php:73
+[22-Sep-2026 10:25:10 Asia/Manila] PHP   3. require() D:\Server\www\projects\victoryfreewifi\footer.php:1
+[22-Sep-2026 10:25:10 Asia/Manila] PHP Warning:  Undefined variable $mcode in D:\Server\www\projects\victoryfreewifi\sites_count.php on line 279
+[22-Sep-2026 10:25:10 Asia/Manila] PHP Stack trace:
+[22-Sep-2026 10:25:10 Asia/Manila] PHP   1. {main}() D:\Server\www\projects\victoryfreewifi\index.php:0
+[22-Sep-2026 10:25:10 Asia/Manila] PHP   2. require() D:\Server\www\projects\victoryfreewifi\index.php:73
+[22-Sep-2026 10:25:10 Asia/Manila] PHP   3. require() D:\Server\www\projects\victoryfreewifi\footer.php:1
+[22-Sep-2026 10:25:10 Asia/Manila] PHP Warning:  Undefined variable $mcode in D:\Server\www\projects\victoryfreewifi\sites_count.php on line 283
+[22-Sep-2026 10:25:10 Asia/Manila] PHP Stack trace:
+[22-Sep-2026 10:25:10 Asia/Manila] PHP   1. {main}() D:\Server\www\projects\victoryfreewifi\index.php:0
+[22-Sep-2026 10:25:10 Asia/Manila] PHP   2. require() D:\Server\www\projects\victoryfreewifi\index.php:73
+[22-Sep-2026 10:25:10 Asia/Manila] PHP   3. require() D:\Server\www\projects\victoryfreewifi\footer.php:1
+[22-Sep-2026 10:25:10 Asia/Manila] PHP Warning:  Undefined variable $mcode in D:\Server\www\projects\victoryfreewifi\sites_count.php on line 287
+[22-Sep-2026 10:25:10 Asia/Manila] PHP Stack trace:
+[22-Sep-2026 10:25:10 Asia/Manila] PHP   1. {main}() D:\Server\www\projects\victoryfreewifi\index.php:0
+[22-Sep-2026 10:25:10 Asia/Manila] PHP   2. require() D:\Server\www\projects\victoryfreewifi\index.php:73
+[22-Sep-2026 10:25:10 Asia/Manila] PHP   3. require() D:\Server\www\projects\victoryfreewifi\footer.php:1
+[22-Sep-2026 10:25:10 Asia/Manila] PHP Warning:  Undefined variable $mcode in D:\Server\www\projects\victoryfreewifi\sites_count.php on line 291
+[22-Sep-2026 10:25:10 Asia/Manila] PHP Stack trace:
+[22-Sep-2026 10:25:10 Asia/Manila] PHP   1. {main}() D:\Server\www\projects\victoryfreewifi\index.php:0
+[22-Sep-2026 10:25:10 Asia/Manila] PHP   2. require() D:\Server\www\projects\victoryfreewifi\index.php:73
+[22-Sep-2026 10:25:10 Asia/Manila] PHP   3. require() D:\Server\www\projects\victoryfreewifi\footer.php:1
+[22-Sep-2026 10:25:10 Asia/Manila] PHP Warning:  Undefined variable $mcode in D:\Server\www\projects\victoryfreewifi\sites_count.php on line 295
+[22-Sep-2026 10:25:10 Asia/Manila] PHP Stack trace:
+[22-Sep-2026 10:25:10 Asia/Manila] PHP   1. {main}() D:\Server\www\projects\victoryfreewifi\index.php:0
+[22-Sep-2026 10:25:10 Asia/Manila] PHP   2. require() D:\Server\www\projects\victoryfreewifi\index.php:73
+[22-Sep-2026 10:25:10 Asia/Manila] PHP   3. require() D:\Server\www\projects\victoryfreewifi\footer.php:1
+[22-Sep-2026 10:25:10 Asia/Manila] PHP Warning:  Undefined variable $mcode in D:\Server\www\projects\victoryfreewifi\sites_count.php on line 299
+[22-Sep-2026 10:25:10 Asia/Manila] PHP Stack trace:
+[22-Sep-2026 10:25:10 Asia/Manila] PHP   1. {main}() D:\Server\www\projects\victoryfreewifi\index.php:0
+[22-Sep-2026 10:25:10 Asia/Manila] PHP   2. require() D:\Server\www\projects\victoryfreewifi\index.php:73
+[22-Sep-2026 10:25:10 Asia/Manila] PHP   3. require() D:\Server\www\projects\victoryfreewifi\footer.php:1
+[22-Sep-2026 10:25:10 Asia/Manila] PHP Warning:  Undefined variable $mcode in D:\Server\www\projects\victoryfreewifi\sites_count.php on line 303
+[22-Sep-2026 10:25:10 Asia/Manila] PHP Stack trace:
+[22-Sep-2026 10:25:10 Asia/Manila] PHP   1. {main}() D:\Server\www\projects\victoryfreewifi\index.php:0
+[22-Sep-2026 10:25:10 Asia/Manila] PHP   2. require() D:\Server\www\projects\victoryfreewifi\index.php:73
+[22-Sep-2026 10:25:10 Asia/Manila] PHP   3. require() D:\Server\www\projects\victoryfreewifi\footer.php:1
+[22-Sep-2026 10:25:10 Asia/Manila] PHP Warning:  Undefined variable $mcode in D:\Server\www\projects\victoryfreewifi\sites_count.php on line 307
+[22-Sep-2026 10:25:10 Asia/Manila] PHP Stack trace:
+[22-Sep-2026 10:25:10 Asia/Manila] PHP   1. {main}() D:\Server\www\projects\victoryfreewifi\index.php:0
+[22-Sep-2026 10:25:10 Asia/Manila] PHP   2. require() D:\Server\www\projects\victoryfreewifi\index.php:73
+[22-Sep-2026 10:25:10 Asia/Manila] PHP   3. require() D:\Server\www\projects\victoryfreewifi\footer.php:1
+[22-Sep-2026 10:25:10 Asia/Manila] PHP Warning:  Undefined variable $mcode in D:\Server\www\projects\victoryfreewifi\sites_count.php on line 312
+[22-Sep-2026 10:25:10 Asia/Manila] PHP Stack trace:
+[22-Sep-2026 10:25:10 Asia/Manila] PHP   1. {main}() D:\Server\www\projects\victoryfreewifi\index.php:0
+[22-Sep-2026 10:25:10 Asia/Manila] PHP   2. require() D:\Server\www\projects\victoryfreewifi\index.php:73
+[22-Sep-2026 10:25:10 Asia/Manila] PHP   3. require() D:\Server\www\projects\victoryfreewifi\footer.php:1
+[22-Sep-2026 10:25:10 Asia/Manila] PHP Warning:  Undefined variable $mcode in D:\Server\www\projects\victoryfreewifi\sites_count.php on line 316
+[22-Sep-2026 10:25:10 Asia/Manila] PHP Stack trace:
+[22-Sep-2026 10:25:10 Asia/Manila] PHP   1. {main}() D:\Server\www\projects\victoryfreewifi\index.php:0
+[22-Sep-2026 10:25:10 Asia/Manila] PHP   2. require() D:\Server\www\projects\victoryfreewifi\index.php:73
+[22-Sep-2026 10:25:10 Asia/Manila] PHP   3. require() D:\Server\www\projects\victoryfreewifi\footer.php:1
+[22-Sep-2026 10:25:10 Asia/Manila] PHP Warning:  Undefined variable $mcode in D:\Server\www\projects\victoryfreewifi\sites_count.php on line 320
+[22-Sep-2026 10:25:10 Asia/Manila] PHP Stack trace:
+[22-Sep-2026 10:25:10 Asia/Manila] PHP   1. {main}() D:\Server\www\projects\victoryfreewifi\index.php:0
+[22-Sep-2026 10:25:10 Asia/Manila] PHP   2. require() D:\Server\www\projects\victoryfreewifi\index.php:73
+[22-Sep-2026 10:25:10 Asia/Manila] PHP   3. require() D:\Server\www\projects\victoryfreewifi\footer.php:1
+[22-Sep-2026 10:25:10 Asia/Manila] PHP Warning:  Undefined variable $mcode in D:\Server\www\projects\victoryfreewifi\sites_count.php on line 324
+[22-Sep-2026 10:25:10 Asia/Manila] PHP Stack trace:
+[22-Sep-2026 10:25:10 Asia/Manila] PHP   1. {main}() D:\Server\www\projects\victoryfreewifi\index.php:0
+[22-Sep-2026 10:25:10 Asia/Manila] PHP   2. require() D:\Server\www\projects\victoryfreewifi\index.php:73
+[22-Sep-2026 10:25:10 Asia/Manila] PHP   3. require() D:\Server\www\projects\victoryfreewifi\footer.php:1
+[22-Sep-2026 10:25:10 Asia/Manila] PHP Warning:  Undefined variable $mcode in D:\Server\www\projects\victoryfreewifi\sites_count.php on line 328
+[22-Sep-2026 10:25:10 Asia/Manila] PHP Stack trace:
+[22-Sep-2026 10:25:10 Asia/Manila] PHP   1. {main}() D:\Server\www\projects\victoryfreewifi\index.php:0
+[22-Sep-2026 10:25:10 Asia/Manila] PHP   2. require() D:\Server\www\projects\victoryfreewifi\index.php:73
+[22-Sep-2026 10:25:10 Asia/Manila] PHP   3. require() D:\Server\www\projects\victoryfreewifi\footer.php:1
+[22-Sep-2026 10:25:10 Asia/Manila] PHP Warning:  Undefined variable $mcode in D:\Server\www\projects\victoryfreewifi\sites_count.php on line 332
+[22-Sep-2026 10:25:10 Asia/Manila] PHP Stack trace:
+[22-Sep-2026 10:25:10 Asia/Manila] PHP   1. {main}() D:\Server\www\projects\victoryfreewifi\index.php:0
+[22-Sep-2026 10:25:10 Asia/Manila] PHP   2. require() D:\Server\www\projects\victoryfreewifi\index.php:73
+[22-Sep-2026 10:25:10 Asia/Manila] PHP   3. require() D:\Server\www\projects\victoryfreewifi\footer.php:1
+[22-Sep-2026 10:25:10 Asia/Manila] PHP Warning:  Undefined variable $mcode in D:\Server\www\projects\victoryfreewifi\sites_count.php on line 336
+[22-Sep-2026 10:25:10 Asia/Manila] PHP Stack trace:
+[22-Sep-2026 10:25:10 Asia/Manila] PHP   1. {main}() D:\Server\www\projects\victoryfreewifi\index.php:0
+[22-Sep-2026 10:25:10 Asia/Manila] PHP   2. require() D:\Server\www\projects\victoryfreewifi\index.php:73
+[22-Sep-2026 10:25:10 Asia/Manila] PHP   3. require() D:\Server\www\projects\victoryfreewifi\footer.php:1
+[22-Sep-2026 10:25:10 Asia/Manila] PHP Warning:  Undefined variable $mcode in D:\Server\www\projects\victoryfreewifi\sites_count.php on line 340
+[22-Sep-2026 10:25:10 Asia/Manila] PHP Stack trace:
+[22-Sep-2026 10:25:10 Asia/Manila] PHP   1. {main}() D:\Server\www\projects\victoryfreewifi\index.php:0
+[22-Sep-2026 10:25:10 Asia/Manila] PHP   2. require() D:\Server\www\projects\victoryfreewifi\index.php:73
+[22-Sep-2026 10:25:10 Asia/Manila] PHP   3. require() D:\Server\www\projects\victoryfreewifi\footer.php:1
+[22-Sep-2026 10:25:10 Asia/Manila] PHP Warning:  Undefined variable $mcode in D:\Server\www\projects\victoryfreewifi\sites_count.php on line 350
+[22-Sep-2026 10:25:10 Asia/Manila] PHP Stack trace:
+[22-Sep-2026 10:25:10 Asia/Manila] PHP   1. {main}() D:\Server\www\projects\victoryfreewifi\index.php:0
+[22-Sep-2026 10:25:10 Asia/Manila] PHP   2. require() D:\Server\www\projects\victoryfreewifi\index.php:73
+[22-Sep-2026 10:25:10 Asia/Manila] PHP   3. require() D:\Server\www\projects\victoryfreewifi\footer.php:1
+[22-Sep-2026 10:25:10 Asia/Manila] PHP Warning:  Undefined variable $mcode in D:\Server\www\projects\victoryfreewifi\sites_count.php on line 355
+[22-Sep-2026 10:25:10 Asia/Manila] PHP Stack trace:
+[22-Sep-2026 10:25:10 Asia/Manila] PHP   1. {main}() D:\Server\www\projects\victoryfreewifi\index.php:0
+[22-Sep-2026 10:25:10 Asia/Manila] PHP   2. require() D:\Server\www\projects\victoryfreewifi\index.php:73
+[22-Sep-2026 10:25:10 Asia/Manila] PHP   3. require() D:\Server\www\projects\victoryfreewifi\footer.php:1
