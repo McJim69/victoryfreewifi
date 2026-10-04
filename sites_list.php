@@ -79,7 +79,7 @@
 
 <script>setActive("sites");</script>
 
-<main id="main" style="margin-top:193px;min-height:610px">
+<main id="main" style="margin-top:193px;">
 	<?php if ($ex->num_rows > 0) { ?>
 	<div class="container">
 		<table class="table bg-secondary text-light">

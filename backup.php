@@ -29,7 +29,7 @@
 			</form>
 		</div>
 	</section>
-	<section style="margin-top:-45px;min-height:540px;" >
+	<section style="margin-top:-45px;" >
 		<div class="container">
 			<div class="row">		
 

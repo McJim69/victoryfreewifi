@@ -5,7 +5,6 @@
 ?>
 
 <script>setActive("team");</script>
-<script>setActive("admin");</script>
 <script>setActive("installers");</script>
 
 <main id="main">
@@ -35,7 +34,7 @@
 			</h2>
 		</div>
 	</section>
-	<section style="min-height:500px;" >
+	<section style="" >
 		<div class="container" data-aos="fade-up">
 			<div class="row justify-content-center">		
 				<?php					

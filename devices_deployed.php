@@ -70,7 +70,7 @@
 			</h2>
 		</div>
 	</section>
-	<section style="margin-top:-45px;min-height:550px;" >
+	<section style="margin-top:-45px;" >
 		<div class="container" data-aos="fade-up">
 			<div class="row">		
 			<?php	

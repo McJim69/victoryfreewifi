@@ -83,7 +83,7 @@
 </style>
 
 <main id="main">
-    <section style="margin: 175px 15px 0 15px;">
+    <section style="margin: 125px 15px 0 15px;">
 		<div class="container">
 			<div class="row justify-content-center">	
 				<?php

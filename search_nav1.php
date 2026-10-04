@@ -40,15 +40,7 @@
   <div class="container d-flex align-items-center justify-content-between">
     <h1 class="logo"><a href="sites_list.php" class="scrollto" style="color:#fff">SITES</a></h1>
     
-    <span id="refresh">
-      <a href="sites_status_mon.php">
-        <button class="btn btn-light" style="padding:3px 5px;font-size:15px">
-          Active: <?php echo $active;?> 
-          <i class="fa fa-refresh fa-spin text-primary" aria-hidden="true"></i>
-          Down: <?php echo $downed;?> 
-        </button>
-      </a>
-    </span> 
+
 
     <form method="post" enctype="multipart/form-data">
       <nav class="nav-menu d-none d-lg-block">
@@ -71,7 +63,7 @@
               <option>Municipality</option>
               <?php
                 if ($barangays === "" || $barangays === "Barangays") {
-                  $ex2 = $link->query("SELECT mcode FROM sites GROUP BY mcode ORDER BY mcode") or die(mysqli_error($link));
+                  $ex2 = $link->query("SELECT mcode FROM sites WHERE TRIM(mcode) != '' AND mcode IS NOT NULL GROUP BY mcode ORDER BY mcode") or die(mysqli_error($link));
                 } else {
                   $ex2 = $link->query("SELECT mcode FROM sites WHERE barangay='$barangays' GROUP BY mcode ORDER BY mcode") or die(mysqli_error($link));
                 }
@@ -82,14 +74,14 @@
               ?>
             </select>
             <!-- Barangays dropdown -->
-            <select class="btn btn-light"
+            <select class="btn btn-light" style="text-transform:capitalize;"
               onchange="jump('?municipality=<?php echo $municipal; ?>&barangays='+this.value)">
               <option>Barangays</option>
               <?php
                 if ($municipal === "" || $municipal === "Municipality") {
-                  $ex2 = $link->query("SELECT barangay FROM sites GROUP BY barangay ORDER BY barangay") or die(mysqli_error($link));
+                  $ex2 = $link->query("SELECT barangay FROM barangays WHERE TRIM(barangay) != '' AND barangay IS NOT NULL GROUP BY barangay ORDER BY barangay") or die(mysqli_error($link));
                 } else {
-                  $ex2 = $link->query("SELECT barangay FROM sites WHERE mcode='$municipal' GROUP BY barangay ORDER BY barangay") or die(mysqli_error($link));
+                  $ex2 = $link->query("SELECT barangay FROM barangays WHERE mcode='$municipal' GROUP BY barangay ORDER BY barangay") or die(mysqli_error($link));
                 }
                 while ($rs = mysqli_fetch_array($ex2)) {
                   $selected = ($barangays === $rs[0]) ? "selected" : "";
@@ -103,3 +95,4 @@
     </form>
   </div>    
 </header>
+

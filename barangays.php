@@ -45,7 +45,7 @@
 <script>setActive("barangays");</script>
 
 <!-- Responsive table implemented below -->
-<main id="main" style="margin-top:175px;min-height:580px">
+<main id="main" style="margin-top:175px;">
 	<?php if ($ex->num_rows > 0) { ?>
 	<div class="container">
 		<table class="table bg-secondary text-light">

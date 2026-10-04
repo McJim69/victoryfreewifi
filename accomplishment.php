@@ -19,26 +19,31 @@
 	
 	if(isset($_POST["search"])){
 		
-		if($_POST["lead"]!==""){
+		if(isset($_POST["lead"]) && $_POST["lead"]!==""){
 			$lead=$_POST["lead"];
-			$inst="and installer='".$_POST["lead"]."'";
-			$repr="and repair_team='".$_POST["lead"]."'";
+			$esc_lead=$link->real_escape_string($lead);
+			$inst="and installer='".$esc_lead."'";
+			$repr="and repair_team='".$esc_lead."'";
 		}else{
 			$lead="Installer (All)";
 			$inst="and installer=installer";
 			$repr="and repair_team=repair_team";
 		}
 
-		if($_POST["from"]!==""){
-			$dafr=$_POST["from"];
+		if(isset($_POST["from"]) && $_POST["from"]!==""){
+			$dafr=$link->real_escape_string($_POST["from"]);
 		}else{
 			$datQ=$link->query("SELECT inst_date AS date FROM sites WHERE inst_date is not NULL ORDER BY inst_date LIMIT 1");
-			$datR=mysqli_fetch_array($datQ);
-			$dafr=$datR["date"];
+			if($datQ && $datQ->num_rows > 0) {
+				$datR=mysqli_fetch_array($datQ);
+				$dafr=$datR["date"];
+			} else {
+				$dafr=date("Y-m-d");
+			}
 		}
 		
-		if($_POST["dato"]!==""){
-			$dato=$_POST["dato"];
+		if(isset($_POST["dato"]) && $_POST["dato"]!==""){
+			$dato=$link->real_escape_string($_POST["dato"]);
 		}else{
 			$dato=date("Y-m-d");
 		}
@@ -46,7 +51,7 @@
 		$exi=$link->query("select * from sites where inst_date between '$dafr' and '$dato' $inst order by mcode") or die(mysqli_error($link));		
 		$exr=$link->query("select * from sites where repair_date between '$dafr' and '$dato' $repr order by mcode") or die(mysqli_error($link));		
 	}	
-	$link->query("UPDATE sites set inst_date='2022-06-20' WHERE inst_date=null ");
+	$link->query("UPDATE sites set inst_date='2022-06-20' WHERE inst_date IS NULL ");
 
 	require("header.php");
 	require("menunav.php");
@@ -55,9 +60,8 @@
 <script>setActive("admin");</script>
 <script>setActive("rollout");</script>
 
+<main id="main" class="main">
 <form action="#" method="post" enctype="multipart/form-data">
-
-<main id="main">
 	<section id="breadcrumbs" class="breadcrumbs" >
 		<div class="container" style="margin-bottom:-10px">
 			<ol>
@@ -68,7 +72,7 @@
 			<h2>Rollout || Accomplishment</h2>
 		</div>
 	</section>	
-	<section style="min-height:495px">
+	<section>
 		<div class="container" style="margin-top:-45px;margin-bottom:15px">	
 			<input  class="btn btn-sm btn-light" style="width:150px;margin-top:5px;border:1px solid #bbb" onfocus="(this. type='date')" placeholder="Date from" name="from">
 			<input  class="btn btn-sm btn-light" style="width:150px;margin-top:5px;border:1px solid #bbb" onfocus="(this. type='date')" placeholder="Date to" name="dato">
@@ -265,10 +269,7 @@
 										</tr>";
 										$i++;
 										}
-										$cls='';
-										if(!empty($rsr[0])){
-											$cls="style='border-bottom:1px solid #bbb;height:20px;padding:5px' onclick=\"jump('site_details.php?sites={$rsr[0]}')\"";
-										}
+										$cls="style='border-bottom:1px solid #bbb;height:20px;padding:5px'";
 										echo"
 										<td $cls></td>
 										<td $cls></td>
@@ -285,8 +286,8 @@
 			</div>			
 		</div>
 	</section>
-</main>
-
 </form>			
+
+</main>
 
 <?php require("footer.php");?>

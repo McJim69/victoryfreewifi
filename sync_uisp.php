@@ -17,7 +17,11 @@ $verify_ssl = false;
 // ==========================================
 
 ?>
-<main class="main" style="min-height:614px;">
+
+<script>setActive("admin");</script>
+<script>setActive("sync");</script>
+
+<main class="main" style="">
     <section style="margin-top:90px;">
         <div class="container">
             <h2 class="text-success">UISP Synchronization Log</h2>

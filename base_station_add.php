@@ -67,7 +67,7 @@
 <input type="hidden" name="stn_id" id="hidden_stn_id" value="">
 <input type="hidden" name="station_name" id="hidden_station_name" value="">
 
-<main class="main" style="min-height:614px;">
+<main class="main" style="">
     <section style="margin-top:90px;">
 		<div class="container"><h2 class="text-success">ADD BASE STATION <?php echo $baseID;?></h2>
 			<div class="container" style="padding-bottom:15px;background:#eee;border:1px solid #bbb;border-radius:5px">	

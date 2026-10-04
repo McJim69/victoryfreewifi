@@ -50,7 +50,7 @@
 			</h2>
 		</div>
 	</section>
-	<section style="margin-top:-60px;margin-bottom:-20px;min-height:550px;" >
+	<section style="margin-top:-60px;margin-bottom:-20px;" >
 		<div class="container" data-aos="fade-up" style='margin-bottom:-40px'>
 			<div class="row justify-content-center" style="text-align:center;padding:20px">		
 			<?php		

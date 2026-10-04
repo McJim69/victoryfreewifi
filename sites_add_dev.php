@@ -119,10 +119,9 @@
 
 <script>setActive("sites");</script>
 
-<form action="#" method="POST">
-
 <main class="main">
-    <section style="margin-top:100px;min-height:610px;">
+<form action="#" method="POST">
+    <section style="margin-top:100px;">
 		<div class="container">
 			<h2 class="text-success">
 				ADD Device :
@@ -162,9 +161,8 @@
 			</div>	
 		</div>
     </section>
-</main>
-
 </form>
+</main>
 
 <style>
 	.addtr{

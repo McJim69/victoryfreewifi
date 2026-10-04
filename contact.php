@@ -11,7 +11,7 @@
 
     <!-- ======= Contact Section ======= -->
     <section id="contact" class="contact" style="background:linear-gradient(rgba(255, 0, 0, 0.1), rgba(255, 0, 0, 0.2));" >
-      <div class="container" data-aos="fade-up" style="min-height:435px">
+      <div class="container" data-aos="fade-up" style="">
         <div class="section-title">
           <h2>Contact Us</h2>
         </div>

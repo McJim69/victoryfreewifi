@@ -40,7 +40,7 @@
 						<?php
 							$ex2=$link->query("select mcode from barangays where barangay='".$_GET["barangays"]."' group by mcode order by mcode")or die(mysqli_error($link));			
 							if($_GET["barangays"]=="" || $_GET["barangays"]=="Barangays")							
-							$ex2=$link->query("select mcode from barangays group by mcode order by mcode")or die(mysqli_error($link));																	
+							$ex2=$link->query("select mcode from barangays where TRIM(mcode) != '' group by mcode order by mcode")or die(mysqli_error($link));																	
 							while($rs=mysqli_fetch_array($ex2)){
 								echo "<option ";
 							if($_GET["municipality"]===$rs[0])
@@ -49,12 +49,11 @@
 							}
 						?>
 					</select>
-					<select style='padding:3px 5px 3px 5px;text-align:left' class="btn btn-light" onchange="jump('?municipality=<?php echo $_GET["municipality"];?>&wifi=<?php echo $_GET["wifi"];?>&los=<?php echo $_GET["los"];?>&barangays='+this.value)">
-						<option>Barangays</option>
+					;text-transform:capitalize;'
 						<?php
 							$ex2=$link->query("select barangay from barangays where mcode='".$_GET["municipality"]."' group by barangay order by barangay")or die(mysqli_error($link));
 							if($_GET["municipality"]=="" || $_GET["municipality"]=="Municipality")
-							$ex2=$link->query("select barangay from barangays group by barangay order by barangay")or die(mysqli_error($link));																
+							$ex2=$link->query("select barangay from barangays where TRIM(barangay) != '' group by barangay order by barangay")or die(mysqli_error($link));																
 							while($rs=mysqli_fetch_array($ex2)){
 								echo "<option ";
 							if($_GET["barangays"]===$rs[0])

@@ -125,10 +125,12 @@
 								<li><a href='backup.php' id='backup' class='menuli'>Backup</a></li>
 								<li><a href='devices.php' id='devices' class='menuli'>Devices</a></li>
 								<li><a href='categories.php' id='categories' class='menuli'>Category</a></li>
-								<li><a href='installers.php' id='installers' class='menuli'>Installers</a></li>
-								<li><a href='barangays.php' id='barangays' class='menuli'>Barangays</a></li>
-								<li><a href='sync_uisp.php' class='menuli'>Sync UISP</a></li>
-								<li><a href='recover_ips.php' class='menuli'>Recover IPs</a></li>
+								<li><a href='sync_uisp.php' id='sync' class='menuli'>Sync UISP</a></li>
+								<li><a href='recover_ips.php' id='recover' class='menuli'>Recover IPs</a></li>
+								<li><a href='rename_uisp_stations.php' id='rename' class='menuli'>Device Names</a></li>
+								<li><a href='import_missing_sites.php' id='import_sites' class='menuli'>Fix Missing Sites</a></li>
+								<li><a href='cleanup_barangays.php' id='clean_barangays' class='menuli'>Clean Malformed</a></li>								
+								<li><a href='fix_barangay_admin.php' id='fix_barangays' class='menuli'>Fix Barangay Admin</a></li>								
 							</ul>
 						</li>
 						<li><a onclick='sessionEnd()' class='menuli'>Logout</a></li>";

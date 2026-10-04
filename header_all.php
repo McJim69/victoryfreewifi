@@ -38,7 +38,7 @@
 	<link href="awesome/css/all.min.css" rel="stylesheet"> <!-- Font Awesome -->
 
 	<!-- Custom overrides -->
-	<link href="assets/css/style.css" rel="stylesheet">
+	<link href="assets/css/style.css?v=<?=time()?>" rel="stylesheet">
 
 	<!-- Facebox Modal -->	
 	<link href="facebox/facebox.css" media="screen" rel="stylesheet" type="text/css">	

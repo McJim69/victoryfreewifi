@@ -40,7 +40,7 @@
               <option>Municipality</option>
               <?php
                 if ($barangays === "" || $barangays === "Barangays") {
-                  $ex2 = $link->query("SELECT mcode FROM sites GROUP BY mcode ORDER BY mcode") or die(mysqli_error($link));
+                  $ex2 = $link->query("SELECT mcode FROM sites WHERE TRIM(mcode) != '' AND mcode IS NOT NULL GROUP BY mcode ORDER BY mcode") or die(mysqli_error($link));
                 } else {
                   $ex2 = $link->query("SELECT mcode FROM sites WHERE barangay='$barangays' GROUP BY mcode ORDER BY mcode") or die(mysqli_error($link));
                 }
@@ -51,14 +51,14 @@
               ?>
             </select>
             <!-- Barangays dropdown -->
-            <select class="btn btn-light"
+            <select class="btn btn-light" style="text-transform:capitalize;"
               onchange="jump('?municipality=<?php echo $municipal; ?>&places=<?php echo $places; ?>&barangays='+this.value)">
               <option>Barangays</option>
               <?php
                 if ($municipal === "" || $municipal === "Municipality") {
-                  $ex2 = $link->query("SELECT barangay FROM sites GROUP BY barangay ORDER BY barangay") or die(mysqli_error($link));
+                  $ex2 = $link->query("SELECT barangay FROM barangays WHERE TRIM(barangay) != '' AND barangay IS NOT NULL GROUP BY barangay ORDER BY barangay") or die(mysqli_error($link));
                 } else {
-                  $ex2 = $link->query("SELECT barangay FROM sites WHERE mcode='$municipal' GROUP BY barangay ORDER BY barangay") or die(mysqli_error($link));
+                  $ex2 = $link->query("SELECT barangay FROM barangays WHERE mcode='$municipal' GROUP BY barangay ORDER BY barangay") or die(mysqli_error($link));
                 }
                 while ($rs = mysqli_fetch_array($ex2)) {
                   $selected = ($barangays === $rs[0]) ? "selected" : "";
@@ -73,3 +73,4 @@
     <!-- Responsive table header implemented in main file -->
 </header>
 </form>
+

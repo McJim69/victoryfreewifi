@@ -25,11 +25,11 @@
 		</div>
 	</section>
 
-	<section style="margin-top:-50px;min-height:600px">
+	<section style="margin-top:-50px;">
 		<div class="container">
 			<div class="row justify-content-center" style="margin-bottom:-50px">
 				<div class="col-lg-12">
-					<iframe src='assets/files/servers_topology.pdf' style='border-radius:5px;width:100%;min-height:700px'></iframe>
+					<iframe src='assets/files/servers_topology.pdf' style='border-radius:5px;width:100%;'></iframe>
 				</div>
 			</div>
 		</div>

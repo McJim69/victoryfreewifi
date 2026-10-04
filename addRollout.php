@@ -216,10 +216,9 @@
 
 <script>setActive("sites");</script>
 
-<form action="#" method="POST">
-
 <main class="main">
-    <section style="margin-top:90px;min-height:614px;">
+  <form action="#" method="POST">
+    <section style="margin-top:90px;">
 		<div class="container"><h2 class="text-success">ADD ROLLOUT</h2>
 			<div class="container" style="padding-bottom:15px;background:#eee;border:1px solid #bbb;border-radius:5px">	
 				<div class="row row-cols-2 row-cols-sm-3 row-cols-md-4 row-cols-lg-5 row-cols-xl-5" style="margin-top:10px">					
@@ -232,9 +231,9 @@
 									$municipality = $_GET["municipality"] ?? "";
 
 									if ($barangay === "" || $barangay === "Barangays") {
-										$stmt = $link->prepare("SELECT DISTINCT mcode FROM barangays ORDER BY mcode");
+										$stmt = $link->prepare("SELECT DISTINCT mcode FROM barangays WHERE TRIM(mcode) != '' AND mcode IS NOT NULL ORDER BY mcode");
 									} else {
-										$stmt = $link->prepare("SELECT DISTINCT mcode FROM barangays WHERE barangay = ? ORDER BY mcode");
+										$stmt = $link->prepare("SELECT DISTINCT mcode FROM barangays WHERE barangay = ? AND TRIM(mcode) != '' AND mcode IS NOT NULL ORDER BY mcode");
 										$stmt->bind_param("s", $barangay);
 									}
 
@@ -256,16 +255,16 @@
 					</div>
 					<div class="col" style="margin-top:5px">
 						<small class="text-success">&nbsp;<i class="fa fa-motorcycle"></i> Barangay
-							<select class="form-control" name="barangay" required >
+							<select class="form-control" name="barangay" style="text-transform:capitalize;" required >
 								<option value="" selected="1">Barangays</option>
 								<?php
 									$municipality    = $_GET["municipality"] ?? "";
 									$selectedBarangay = $_GET["barangays"]   ?? "";
 
 									if ($municipality === "" || $municipality === "Municipality") {
-										$stmt = $link->prepare("SELECT DISTINCT barangay FROM barangays ORDER BY barangay");
+										$stmt = $link->prepare("SELECT DISTINCT barangay FROM barangays WHERE TRIM(barangay) != '' AND barangay IS NOT NULL ORDER BY barangay");
 									} else {
-										$stmt = $link->prepare("SELECT DISTINCT barangay FROM barangays WHERE mcode = ? ORDER BY barangay");
+										$stmt = $link->prepare("SELECT DISTINCT barangay FROM barangays WHERE mcode = ? AND TRIM(barangay) != '' AND barangay IS NOT NULL ORDER BY barangay");
 										$stmt->bind_param("s", $municipality);
 									}
 
@@ -391,9 +390,8 @@
 			</div>	
 		</div>
     </section>
+  </form>
 </main>
-
-</form>
 
 <style>
 	.addtr{

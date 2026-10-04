@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title> </title>
+    <link rel="icon" type="image/png" href="/nms/favicon.png" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noindex" />
+    <meta name="apple-itunes-app" content="app-id=1183022489" />
+    <meta name="google-play-app" content="app-id=com.ubnt.umobile" />
+    <style type="text/css">
+      .ie-warning {
+        display: none;
+      }
+
+      .no-promises .ie-warning {
+        display: block;
+      }
+    </style>
+    <script type="text/javascript">
+      var title = document.getElementsByTagName('title')[0];
+      title.innerHTML = 'UISP | ' + window.location.hostname;
+
+      // delighted survey lib
+      !(function (e, t, r, n) {
+        if (!e[n]) {
+          for (
+            var a = (e[n] = []),
+              i = [
+                'survey',
+                'reset',
+                'config',
+                'init',
+                'set',
+                'get',
+                'event',
+                'identify',
+                'track',
+                'page',
+                'screen',
+                'group',
+                'alias',
+              ],
+              s = 0;
+            s < i.length;
+            s++
+          ) {
+            var c = i[s];
+            a[c] =
+              a[c] ||
+              (function (e) {
+                return function () {
+                  var t = Array.prototype.slice.call(arguments);
+                  a.push([e, t]);
+                };
+              })(c);
+          }
+          a.SNIPPET_VERSION = '1.0.1';
+          var o = t.createElement('script');
+          (o.type = 'text/javascript'),
+            (o.async = !0),
+            (o.src = 'https://d2yyd1h5u9mauk.cloudfront.net/integrations/web/v1/library/' + r + '/' + n + '.js');
+          var p = t.getElementsByTagName('script')[0];
+          p.parentNode.insertBefore(o, p);
+        }
+      })(window, document, 'qJgv0IXXbH6c4m2O', 'delightedNps4');
+    </script>
+
+    <link rel="preload" as="font" type="font/woff2" href="/nms/fonts/UI_Sans_v10_Regular.woff2" crossorigin />
+    <link rel="preload" as="font" type="font/woff2" href="/nms/fonts/UI_Sans_v10_Medium.woff2" crossorigin />
+    <link rel="preload" as="font" type="font/woff2" href="/nms/fonts/UI_Sans_v10_Light.woff2" crossorigin />
+    <link rel="preload" as="font" type="font/woff2" href="/nms/fonts/UI_Sans_v10_Bold.woff2" crossorigin />
+    <link rel="preload" as="font" type="font/woff2" href="/nms/fonts/UI_Sans_v10_Black.woff2" crossorigin />
+
+    <link rel="preload" as="font" type="font/woff2" href="/nms/fonts/lato-light.woff2" crossorigin />
+    <link rel="preload" as="font" type="font/woff2" href="/nms/fonts/lato-regular.woff2" crossorigin />
+    <link rel="preload" as="font" type="font/woff2" href="/nms/fonts/lato-medium.woff2" crossorigin />
+    <link rel="preload" as="font" type="font/woff2" href="/nms/fonts/lato-semibold.woff2" crossorigin />
+    <link rel="preload" as="font" type="font/woff2" href="/nms/fonts/lato-bold.woff2" crossorigin />
+    <link rel="preload" as="font" type="font/woff2" href="/nms/fonts/lato-heavy.woff2" crossorigin />
+
+    <link rel="stylesheet" type="text/css" href="/nms/fonts.min.css" />
+    <script type="module" crossorigin src="/nms/assets/index-9_kxL8KA.js"></script>
+    <link rel="stylesheet" crossorigin href="/nms/assets/index-DH6xmfRL.css">
+  </head>
+
+  <body>
+    <noscript>
+      <div class="unifiAccountContainer">
+        <div class="unifiAccount">
+          <a class="loginLogoUisp" href="https://uisp.com/"></a>
+          <div class="unifiAccount__content">
+            <div class="appInputGroup alignCenter">
+              <div>
+                <p>
+                  The browser you are using is not supported. We recommend using Chrome or Firefox to get the best
+                  experience.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </noscript>
+    <div id="root" style="height: 100%">
+      <div class="ie-warning">
+        <div class="unifiAccountContainer">
+          <div class="unifiAccount">
+            <a class="loginLogoUisp" href="https://uisp.com/"></a>
+            <div class="unifiAccount__content">
+              <div class="appInputGroup alignCenter">
+                <div>
+                  <p>
+                    The browser you are using is not supported. We recommend using Chrome or Firefox to get the best
+                    experience.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

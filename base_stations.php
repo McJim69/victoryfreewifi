@@ -165,7 +165,7 @@
 	</div>
 </header>
 
-<main id="main" style="margin-top:120px;min-height:560px">
+<main id="main" style="margin-top:120px;">
 	<div class="container">
 		<div class="row">
 		<?php 

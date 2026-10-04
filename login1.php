@@ -43,7 +43,7 @@
 
 <script>setActive("login");</script>
 
-<main id="main" style="min-height:682px;">
+<main id="main" style="">
 	<section id="contact" class="contact">
 		<div class="container" data-aos="fade-up" style="margin-top:90px;padding:20px;border-radius:5px;width:333px;text-align:center;border:1px solid #bbb;background:#eee">
 		<img src="assets/img/logo_2.png" height="120px">
